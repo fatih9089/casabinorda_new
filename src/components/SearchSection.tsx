@@ -5,7 +5,6 @@ import { Search } from 'lucide-react';
 import { Medicine } from '../types/medicine';
 import { mockMedicines } from '../data/mockMedicines';
 import SearchResults from './search/SearchResults';
-import FileUpload from './search/FileUpload';
 import CartPanel from './cart/CartPanel';
 import CartButton from './cart/CartButton';
 
@@ -15,7 +14,6 @@ const SearchSection = () => {
   const [cartItems, setCartItems] = useState<(Medicine & { quantity: number })[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [medicines, setMedicines] = useState<Medicine[]>(mockMedicines);
-  const [fileUploadError, setFileUploadError] = useState<string | null>(null);
   
   const searchRef = useRef(null);
   const isInView = useInView(searchRef, { once: true, amount: 0.3 });
@@ -139,15 +137,6 @@ const SearchSection = () => {
               />
             </div>
           </motion.div>
-
-          {/* Excel Dosyası Yükleme */}
-          <FileUpload 
-            medicines={medicines}
-            setMedicines={setMedicines}
-            fileUploadError={fileUploadError}
-            setFileUploadError={setFileUploadError}
-            itemVariants={itemVariants}
-          />
 
           {/* Search Results */}
           <SearchResults 
