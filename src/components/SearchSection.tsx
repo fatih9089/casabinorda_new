@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Search, Plus, ShoppingCart, X, Minus, Upload } from 'lucide-react';
@@ -9,7 +8,7 @@ interface Medicine {
   id: number;
   name: string;
   activeIngredient: string;
-  category: string;
+  category?: string;
   packaging?: string;
   manufacturer?: string;
   country?: string;
@@ -27,6 +26,43 @@ const mockMedicines: Medicine[] = [
   { id: 8, name: "Coumadin", activeIngredient: "Warfarin", category: "Antikoagülan", packaging: "28 Tablet", manufacturer: "Bristol-Myers Squibb", country: "ABD" },
   { id: 9, name: "Ventolin", activeIngredient: "Salbutamol", category: "Bronkodilatatör", packaging: "1 İnhaler", manufacturer: "GSK", country: "İngiltere" },
   { id: 10, name: "Nexium", activeIngredient: "Esomeprazol", category: "Proton Pompası İnhibitörü", packaging: "14 Tablet", manufacturer: "AstraZeneca", country: "İsveç" },
+  
+  // CSV'den eklenen yeni ilaçlar
+  { id: 11, name: "ZIAGEN", activeIngredient: "ABACAVIR", packaging: "300 MG 60 FILM-COATED TABLETS", manufacturer: "GLAXOSMITHKLINE", country: "CANADA" },
+  { id: 12, name: "ORENCIA", activeIngredient: "ABATACEPT", packaging: "125 MG 4 SOLUTION FOR INJECTION IN PRE-FILLED SYRINGES", manufacturer: "BRISTOL-MYERS SQUIBB", country: "PUERTO RICO" },
+  { id: 13, name: "ORENCIA", activeIngredient: "ABATACEPT", packaging: "250 MG POWDER FOR CONCENTRATE FOR SOLUTION FOR INFUSION", manufacturer: "BRISTOL-MYERS SQUIBB", country: "USA" },
+  { id: 14, name: "CLOTINAB", activeIngredient: "ABCIXIMAB", packaging: "10 MG 5 ML. VIAL", manufacturer: "DEM", country: "SOUTH KOREA" },
+  { id: 15, name: "VERZENIOS", activeIngredient: "ABEMACICLIB", packaging: "100 MG 42 FILM-COATED TABLETS", manufacturer: "LILLY", country: "PUERTO RICO" },
+  { id: 16, name: "VERZENIOS", activeIngredient: "ABEMACICLIB", packaging: "150 MG 42 FILM-COATED TABLETS", manufacturer: "LILLY", country: "PUERTO RICO" },
+  { id: 17, name: "VERZENIOS", activeIngredient: "ABEMACICLIB", packaging: "50 MG 42 FILM-COATED TABLETS", manufacturer: "LILLY", country: "PUERTO RICO" },
+  { id: 18, name: "ABITIGA", activeIngredient: "ABIRATERONE ACETATE", packaging: "250 MG 120 FILM-COATED TABLETS", manufacturer: "TEVA", country: "ISRAEL" },
+  { id: 19, name: "ARVILA", activeIngredient: "ABIRATERONE ACETATE", packaging: "250 MG 120 FILM-COATED TABLETS", manufacturer: "ECZACIBASI", country: "SPAIN" },
+  { id: 20, name: "ZYTIGA", activeIngredient: "ABIRATERONE ACETATE", packaging: "250 MG 120 FILM-COATED TABLETS", manufacturer: "JANSSEN-CILAG", country: "CANADA" },
+  { id: 21, name: "CAMPRAL", activeIngredient: "ACAMPROSATE", packaging: "333 MG 84 TAB.", manufacturer: "MERCK", country: "FRANCE" },
+  { id: 22, name: "GLUCOBAY", activeIngredient: "ACARBOSE", packaging: "100 MG 30 TAB.", manufacturer: "BAYER", country: "TURKEY" },
+  { id: 23, name: "GLUCOBAY", activeIngredient: "ACARBOSE", packaging: "100 MG 90 TAB.", manufacturer: "BAYER", country: "TURKEY" },
+  { id: 24, name: "GLUCOBAY", activeIngredient: "ACARBOSE", packaging: "50 MG 30 TAB.", manufacturer: "BAYER", country: "TURKEY" },
+  { id: 25, name: "GLUCOBAY", activeIngredient: "ACARBOSE", packaging: "50 MG 90 TAB.", manufacturer: "BAYER", country: "TURKEY" },
+  { id: 26, name: "BIOFENAC", activeIngredient: "ACECLOFENAC", packaging: "100 MG 20 TAB.", manufacturer: "ECZACIBASI", country: "SPAIN" },
+  { id: 27, name: "RANTUDIL FORT", activeIngredient: "ACEMETACIN", packaging: "60 MG 20 CAP.", manufacturer: "MEDA", country: "TURKEY" },
+  { id: 28, name: "RANTUDIL RETARD", activeIngredient: "ACEMETACIN", packaging: "90 MG 10 SUSTAINED-RELEASE CAPSULES", manufacturer: "MEDA", country: "TURKEY" },
+  { id: 29, name: "BENICAL COLD", activeIngredient: "ACETAMINOPHEN + DEXTROMETHORPHAN + PSEUDOEPHEDRINE", packaging: "20 FILM-COATED TABLETS", manufacturer: "BAYER", country: "TURKEY" },
+  { id: 30, name: "DIAZOMID", activeIngredient: "ACETAZOLAMIDE", packaging: "250 MG 10 TAB.", manufacturer: "SANOFI", country: "TURKEY" },
+  { id: 31, name: "BRUNAC %5", activeIngredient: "ACETYLCYSTEINE", packaging: "5 ML. EYE DROPS", manufacturer: "BIO-GEN", country: "ITALY" },
+  { id: 32, name: "MUCOLATOR", activeIngredient: "ACETYLCYSTEINE", packaging: "200 MG 100 ML. POWDER FOR ORAL SOLUTION", manufacturer: "KOCAK", country: "TURKEY" },
+  { id: 33, name: "MUCOLATOR", activeIngredient: "ACETYLCYSTEINE", packaging: "200 MG 150 ML. POWDER FOR ORAL SOLUTION", manufacturer: "KOCAK", country: "TURKEY" },
+  { id: 34, name: "MUCOLATOR PLUS", activeIngredient: "ACETYLCYSTEINE", packaging: "600 MG TOZ 30 SACHETS", manufacturer: "KOCAK", country: "TURKEY" },
+  { id: 35, name: "MUCOPLUS", activeIngredient: "ACETYLCYSTEINE", packaging: "1200 MG 20 EFFERVESCENT TABLETS", manufacturer: "TAKEDA", country: "TURKEY" },
+  { id: 36, name: "ALKA-SELTZER", activeIngredient: "ACETYLSALICYLIC ACID", packaging: "324 MG 10 EFFERVESCENT TABLETS", manufacturer: "BAYER", country: "GERMANY" },
+  { id: 37, name: "ASPIRIN", activeIngredient: "ACETYLSALICYLIC ACID", packaging: "100 MG 20 TAB.", manufacturer: "BAYER", country: "TURKEY" },
+  { id: 38, name: "ASPIRIN", activeIngredient: "ACETYLSALICYLIC ACID", packaging: "500 MG 20 TAB.", manufacturer: "BAYER", country: "TURKEY" },
+  { id: 39, name: "CORASPIN", activeIngredient: "ACETYLSALICYLIC ACID", packaging: "100 MG 30 TAB.", manufacturer: "BAYER", country: "TURKEY" },
+  { id: 40, name: "CORASPIN", activeIngredient: "ACETYLSALICYLIC ACID", packaging: "300 MG 30 TAB.", manufacturer: "BAYER", country: "TURKEY" },
+  { id: 41, name: "DISPRIL", activeIngredient: "ACETYLSALICYLIC ACID", packaging: "300 MG 24 ORODISPERSIBLE TABLETS", manufacturer: "RECKITT BENCKISER", country: "UK" },
+  { id: 42, name: "ASPIRIN PLUS C", activeIngredient: "ACETYLSALICYLIC ACID + ASCORBIC ACID (VITAMIN C)", packaging: "10 EFFERVESCENT TABLETS", manufacturer: "BAYER", country: "TURKEY" },
+  { id: 43, name: "ASPIRIN COMPLEX", activeIngredient: "ACETYLSALICYLIC ACID + PSEUDOEPHEDRINE HYDROCHLORIDE", packaging: "500 MG 10 SACHETS", manufacturer: "BAYER", country: "GERMANY" },
+  { id: 44, name: "ASPIRIN COMPLEX", activeIngredient: "ACETYLSALICYLIC ACID + PSEUDOEPHEDRINE HYDROCHLORIDE", packaging: "500 MG 20 SACHETS", manufacturer: "BAYER", country: "GERMANY" },
+  { id: 45, name: "ZOVIRAX %5", activeIngredient: "ACICLOVIR", packaging: "2 GR HERPES CREAM", manufacturer: "GLAXOSMITHKLINE", country: "TURKEY" },
 ];
 
 const SearchSection = () => {
