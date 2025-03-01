@@ -1,7 +1,6 @@
-
 import { useState, useEffect, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Search, Plus, ShoppingCart } from 'lucide-react';
+import { Search, Plus, ShoppingCart, X, Minus } from 'lucide-react';
 
 // Mock data - in a real app, this would come from an API
 const mockMedicines = [
