@@ -1,44 +1,114 @@
+
 import { useState, useEffect, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Search, Plus, ShoppingCart, X, Minus } from 'lucide-react';
+import { Search, Plus, ShoppingCart, X, Minus, Upload } from 'lucide-react';
+import * as XLSX from 'xlsx';
 
-// Mock data - in a real app, this would come from an API
-const mockMedicines = [
-  { id: 1, name: "Parol", activeIngredient: "Parasetamol", category: "Ağrı Kesici" },
-  { id: 2, name: "Majezik", activeIngredient: "Flurbiprofen", category: "Ağrı Kesici" },
-  { id: 3, name: "Augmentin", activeIngredient: "Amoksisilin", category: "Antibiyotik" },
-  { id: 4, name: "Cipro", activeIngredient: "Siprofloksasin", category: "Antibiyotik" },
-  { id: 5, name: "Xanax", activeIngredient: "Alprazolam", category: "Anksiyolitik" },
-  { id: 6, name: "Prozac", activeIngredient: "Fluoksetin", category: "Antidepresan" },
-  { id: 7, name: "Lipitor", activeIngredient: "Atorvastatin", category: "Kolesterol" },
-  { id: 8, name: "Coumadin", activeIngredient: "Warfarin", category: "Antikoagülan" },
-  { id: 9, name: "Ventolin", activeIngredient: "Salbutamol", category: "Bronkodilatatör" },
-  { id: 10, name: "Nexium", activeIngredient: "Esomeprazol", category: "Proton Pompası İnhibitörü" },
+// Genişletilmiş ilaç tipi tanımı
+interface Medicine {
+  id: number;
+  name: string;
+  activeIngredient: string;
+  category: string;
+  packaging?: string;
+  manufacturer?: string;
+  country?: string;
+}
+
+// Mock data - genişletilmiş veri alanlarıyla
+const mockMedicines: Medicine[] = [
+  { id: 1, name: "Parol", activeIngredient: "Parasetamol", category: "Ağrı Kesici", packaging: "20 Tablet", manufacturer: "Atabay", country: "Türkiye" },
+  { id: 2, name: "Majezik", activeIngredient: "Flurbiprofen", category: "Ağrı Kesici", packaging: "15 Tablet", manufacturer: "Sanovel", country: "Türkiye" },
+  { id: 3, name: "Augmentin", activeIngredient: "Amoksisilin", category: "Antibiyotik", packaging: "14 Tablet", manufacturer: "GSK", country: "İngiltere" },
+  { id: 4, name: "Cipro", activeIngredient: "Siprofloksasin", category: "Antibiyotik", packaging: "10 Tablet", manufacturer: "Bayer", country: "Almanya" },
+  { id: 5, name: "Xanax", activeIngredient: "Alprazolam", category: "Anksiyolitik", packaging: "30 Tablet", manufacturer: "Pfizer", country: "ABD" },
+  { id: 6, name: "Prozac", activeIngredient: "Fluoksetin", category: "Antidepresan", packaging: "28 Kapsül", manufacturer: "Eli Lilly", country: "ABD" },
+  { id: 7, name: "Lipitor", activeIngredient: "Atorvastatin", category: "Kolesterol", packaging: "90 Tablet", manufacturer: "Pfizer", country: "ABD" },
+  { id: 8, name: "Coumadin", activeIngredient: "Warfarin", category: "Antikoagülan", packaging: "28 Tablet", manufacturer: "Bristol-Myers Squibb", country: "ABD" },
+  { id: 9, name: "Ventolin", activeIngredient: "Salbutamol", category: "Bronkodilatatör", packaging: "1 İnhaler", manufacturer: "GSK", country: "İngiltere" },
+  { id: 10, name: "Nexium", activeIngredient: "Esomeprazol", category: "Proton Pompası İnhibitörü", packaging: "14 Tablet", manufacturer: "AstraZeneca", country: "İsveç" },
 ];
 
 const SearchSection = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
-  const [cartItems, setCartItems] = useState([]);
+  const [searchResults, setSearchResults] = useState<Medicine[]>([]);
+  const [cartItems, setCartItems] = useState<(Medicine & { quantity: number })[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [medicines, setMedicines] = useState<Medicine[]>(mockMedicines);
+  const [fileUploadError, setFileUploadError] = useState<string | null>(null);
   
   const searchRef = useRef(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const isInView = useInView(searchRef, { once: true, amount: 0.3 });
 
   useEffect(() => {
     if (searchTerm.length >= 2) {
-      const filtered = mockMedicines.filter(
+      const filtered = medicines.filter(
         medicine => 
           medicine.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-          medicine.activeIngredient.toLowerCase().includes(searchTerm.toLowerCase())
+          medicine.activeIngredient.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          (medicine.manufacturer && medicine.manufacturer.toLowerCase().includes(searchTerm.toLowerCase())) ||
+          (medicine.country && medicine.country.toLowerCase().includes(searchTerm.toLowerCase()))
       );
       setSearchResults(filtered);
     } else {
       setSearchResults([]);
     }
-  }, [searchTerm]);
+  }, [searchTerm, medicines]);
 
-  const addToCart = (medicine) => {
+  const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setFileUploadError(null);
+    const file = event.target.files?.[0];
+    
+    if (!file) return;
+    
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      try {
+        const data = e.target?.result;
+        const workbook = XLSX.read(data, { type: 'binary' });
+        const sheetName = workbook.SheetNames[0];
+        const worksheet = workbook.Sheets[sheetName];
+        const jsonData = XLSX.utils.sheet_to_json(worksheet);
+        
+        // Doğru veri formatını kontrol et ve dönüştür
+        const newMedicines = jsonData.map((row: any, index) => {
+          // Excel'den gelen verilerin alan isimlerini kontrol et
+          if (!row.name || !row.activeIngredient || !row.category) {
+            throw new Error('Excel dosyası doğru formatı içermiyor. İlaç adı, etkin madde ve kategori alanları zorunludur.');
+          }
+          
+          return {
+            id: (medicines.length > 0 ? Math.max(...medicines.map(m => m.id)) : 0) + index + 1,
+            name: row.name,
+            activeIngredient: row.activeIngredient,
+            category: row.category,
+            packaging: row.packaging || '',
+            manufacturer: row.manufacturer || '',
+            country: row.country || '',
+          };
+        });
+        
+        setMedicines(prevMedicines => [...prevMedicines, ...newMedicines]);
+        
+        // Dosya seçimini sıfırla
+        if (fileInputRef.current) {
+          fileInputRef.current.value = '';
+        }
+      } catch (error) {
+        console.error('Excel dosyası yüklenirken hata oluştu:', error);
+        setFileUploadError('Excel dosyası yüklenirken bir hata oluştu. Lütfen doğru formatta bir dosya yüklediğinizden emin olun.');
+      }
+    };
+    
+    reader.onerror = () => {
+      setFileUploadError('Dosya okunurken bir hata oluştu.');
+    };
+    
+    reader.readAsBinaryString(file);
+  };
+
+  const addToCart = (medicine: Medicine) => {
     setCartItems(prevItems => {
       // Check if item already exists in cart
       const exists = prevItems.find(item => item.id === medicine.id);
@@ -57,7 +127,7 @@ const SearchSection = () => {
     });
   };
 
-  const updateQuantity = (id, newQuantity) => {
+  const updateQuantity = (id: number, newQuantity: number) => {
     if (newQuantity <= 0) {
       setCartItems(prevItems => prevItems.filter(item => item.id !== id));
     } else {
@@ -132,7 +202,7 @@ const SearchSection = () => {
           animate={isInView ? "visible" : "hidden"}
           className="relative"
         >
-          <motion.div variants={itemVariants} className="relative mb-10">
+          <motion.div variants={itemVariants} className="relative mb-6">
             <div className="flex items-center shadow-sm border border-gray-200 rounded-lg overflow-hidden">
               <div className="pl-4">
                 <Search className="w-5 h-5 text-gray-400" />
@@ -141,10 +211,35 @@ const SearchSection = () => {
                 type="text"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                placeholder="İlaç adı veya etkin madde ara..."
+                placeholder="İlaç adı, etkin madde, üretici firma veya ülke ara..."
                 className="w-full px-4 py-3 focus:outline-none text-lg"
               />
             </div>
+          </motion.div>
+
+          {/* Excel Dosyası Yükleme */}
+          <motion.div variants={itemVariants} className="mb-10">
+            <div className="flex items-center justify-center p-6 border-2 border-dashed border-gray-300 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors cursor-pointer" onClick={() => fileInputRef.current?.click()}>
+              <div className="text-center">
+                <Upload className="mx-auto h-12 w-12 text-gray-400" />
+                <div className="mt-2">
+                  <span className="block text-sm font-medium text-gray-900">Excel Dosyası Yükle</span>
+                  <span className="block text-xs text-gray-500 mt-1">İlaç listenizi içeren Excel dosyasını (.xlsx) yükleyin</span>
+                </div>
+                <input 
+                  ref={fileInputRef}
+                  type="file" 
+                  className="hidden" 
+                  accept=".xlsx, .xls"
+                  onChange={handleFileUpload}
+                />
+              </div>
+            </div>
+            {fileUploadError && (
+              <div className="mt-2 p-3 bg-red-50 text-red-700 rounded-md text-sm">
+                {fileUploadError}
+              </div>
+            )}
           </motion.div>
 
           {/* Search Results */}
@@ -153,16 +248,19 @@ const SearchSection = () => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
-              className="bg-white rounded-xl shadow-md border border-gray-100 mb-8 overflow-hidden"
+              className="bg-white rounded-xl shadow-md border border-gray-100 mb-8 overflow-hidden overflow-x-auto"
             >
-              <div className="grid grid-cols-12 px-6 py-3 bg-gray-50 text-sm font-medium text-gray-500">
-                <div className="col-span-4 md:col-span-4">İlaç Adı</div>
-                <div className="col-span-4 md:col-span-4">Etkin Madde</div>
-                <div className="col-span-3 md:col-span-3">Kategori</div>
-                <div className="col-span-1 md:col-span-1 text-right">İşlem</div>
+              <div className="grid grid-cols-12 px-6 py-3 bg-gray-50 text-sm font-medium text-gray-500 min-w-[1000px]">
+                <div className="col-span-2">İlaç Adı</div>
+                <div className="col-span-2">Etkin Madde</div>
+                <div className="col-span-2">Kategori</div>
+                <div className="col-span-2">Paketleme</div>
+                <div className="col-span-2">Üretici Firma</div>
+                <div className="col-span-1">Ülke</div>
+                <div className="col-span-1 text-right">İşlem</div>
               </div>
               
-              <div className="divide-y divide-gray-100">
+              <div className="divide-y divide-gray-100 min-w-[1000px]">
                 {searchResults.map((medicine, index) => (
                   <motion.div
                     key={medicine.id}
@@ -171,10 +269,13 @@ const SearchSection = () => {
                     transition={{ delay: index * 0.05 }}
                     className="grid grid-cols-12 px-6 py-4 hover:bg-gray-50 transition-colors"
                   >
-                    <div className="col-span-4 md:col-span-4 font-medium">{medicine.name}</div>
-                    <div className="col-span-4 md:col-span-4 text-gray-600">{medicine.activeIngredient}</div>
-                    <div className="col-span-3 md:col-span-3 text-gray-600">{medicine.category}</div>
-                    <div className="col-span-1 md:col-span-1 flex justify-end">
+                    <div className="col-span-2 font-medium">{medicine.name}</div>
+                    <div className="col-span-2 text-gray-600">{medicine.activeIngredient}</div>
+                    <div className="col-span-2 text-gray-600">{medicine.category}</div>
+                    <div className="col-span-2 text-gray-600">{medicine.packaging || '-'}</div>
+                    <div className="col-span-2 text-gray-600">{medicine.manufacturer || '-'}</div>
+                    <div className="col-span-1 text-gray-600">{medicine.country || '-'}</div>
+                    <div className="col-span-1 flex justify-end">
                       <button
                         onClick={() => addToCart(medicine)}
                         className="p-1.5 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
@@ -251,6 +352,7 @@ const SearchSection = () => {
                             <div>
                               <p className="font-medium">{item.name}</p>
                               <p className="text-sm text-gray-500">{item.activeIngredient}</p>
+                              <p className="text-xs text-gray-400">{item.manufacturer} | {item.packaging}</p>
                             </div>
                             <div className="flex items-center">
                               <button 
