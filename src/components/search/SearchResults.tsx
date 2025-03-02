@@ -34,9 +34,9 @@ const SearchResults = ({ searchResults, addToCart }: SearchResultsProps) => {
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
-      className="bg-white rounded-xl shadow-md border border-gray-100 mb-8 overflow-hidden"
+      className="bg-white rounded-xl shadow-md border border-gray-100 mb-8 overflow-hidden w-full"
     >
-      <div className={`grid ${isMobile ? 'grid-cols-5' : 'grid-cols-12'} px-6 py-3 bg-gray-50 text-sm font-medium text-gray-500 ${isMobile ? '' : 'min-w-[1000px]'}`}>
+      <div className={`grid ${isMobile ? 'grid-cols-5' : 'grid-cols-12'} px-6 py-3 bg-gray-50 text-sm font-medium text-gray-500`}>
         <div className={isMobile ? "col-span-3" : "col-span-2"}>İlaç Adı</div>
         <div className={isMobile ? "col-span-2" : "col-span-2"}>Etkin Madde</div>
         {!isMobile && (
@@ -50,7 +50,7 @@ const SearchResults = ({ searchResults, addToCart }: SearchResultsProps) => {
         <div className={`${isMobile ? "" : "col-span-1"} text-right`}>İşlem</div>
       </div>
       
-      <div className={`divide-y divide-gray-100 ${isMobile ? '' : 'min-w-[1000px]'}`}>
+      <div className="divide-y divide-gray-100">
         {searchResults.map((medicine, index) => (
           <motion.div
             key={medicine.id}
@@ -60,23 +60,23 @@ const SearchResults = ({ searchResults, addToCart }: SearchResultsProps) => {
             className={`grid ${isMobile ? 'grid-cols-5' : 'grid-cols-12'} px-6 py-4 hover:bg-gray-50 transition-colors`}
           >
             <div 
-              className={`${isMobile ? "col-span-3" : "col-span-2"} font-medium cursor-pointer`} 
+              className={`${isMobile ? "col-span-3" : "col-span-2"} font-medium cursor-pointer text-xs md:text-sm truncate`} 
               onClick={() => handleMedicineClick(medicine)}
             >
               {medicine.name}
             </div>
             <div 
-              className={`${isMobile ? "col-span-2" : "col-span-2"} text-gray-600 cursor-pointer`}
+              className={`${isMobile ? "col-span-2" : "col-span-2"} text-gray-600 cursor-pointer text-xs md:text-sm truncate`}
               onClick={() => handleMedicineClick(medicine)}
             >
               {medicine.activeIngredient}
             </div>
             {!isMobile && (
               <>
-                <div className="col-span-2 text-gray-600">{medicine.category || '-'}</div>
-                <div className="col-span-2 text-gray-600">{medicine.packaging || '-'}</div>
-                <div className="col-span-2 text-gray-600">{medicine.manufacturer || '-'}</div>
-                <div className="col-span-1 text-gray-600">{medicine.country || '-'}</div>
+                <div className="col-span-2 text-gray-600 text-xs md:text-sm truncate">{medicine.category || '-'}</div>
+                <div className="col-span-2 text-gray-600 text-xs md:text-sm truncate">{medicine.packaging || '-'}</div>
+                <div className="col-span-2 text-gray-600 text-xs md:text-sm truncate">{medicine.manufacturer || '-'}</div>
+                <div className="col-span-1 text-gray-600 text-xs md:text-sm truncate">{medicine.country || '-'}</div>
               </>
             )}
             <div className={`${isMobile ? "" : "col-span-1"} flex justify-end`}>
