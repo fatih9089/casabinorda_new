@@ -1,10 +1,10 @@
-
 import { useLocation, useParams, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Medicine } from '../types/medicine';
 import { mockMedicines } from '../data/mockMedicines';
 import { ArrowLeft, ShoppingCart } from 'lucide-react';
 import { motion } from 'framer-motion';
+import CartButton from '../components/cart/CartButton';
 
 const MedicineDetail = () => {
   const { id } = useParams();
@@ -12,16 +12,27 @@ const MedicineDetail = () => {
   const navigate = useNavigate();
   const [medicine, setMedicine] = useState<Medicine | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [cartItems, setCartItems] = useState<(Medicine & { quantity: number })[]>([]);
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   useEffect(() => {
-    // Önce location.state'den bakalım (performans için)
+    const storedCart = localStorage.getItem('cart');
+    if (storedCart) {
+      setCartItems(JSON.parse(storedCart));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cartItems));
+  }, [cartItems]);
+
+  useEffect(() => {
     if (location.state?.medicine) {
       setMedicine(location.state.medicine);
       setIsLoading(false);
       return;
     }
     
-    // State'den gelmezse ID ile bulalım
     if (id) {
       const medicineId = parseInt(id);
       const foundMedicine = mockMedicines.find(m => m.id === medicineId);
@@ -33,6 +44,27 @@ const MedicineDetail = () => {
     
     setIsLoading(false);
   }, [id, location.state]);
+
+  const addToCart = (medicine: Medicine) => {
+    setCartItems(prevItems => {
+      const existingItem = prevItems.find(item => item.id === medicine.id);
+      
+      if (existingItem) {
+        return prevItems.map(item => 
+          item.id === medicine.id 
+            ? { ...item, quantity: item.quantity + 1 } 
+            : item
+        );
+      } else {
+        return [...prevItems, { ...medicine, quantity: 1 }];
+      }
+    });
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+  };
 
   if (isLoading) {
     return (
@@ -108,7 +140,10 @@ const MedicineDetail = () => {
                 Bu etkin madde içeren ilaçlar, spesifik hastalıkların tedavisinde kullanılır. 
                 Daha fazla bilgi için lütfen doktorunuza danışınız.
               </p>
-              <button className="w-full bg-primary text-white py-3 px-4 rounded-lg hover:bg-primary/90 transition-colors flex items-center justify-center">
+              <button 
+                onClick={() => addToCart(medicine)}
+                className="w-full bg-primary text-white py-3 px-4 rounded-lg hover:bg-primary/90 transition-colors flex items-center justify-center"
+              >
                 <ShoppingCart size={18} className="mr-2" />
                 Teklif İsteğine Ekle
               </button>
@@ -138,6 +173,12 @@ const MedicineDetail = () => {
             ))}
         </div>
       </div>
+
+      <CartButton 
+        cartItems={cartItems} 
+        setIsCartOpen={setIsCartOpen} 
+        itemVariants={itemVariants} 
+      />
     </div>
   );
 };
