@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { ArrowUp } from 'lucide-react';
 
@@ -41,11 +40,11 @@ const Footer = () => {
           className="flex flex-col md:flex-row justify-between items-center"
         >
           <motion.div variants={itemVariants} className="mb-6 md:mb-0">
-            <a href="#" className="text-primary font-display font-bold text-2xl">
-              CASBINORDA
-            </a>
+            <div className="text-primary font-display font-bold text-2xl">
+              CASABINORDA
+            </div>
             <p className="text-gray-500 mt-2">
-              Güvenilir ve profesyonel toptan ilaç tedarikçisi
+              Reliable and professional wholesale medicine supplier
             </p>
           </motion.div>
           
@@ -54,13 +53,13 @@ const Footer = () => {
             className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8"
           >
             <a href="#about" className="text-gray-500 hover:text-primary transition-colors">
-              Hakkımızda
+              About Us
             </a>
             <a href="#search" className="text-gray-500 hover:text-primary transition-colors">
-              İlaç Arama
+              Medicine Search
             </a>
             <a href="#contact" className="text-gray-500 hover:text-primary transition-colors">
-              İletişim
+              Contact
             </a>
           </motion.div>
         </motion.div>
@@ -73,7 +72,7 @@ const Footer = () => {
           className="mt-12 pt-6 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center"
         >
           <motion.p variants={itemVariants} className="text-gray-500 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} CASBINORDA. Tüm hakları saklıdır.
+            {new Date().getFullYear()} CASABINORDA. All rights reserved.
           </motion.p>
           
           <motion.button
@@ -82,7 +81,7 @@ const Footer = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
-            aria-label="Sayfanın başına dön"
+            aria-label="Back to top"
           >
             <ArrowUp size={20} />
           </motion.button>

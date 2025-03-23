@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
@@ -24,8 +23,23 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden">
-      <div className="container-tight relative">
+    <section id="home" className="pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden relative">
+      {/* Background Image */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-no-repeat w-full h-full"
+          style={{ 
+            backgroundImage: 'url("/images/backgrounds/diverse-people.png")',
+            backgroundSize: '100%',
+            backgroundPosition: 'center 10%',
+            filter: 'blur(0px)',
+            transform: 'scale(1.01)',
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/50 to-white/40" />
+      </div>
+
+      <div className="container-tight relative z-10">
         {/* Background decorative element */}
         <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-80 h-80 rounded-full bg-primary/5 blur-3xl" />
 
@@ -33,57 +47,54 @@ const Hero = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="max-w-3xl mx-auto text-center relative z-10"
+          className="flex flex-col items-center text-center py-2 max-w-3xl mx-auto relative z-10 -mt-4"
         >
+          {/* Negatif margin-top değerini azalttım */}
+          
           <motion.div variants={itemVariants} className="mb-4">
             <span className="inline-block text-sm font-medium px-3 py-1 rounded-full bg-primary/10 text-primary">
-              Toptan İlaç Tedariki
+              Wholesale Medicine Supply
             </span>
           </motion.div>
           
           <motion.h1 
             variants={itemVariants}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-10 leading-tight text-gray-900"
           >
-            Güvenilir ve profesyonel <span className="text-primary">ilaç tedariği</span>
+            Reliable and professional <span className="text-primary">medicine supply</span>
           </motion.h1>
           
-          <motion.p 
-            variants={itemVariants}
-            className="text-lg md:text-xl text-foreground/70 mb-8 md:mb-10"
-          >
-            CASBINORDA, sağlık sektörüne güvenilir, hızlı ve profesyonel toptan ilaç tedarik hizmeti sunmaktadır.
-          </motion.p>
+          {/* Başlık ile butonlar arasına boşluk ekledim */}
+          <div className="h-16"></div>
           
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row justify-center gap-4">
             <motion.a
-              href="#search"
+              href="/#search"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               className="px-6 py-3 bg-primary text-white rounded-lg font-medium inline-flex items-center justify-center gap-2 shadow-sm shadow-primary/20 hover:shadow-md hover:shadow-primary/30 transition-all"
+              variants={itemVariants}
             >
-              İlaç Ara
+              Search Medicine
               <ArrowRight size={16} />
             </motion.a>
-            
             <motion.a
-              href="#contact"
+              href="/#contact"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               className="px-6 py-3 bg-white border border-primary/20 text-primary rounded-lg font-medium inline-flex items-center justify-center gap-2 shadow-sm hover:shadow-md transition-all"
+              variants={itemVariants}
             >
-              İletişime Geç
+              Contact Us
             </motion.a>
           </motion.div>
+          
+          {/* Butonların altına boşluk ekledim */}
+          <div className="h-16"></div>
         </motion.div>
       </div>
       
-      {/* Subtle wave decoration */}
-      <div className="w-full h-16 mt-16 overflow-hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full h-full">
-          <path fill="#f1f5f9" fillOpacity="1" d="M0,192L60,181.3C120,171,240,149,360,154.7C480,160,600,192,720,202.7C840,213,960,203,1080,176C1200,149,1320,107,1380,85.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-        </svg>
-      </div>
+      {/* Dalga dekorasyonunu kaldırdım */}
     </section>
   );
 };

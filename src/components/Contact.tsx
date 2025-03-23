@@ -1,205 +1,276 @@
+import React, { useState, useRef } from 'react';
+import { motion } from 'framer-motion';
+import { MapPin, Phone, Mail, Check } from 'lucide-react';
 
-import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
-import { Phone, Mail, MapPin, MessageSquare } from 'lucide-react';
+interface FormData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  message: string;
+  userType: string;
+}
 
 const Contact = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.3 });
-  
-  const contactInfo = [
-    {
-      icon: <Phone className="w-5 h-5 text-primary" />,
-      title: "Telefon",
-      value: "+90 (212) 123 45 67"
-    },
-    {
-      icon: <Mail className="w-5 h-5 text-primary" />,
-      title: "E-posta",
-      value: "info@casbinorda.com"
-    },
-    {
-      icon: <MapPin className="w-5 h-5 text-primary" />,
-      title: "Adres",
-      value: "İstanbul, Türkiye"
-    },
-    {
-      icon: <MessageSquare className="w-5 h-5 text-primary" />,
-      title: "WhatsApp",
-      value: "+90 (532) 123 45 67"
-    }
-  ];
+  const [formData, setFormData] = useState<FormData>({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    message: '',
+    userType: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const formRef = useRef<HTMLFormElement>(null);
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: { 
-      opacity: 1,
-      transition: { 
-        staggerChildren: 0.1,
-        delayChildren: 0.2
-      }
-    }
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
-      y: 0,
-      transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
+  const handleUserTypeChange = (type: string) => {
+    setFormData(prev => ({ ...prev, userType: type }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError(null);
+
+    // Form validation
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone || !formData.message || !formData.userType) {
+      setError('Please fill in all required fields and select your user type.');
+      setIsSubmitting(false);
+      return;
+    }
+
+    // Email format validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setError('Please enter a valid email address.');
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      // Form submission using FormSubmit
+      if (formRef.current) {
+        formRef.current.submit();
+        setIsSubmitted(true);
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          message: '',
+          userType: ''
+        });
+      }
+    } catch (error) {
+      setError('An error occurred while sending your message. Please try again later.');
+      console.error('Form submission error:', error);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-secondary/50">
-      <div className="container-tight">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.span
-            initial={{ opacity: 0, y: 10 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="inline-block text-sm font-medium px-3 py-1 rounded-full bg-primary/10 text-primary mb-4"
-          >
-            İletişim
-          </motion.span>
-          
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
+    <section id="contact" className="py-16 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-3xl font-bold text-primary mb-2">Contact</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            You can contact us for your questions or requests. We will get back to you as soon as possible.
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 gap-10">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-3xl md:text-4xl font-bold mb-6"
+            viewport={{ once: true }}
+            className="bg-white rounded-lg shadow-md p-6"
           >
-            Bize Ulaşın
-          </motion.h2>
-          
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-lg text-foreground/70"
-          >
-            İhtiyaçlarınız ve talepleriniz için bizimle iletişime geçebilirsiniz.
-          </motion.p>
-        </div>
-        
-        <div className="grid md:grid-cols-2 gap-12">
-          <motion.div 
-            ref={ref}
-            variants={containerVariants}
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-            className="bg-white rounded-xl p-8 shadow-sm border border-gray-100"
-          >
-            <motion.h3 
-              variants={itemVariants}
-              className="text-2xl font-bold mb-6"
-            >
-              İletişim Bilgilerimiz
-            </motion.h3>
+            <h3 className="text-xl font-bold text-primary mb-6">Contact Information</h3>
             
-            <div className="space-y-6">
-              {contactInfo.map((info, index) => (
-                <motion.div 
-                  key={index}
-                  variants={itemVariants}
-                  className="flex items-start"
-                >
-                  <div className="p-2 rounded-full bg-primary/10 mr-4">
-                    {info.icon}
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500">{info.title}</p>
-                    <p className="font-medium">{info.value}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-            
-            <motion.div 
-              variants={itemVariants}
-              className="mt-10"
-            >
-              <h4 className="text-lg font-semibold mb-3">Çalışma Saatleri</h4>
-              <div className="space-y-2">
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Pazartesi - Cuma</span>
-                  <span>09:00 - 18:00</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Cumartesi</span>
-                  <span>09:00 - 13:00</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Pazar</span>
-                  <span>Kapalı</span>
+            <div className="space-y-4">
+              <div className="flex items-start">
+                <MapPin className="w-5 h-5 text-primary mt-1 mr-3" />
+                <div>
+                  <h4 className="font-medium">Address</h4>
+                  <p className="text-gray-600">Kemeraltı Mah.99.sok.No:13-8, 48700 Marmaris Mugla</p>
                 </div>
               </div>
-            </motion.div>
+              
+              <div className="flex items-start">
+                <Phone className="w-5 h-5 text-primary mt-1 mr-3" />
+                <div>
+                  <h4 className="font-medium">Phone</h4>
+                  <p className="text-gray-600">+90 (534) 500 82 60</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start">
+                <Mail className="w-5 h-5 text-primary mt-1 mr-3" />
+                <div>
+                  <h4 className="font-medium">Email</h4>
+                  <p className="text-gray-600">info@casabinorda.com</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-8">
+              <h4 className="font-medium mb-2">Working Hours</h4>
+              <p className="text-gray-600">Monday - Friday: 09:00 - 18:00</p>
+              <p className="text-gray-600">Saturday: 09:00 - 14:00</p>
+              <p className="text-gray-600">Sunday: Closed</p>
+            </div>
           </motion.div>
           
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="bg-white rounded-xl p-8 shadow-sm border border-gray-100"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-lg shadow-md p-6"
           >
-            <h3 className="text-2xl font-bold mb-6">Mesaj Gönderin</h3>
+            <h3 className="text-xl font-bold text-primary mb-6">Send Us a Message</h3>
             
-            <form className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium mb-1">İsim</label>
-                  <input 
-                    type="text" 
-                    className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
-                    placeholder="İsminiz"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-1">Soyisim</label>
-                  <input 
-                    type="text" 
-                    className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
-                    placeholder="Soyisminiz"
-                  />
-                </div>
+            {isSubmitted ? (
+              <div className="bg-green-50 border border-green-200 rounded-md p-4">
+                <p className="text-green-700">Your message has been sent successfully. We will contact you as soon as possible.</p>
               </div>
-              
-              <div>
-                <label className="block text-sm font-medium mb-1">E-posta</label>
-                <input 
-                  type="email" 
-                  className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
-                  placeholder="E-posta adresiniz"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium mb-1">Telefon</label>
-                <input 
-                  type="tel" 
-                  className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
-                  placeholder="Telefon numaranız"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium mb-1">Mesajınız</label>
-                <textarea
-                  rows={5}
-                  className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
-                  placeholder="Mesajınızı yazın..."
-                />
-              </div>
-              
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full py-3 bg-primary text-white rounded-lg font-medium hover:shadow-md hover:shadow-primary/20 transition-all"
+            ) : (
+              <form 
+                ref={formRef}
+                onSubmit={handleSubmit}
+                action="https://formsubmit.co/devvare@gmail.com" 
+                method="POST"
+                className="space-y-4"
               >
-                Mesaj Gönder
-              </motion.button>
-            </form>
+                <input type="hidden" name="_subject" value="New Contact Form Message" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="firstName" className="block text-sm font-medium mb-1">First Name *</label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleInputChange}
+                      className="w-full p-2 border rounded-md"
+                      required
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="lastName" className="block text-sm font-medium mb-1">Last Name *</label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleInputChange}
+                      className="w-full p-2 border rounded-md"
+                      required
+                    />
+                  </div>
+                </div>
+                
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium mb-1">Email *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="w-full p-2 border rounded-md"
+                    required
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium mb-1">Phone *</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    className="w-full p-2 border rounded-md"
+                    required
+                  />
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium mb-2">I am a...</label>
+                  <div className="grid grid-cols-1 gap-3 pl-4">
+                    <div 
+                      onClick={() => handleUserTypeChange('patient')}
+                      className={`p-3 border rounded-md cursor-pointer flex items-center justify-between transition-colors ${formData.userType === 'patient' ? 'border-primary bg-primary/5' : 'hover:bg-gray-50'}`}
+                    >
+                      <span>Patient/Patient Relative</span>
+                      {formData.userType === 'patient' && <Check className="h-4 w-4 text-primary" />}
+                    </div>
+                    <div 
+                      onClick={() => handleUserTypeChange('healthcare')}
+                      className={`p-3 border rounded-md cursor-pointer flex items-center justify-between transition-colors ${formData.userType === 'healthcare' ? 'border-primary bg-primary/5' : 'hover:bg-gray-50'}`}
+                    >
+                      <span>Healthcare Professional</span>
+                      {formData.userType === 'healthcare' && <Check className="h-4 w-4 text-primary" />}
+                    </div>
+                    <div 
+                      onClick={() => handleUserTypeChange('business')}
+                      className={`p-3 border rounded-md cursor-pointer flex items-center justify-between transition-colors ${formData.userType === 'business' ? 'border-primary bg-primary/5' : 'hover:bg-gray-50'}`}
+                    >
+                      <span>Wholesaler/Merchant</span>
+                      {formData.userType === 'business' && <Check className="h-4 w-4 text-primary" />}
+                    </div>
+                  </div>
+                  <input type="hidden" name="userType" value={formData.userType} />
+                </div>
+                
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium mb-1">Message *</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    rows={4}
+                    className="w-full p-2 border rounded-md"
+                    required
+                  />
+                </div>
+
+                {error && (
+                  <div className="bg-red-50 border border-red-200 rounded-md p-3">
+                    <p className="text-red-700 text-sm">{error}</p>
+                  </div>
+                )}
+                
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full bg-primary hover:bg-primary-dark text-white py-2 px-4 rounded-md transition duration-200 disabled:opacity-70"
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                </button>
+              </form>
+            )}
           </motion.div>
         </div>
       </div>

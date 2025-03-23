@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { ShoppingCart } from 'lucide-react';
 import { Medicine } from '../../types/medicine';
@@ -14,13 +13,18 @@ const CartButton = ({ cartItems, setIsCartOpen, itemVariants }: CartButtonProps)
     return cartItems.reduce((total, item) => total + item.quantity, 0);
   };
 
+  // Sepet butonuna tıklandığında talep listesini aç
+  const handleCartClick = () => {
+    setIsCartOpen(true);
+  };
+
   return (
     <motion.div 
       variants={itemVariants}
       className="fixed bottom-6 right-6 z-40"
     >
       <button
-        onClick={() => setIsCartOpen(true)}
+        onClick={handleCartClick}
         className="flex items-center justify-center p-4 bg-primary text-white rounded-full shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all"
       >
         <ShoppingCart size={24} />

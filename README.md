@@ -67,3 +67,58 @@ Simply open [Lovable](https://lovable.dev/projects/b453f157-2290-4653-a501-6acf3
 ## I want to use a custom domain - is that possible?
 
 We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+
+## E-posta Gönderme Özelliği
+
+Uygulama, iki farklı bölümde e-posta gönderme özelliği sunmaktadır:
+
+1. **Teklif Talebi Gönderme**: Kullanıcılar, talep listesindeki ilaçlar için teklif talebini e-posta olarak gönderebilir.
+2. **İletişim Formu**: Kullanıcılar, iletişim sayfasındaki form aracılığıyla genel sorular veya talepler için mesaj gönderebilir.
+
+Her iki özellik de [FormSubmit](https://formsubmit.co/) servisi kullanılarak gerçekleştirilmiştir. FormSubmit, herhangi bir hesap oluşturmadan veya arka uç kodu yazmadan form verilerini e-posta olarak almanızı sağlayan ücretsiz bir servistir.
+
+### FormSubmit Kurulumu
+
+1. `src/components/cart/CartPanel.tsx` ve `src/components/Contact.tsx` dosyalarındaki form etiketlerinde bulunan `action` özelliğini kendi e-posta adresinizle güncelleyin:
+
+```tsx
+<form 
+  action="https://formsubmit.co/your-email@example.com" 
+  method="POST"
+  ...
+>
+```
+
+2. İlk form gönderiminden sonra, FormSubmit size bir aktivasyon e-postası gönderecektir. Bu e-postadaki aktivasyon bağlantısına tıklayarak form gönderimlerini almaya başlayabilirsiniz.
+
+3. Daha fazla özelleştirme için FormSubmit'in [resmi dokümantasyonunu](https://formsubmit.co/) inceleyebilirsiniz.
+
+### Form Yapılandırması
+
+Her iki formda da aşağıdaki gizli alanlar kullanılmıştır:
+
+```html
+<input type="hidden" name="_subject" value="Yeni Teklif Talebi" />
+<input type="hidden" name="_captcha" value="false" />
+<input type="hidden" name="_template" value="table" />
+```
+
+Bu alanlar:
+- `_subject`: Alınan e-postanın konu satırını belirler
+- `_captcha`: CAPTCHA doğrulamasını devre dışı bırakır (isteğe bağlı olarak etkinleştirilebilir)
+- `_template`: E-posta içeriğinin tablo formatında görüntülenmesini sağlar
+
+### Formların İçeriği
+
+#### Teklif Talebi Formu
+- Gönderenin adı
+- E-posta adresi
+- Telefon numarası
+- Notlar
+- Talep edilen ilaçların listesi
+
+#### İletişim Formu
+- Gönderenin adı ve soyadı
+- E-posta adresi
+- Telefon numarası
+- Mesaj

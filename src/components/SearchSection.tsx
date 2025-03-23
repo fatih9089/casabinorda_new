@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Search } from 'lucide-react';
@@ -17,6 +16,19 @@ const SearchSection = () => {
   
   const searchRef = useRef(null);
   const isInView = useInView(searchRef, { once: true, amount: 0.3 });
+
+  // Load cart data from localStorage when page loads
+  useEffect(() => {
+    const storedCart = localStorage.getItem('cart');
+    if (storedCart) {
+      setCartItems(JSON.parse(storedCart));
+    }
+  }, []);
+
+  // Save cart data to localStorage when it changes
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cartItems));
+  }, [cartItems]);
 
   useEffect(() => {
     if (searchTerm.length >= 2) {
@@ -50,6 +62,9 @@ const SearchSection = () => {
         return [...prevItems, { ...medicine, quantity: 1 }];
       }
     });
+    
+    // Open cart after adding product
+    setIsCartOpen(true);
   };
 
   const updateQuantity = (id: number, newQuantity: number) => {
@@ -62,6 +77,12 @@ const SearchSection = () => {
         )
       );
     }
+  };
+
+  // Clear cart function
+  const clearCart = () => {
+    setCartItems([]);
+    localStorage.removeItem('cart');
   };
 
   const containerVariants = {
@@ -85,8 +106,20 @@ const SearchSection = () => {
   };
 
   return (
-    <section id="search" className="py-16 md:py-24">
-      <div className="container-tight">
+    <section id="search" className="py-16 md:py-24 bg-white relative overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat w-full h-full"
+          style={{ 
+            backgroundImage: 'url("/images/pharmacy-background.webp")',
+            opacity: 0.4
+          }}
+        />
+        <div className="absolute inset-0 bg-white/60" />
+      </div>
+      
+      <div className="container-tight relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.span
             initial={{ opacity: 0, y: 10 }}
@@ -94,7 +127,7 @@ const SearchSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="inline-block text-sm font-medium px-3 py-1 rounded-full bg-primary/10 text-primary mb-4"
           >
-            İlaç Arama
+            Medicine Search
           </motion.span>
           
           <motion.h2
@@ -103,7 +136,7 @@ const SearchSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-3xl md:text-4xl font-bold mb-6"
           >
-            Toptan İlaç Kataloğu
+            Medicine Catalog
           </motion.h2>
           
           <motion.p
@@ -112,7 +145,7 @@ const SearchSection = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-lg text-foreground/70"
           >
-            İlaç adı veya etkin madde ile arama yaparak, ihtiyacınız olan ürünleri bulun ve talep listesi oluşturun.
+            Search by medicine name or active ingredient to find the products you need and create a request list.
           </motion.p>
         </div>
         
@@ -124,7 +157,7 @@ const SearchSection = () => {
           className="relative"
         >
           <motion.div variants={itemVariants} className="relative mb-6">
-            <div className="flex items-center shadow-sm border border-gray-200 rounded-lg overflow-hidden">
+            <div className="flex items-center shadow-sm border border-gray-200 rounded-lg overflow-hidden bg-white">
               <div className="pl-4">
                 <Search className="w-5 h-5 text-gray-400" />
               </div>
@@ -132,7 +165,7 @@ const SearchSection = () => {
                 type="text"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                placeholder="İlaç adı, etkin madde, üretici firma veya ülke ara..."
+                placeholder="Search medicine name, active ingredient, manufacturer or country..."
                 className="w-full px-4 py-3 focus:outline-none text-lg"
               />
             </div>
@@ -157,6 +190,7 @@ const SearchSection = () => {
             setIsCartOpen={setIsCartOpen}
             cartItems={cartItems}
             updateQuantity={updateQuantity}
+            clearCart={clearCart}
           />
         </motion.div>
       </div>
