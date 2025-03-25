@@ -2,6 +2,7 @@ import React, { useState, useRef, useCallback, memo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShoppingCart, X, Plus, Minus, Check, Loader2, FileText, CreditCard, Truck } from 'lucide-react';
 import { Medicine } from '../../types/medicine';
+import emailjs from '@emailjs/browser';
 
 interface CartPanelProps {
   isCartOpen: boolean;
@@ -295,12 +296,17 @@ const CartPanel: React.FC<CartPanelProps> = ({
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [originalCartItems, setOriginalCartItems] = useState<(Medicine & { quantity: number })[]>([]);
   const [userType, setUserType] = useState('');
+  const [error, setError] = useState('');
   const formRef = useRef<HTMLFormElement>(null);
 
   // Sepet öğelerini metin formatına dönüştür
-  const formatCartItems = useCallback(() => cartItems.map(item => 
-    `${item.name} - ${item.quantity} units`
-  ).join('\n'), [cartItems]);
+  const formatCartItems = useCallback(() => {
+    if (!cartItems || cartItems.length === 0) return "No items in cart";
+    
+    return cartItems.map(item => 
+      `${item.name} - ${item.quantity} adet`
+    ).join('\n');
+  }, [cartItems]);
 
   // Form gönderme işlemini optimize et
   const handleSubmit = useCallback(async (e: React.FormEvent) => {
@@ -319,26 +325,25 @@ const CartPanel: React.FC<CartPanelProps> = ({
       // Save original cart items for display in success message
       setOriginalCartItems([...cartItems]);
 
-      // FormSubmit.co için e-posta gönderimi
-      const response = await fetch('https://formsubmit.co/ajax/devvare@gmail.com', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
+      // EmailJS ile e-posta gönderimi
+      const result = await emailjs.send(
+        'service_aye53iy',
+        'template_ooxnw4q',
+        {
           name,
           email,
           phone,
           message,
           userType,
-          _subject: 'New Medicine Request',
-          _template: 'table',
+          subject: 'New Medicine Request',
           request: formatCartItems()
-        })
-      });
+        },
+        'PekYKb6ImWD2awBBC'
+      );
+      
+      console.log('EmailJS result in CartPanel:', result);
 
-      if (response.ok) {
+      if (result.status === 200) {
         setIsSubmitted(true);
         
         // Önce mesajın gönderildiğini göster, 5 saniye sonra sepeti temizle
@@ -350,21 +355,11 @@ const CartPanel: React.FC<CartPanelProps> = ({
           } else {
             console.error("clearCart is not a function:", clearCart);
           }
-          
-          // 2 saniye sonra paneli kapat ve durumu sıfırla
-          setTimeout(() => {
-            setIsCartOpen(false);
-            setIsSubmitted(false);
-            setOriginalCartItems([]);
-          }, 2000);
         }, 5000);
-      } else {
-        alert('An error occurred. Please try again later.');
       }
     } catch (error) {
-      console.error('Error during form submission:', error);
-      alert('An error occurred. Please try again later.');
-    } finally {
+      setError('An error occurred while sending your request. Please try again later.');
+      console.error('EmailJS error in CartPanel:', error);
       setIsSubmitting(false);
     }
   }, [setIsCartOpen, formatCartItems, clearCart, cartItems, userType]);
@@ -459,6 +454,7 @@ const CartPanel: React.FC<CartPanelProps> = ({
                   
                   <div className="border-t pt-6">
                     <h3 className="font-medium mb-4">Request a Quote</h3>
+                    {error && <p className="text-red-500 mb-4">{error}</p>}
                     <CartForm 
                       formRef={formRef} 
                       isSubmitting={isSubmitting} 

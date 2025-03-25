@@ -10,6 +10,7 @@ import CartPanel from '../components/cart/CartPanel';
 import Notification from '../components/ui/Notification';
 import { createSlug } from '../utils/slugUtils';
 import { Link } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
 
 // Similar medicines component extracted and optimized with memo
 const SimilarMedicines = memo(({ medicines, navigate }: { 
@@ -202,42 +203,102 @@ const MedicineDetail = () => {
       }
     });
     
-    // Show notification instead of opening cart panel
+    // Show notification
     setNotificationMessage(`${medicine.name} added to cart`);
     setShowNotification(true);
+    
+    // Hide notification after 3 seconds
+    setTimeout(() => {
+      setShowNotification(false);
+    }, 3000);
   }, []);
 
   // Memoize update quantity function
   const updateQuantity = useCallback((id: number, newQuantity: number) => {
-    if (newQuantity <= 0) {
-      // If quantity is 0 or less, remove the item from cart
-      setCartItems(prevItems => prevItems.filter(item => item.id !== id));
-    } else {
-      // Otherwise update the quantity
-      setCartItems(prevItems => 
-        prevItems.map(item => 
-          item.id === id ? { ...item, quantity: newQuantity } : item
-        )
+    setCartItems(prevItems => {
+      if (newQuantity <= 0) {
+        return prevItems.filter(item => item.id !== id);
+      }
+      
+      return prevItems.map(item => 
+        item.id === id 
+          ? { ...item, quantity: newQuantity } 
+          : item
       );
-    }
+    });
   }, []);
 
-  // Sepeti temizleme fonksiyonu
+  // Memoize clear cart function
   const clearCart = useCallback(() => {
     setCartItems([]);
   }, []);
 
-  // Separate variants for content and form
-  const contentVariants = useMemo(() => ({
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
-  }), []);
-  
-  // No animation for the form to prevent zoom effect
-  const formVariants = useMemo(() => ({
-    hidden: { opacity: 1 },
-    visible: { opacity: 1 }
-  }), []);
+  // Toggle request form
+  const toggleRequestForm = useCallback(() => {
+    setShowRequestForm(prev => !prev);
+    setFormError(null);
+  }, []);
+
+  // Handle request form input change
+  const handleRequestInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setRequestFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  }, []);
+
+  // Handle request form submission
+  const handleRequestSubmit = useCallback((e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Validate form
+    if (!requestFormData.name || !requestFormData.email || !requestFormData.phone) {
+      setFormError('Please fill in all required fields');
+      return;
+    }
+    
+    setIsSubmitting(true);
+    
+    // Simulate form submission
+    emailjs.send(
+      'service_aye53iy',
+      'template_ooxnw4q',
+      {
+        name: requestFormData.name,
+        email: requestFormData.email,
+        phone: requestFormData.phone,
+        quantity: requestFormData.quantity,
+        message: requestFormData.message,
+        userType: requestFormData.userType,
+        medicine: medicine?.name,
+        subject: `Information Request: ${medicine?.name}`
+      },
+      'PekYKb6ImWD2awBBC'
+    )
+    .then((result) => {
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      
+      // 5 saniye sonra formu sıfırla
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setRequestFormData({
+          name: '',
+          email: '',
+          phone: '',
+          quantity: '1',
+          message: '',
+          userType: 'patient'
+        });
+      }, 5000);
+    })
+    .catch((error) => {
+      setIsSubmitting(false);
+      setFormError('Error sending request. Please try again later.');
+      console.error('EmailJS error:', error);
+    });
+  }, [requestFormData, medicine]);
 
   // Memoize similar medicines
   const similarMedicines = useMemo(() => {
@@ -247,54 +308,38 @@ const MedicineDetail = () => {
       .filter(m => 
         m.id !== medicine.id && 
         m.activeIngredient === medicine.activeIngredient
-      );
+      )
+      .slice(0, 3);
   }, [medicine]);
 
-  const handleRequestInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setRequestFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleUserTypeChange = (type: string) => {
-    setRequestFormData(prev => ({ ...prev, userType: type }));
-  };
-
-  const handleRequestSubmit = (e: React.FormEvent) => {
-    // Form validation
-    if (!requestFormData.name || !requestFormData.email || !requestFormData.phone || !requestFormData.userType) {
-      e.preventDefault();
-      setFormError('Please fill in all required fields and select your user type.');
-      return;
+  // Animation variants
+  const contentVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: { duration: 0.5 }
     }
+  };
 
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(requestFormData.email)) {
-      e.preventDefault();
-      setFormError('Please enter a valid email address.');
-      return;
+  const formVariants = {
+    hidden: { opacity: 0, height: 0 },
+    visible: { 
+      opacity: 1, 
+      height: 'auto',
+      transition: { duration: 0.3 }
     }
-
-    setIsSubmitting(true);
-    // Form will be submitted naturally by the browser
-    // We don't prevent default here to allow the form to submit normally
   };
 
-  const toggleRequestForm = () => {
-    setShowRequestForm(!showRequestForm);
-  };
-
+  // Set static background image
   useEffect(() => {
-    // Select a random background image on component mount
-    const imageCount = 10; // Total number of background images
-    const randomImageNumber = Math.floor(Math.random() * imageCount) + 1;
-    setBackgroundImage(`/images/backgrounds/medicine-detail${randomImageNumber}.webp`);
+    setBackgroundImage(`/images/backgrounds/medicine-detail.webp`);
   }, []);
 
   if (isLoading) {
     return (
-      <div className="container-tight py-16 flex justify-center">
-        <div className="animate-pulse text-lg">Loading...</div>
+      <div className="flex justify-center items-center min-h-screen">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
       </div>
     );
   }
@@ -370,7 +415,7 @@ const MedicineDetail = () => {
             <Link 
               to="/" 
               className="font-display font-bold text-2xl block"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              onClick={() => navigate('/')}
             >
               <span className="text-primary">CASA</span>
               <span className="text-foreground">BINORDA</span>
@@ -463,7 +508,7 @@ const MedicineDetail = () => {
                         variants={formVariants}
                       >
                         {!isSubmitted ? (
-                          <form onSubmit={handleRequestSubmit} action="https://formsubmit.co/devvare@gmail.com" method="POST">
+                          <form onSubmit={handleRequestSubmit}>
                             <h3 className="font-medium mb-3">Request Information</h3>
                             
                             {formError && (
@@ -515,41 +560,30 @@ const MedicineDetail = () => {
                               <div>
                                 <label htmlFor="quantity" className="block text-sm font-medium mb-1">Quantity</label>
                                 <input
-                                  type="text"
+                                  type="number"
                                   id="quantity"
                                   name="quantity"
                                   value={requestFormData.quantity}
                                   onChange={handleRequestInputChange}
                                   className="w-full p-2 border rounded-md"
+                                  min="1"
                                 />
                               </div>
                               
                               <div>
-                                <label className="block text-sm font-medium mb-2">I am a...</label>
-                                <div className="grid grid-cols-1 gap-3 pl-4">
-                                  <div 
-                                    onClick={() => handleUserTypeChange('patient')}
-                                    className={`p-3 border rounded-md cursor-pointer flex items-center justify-between transition-colors ${requestFormData.userType === 'patient' ? 'border-primary bg-primary/5' : 'hover:bg-gray-50'}`}
-                                  >
-                                    <span>Patient/Patient Relative</span>
-                                    {requestFormData.userType === 'patient' && <Check className="h-4 w-4 text-primary" />}
-                                  </div>
-                                  <div 
-                                    onClick={() => handleUserTypeChange('healthcare')}
-                                    className={`p-3 border rounded-md cursor-pointer flex items-center justify-between transition-colors ${requestFormData.userType === 'healthcare' ? 'border-primary bg-primary/5' : 'hover:bg-gray-50'}`}
-                                  >
-                                    <span>Healthcare Professional</span>
-                                    {requestFormData.userType === 'healthcare' && <Check className="h-4 w-4 text-primary" />}
-                                  </div>
-                                  <div 
-                                    onClick={() => handleUserTypeChange('business')}
-                                    className={`p-3 border rounded-md cursor-pointer flex items-center justify-between transition-colors ${requestFormData.userType === 'business' ? 'border-primary bg-primary/5' : 'hover:bg-gray-50'}`}
-                                  >
-                                    <span>Wholesaler/Merchant</span>
-                                    {requestFormData.userType === 'business' && <Check className="h-4 w-4 text-primary" />}
-                                  </div>
-                                </div>
-                                <input type="hidden" name="userType" value={requestFormData.userType} />
+                                <label htmlFor="userType" className="block text-sm font-medium mb-1">I am a:</label>
+                                <select
+                                  id="userType"
+                                  name="userType"
+                                  value={requestFormData.userType}
+                                  onChange={handleRequestInputChange}
+                                  className="w-full p-2 border rounded-md"
+                                >
+                                  <option value="patient">Patient/Patients Relative</option>
+                                  <option value="doctor">Healthcare Professional</option>
+                                  <option value="pharmacist">Pharmacist</option>
+                                  <option value="wholesaler">Wholesaler/Merchant</option>
+                                </select>
                               </div>
                               
                               <div>
@@ -560,56 +594,54 @@ const MedicineDetail = () => {
                                   value={requestFormData.message}
                                   onChange={handleRequestInputChange}
                                   className="w-full p-2 border rounded-md"
-                                  rows={3}
-                                />
+                                  rows={4}
+                                ></textarea>
                               </div>
                               
-                              <input type="hidden" name="_subject" value={`Information Request for ${medicine?.name}`} />
-                              <input type="hidden" name="_captcha" value="false" />
-                              <input type="hidden" name="_next" value={window.location.href} />
-                              <input type="hidden" name="_template" value="table" />
-                              
-                              <button
-                                type="submit"
-                                disabled={isSubmitting}
-                                className="w-full bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary-dark transition-colors disabled:opacity-70"
-                              >
-                                {isSubmitting ? 'Sending...' : 'Send Request'}
-                              </button>
+                              <div className="flex justify-end">
+                                <button
+                                  type="submit"
+                                  className="bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary-dark transition-colors flex items-center justify-center"
+                                  disabled={isSubmitting}
+                                >
+                                  {isSubmitting ? (
+                                    <>
+                                      <div className="animate-spin rounded-full h-4 w-4 border-t-2 border-b-2 border-white mr-2"></div>
+                                      Sending...
+                                    </>
+                                  ) : 'Submit Request'}
+                                </button>
+                              </div>
                             </div>
                           </form>
                         ) : (
                           <div className="bg-green-50 text-green-600 p-4 rounded-md text-center">
-                            <div className="flex items-center justify-center mb-2">
-                              <Check className="h-6 w-6 mr-2" />
-                              <span className="font-medium">Request Sent!</span>
-                            </div>
-                            <p className="text-sm">Thank you for your request. We will contact you shortly.</p>
+                            <Check size={32} className="mx-auto mb-2" />
+                            <h3 className="font-medium mb-1">Request Submitted</h3>
+                            <p className="text-sm">Thank you for your interest. We will contact you shortly.</p>
                           </div>
                         )}
                       </motion.div>
                     </div>
                   )}
-                  
-                  <p className="text-sm text-gray-500 mt-4">
-                    * Please contact us for pricing information.
-                  </p>
                 </div>
               </div>
             </div>
+            
+            {/* Similar medicines section */}
+            {similarMedicines.length > 0 && (
+              <SimilarMedicines medicines={similarMedicines} navigate={navigate} />
+            )}
           </div>
         </motion.div>
-        
-        <SimilarMedicines medicines={similarMedicines} navigate={navigate} />
-        
-        {/* Notification */}
-        <Notification
-          message={notificationMessage}
-          isVisible={showNotification}
-          onClose={() => setShowNotification(false)}
-          type="success"
-        />
       </div>
+      
+      {/* Notification component */}
+      <Notification 
+        isVisible={showNotification} 
+        message={notificationMessage} 
+        onClose={() => setShowNotification(false)} 
+      />
     </div>
   );
 };

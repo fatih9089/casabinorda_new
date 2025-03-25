@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Check } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 interface FormData {
   firstName: string;
@@ -55,9 +56,25 @@ const Contact = () => {
     }
 
     try {
-      // Form submission using FormSubmit
-      if (formRef.current) {
-        formRef.current.submit();
+      // EmailJS ile form gönderimi
+      const result = await emailjs.send(
+        'service_aye53iy',
+        'template_ooxnw4q',
+        {
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          userType: formData.userType,
+          subject: 'New Contact Form Message'
+        },
+        'PekYKb6ImWD2awBBC'
+      );
+      
+      console.log('EmailJS result:', result);
+      
+      if (result.status === 200) {
         setIsSubmitted(true);
         setFormData({
           firstName: '',
@@ -70,7 +87,7 @@ const Contact = () => {
       }
     } catch (error) {
       setError('An error occurred while sending your message. Please try again later.');
-      console.error('Form submission error:', error);
+      console.error('EmailJS error in Contact form:', error);
     } finally {
       setIsSubmitting(false);
     }
@@ -153,14 +170,8 @@ const Contact = () => {
               <form 
                 ref={formRef}
                 onSubmit={handleSubmit}
-                action="https://formsubmit.co/devvare@gmail.com" 
-                method="POST"
                 className="space-y-4"
               >
-                <input type="hidden" name="_subject" value="New Contact Form Message" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_template" value="table" />
-                
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium mb-1">First Name *</label>
