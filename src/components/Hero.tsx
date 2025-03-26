@@ -29,7 +29,7 @@ const Hero = () => {
         <div 
           className="absolute inset-0 bg-cover bg-no-repeat w-full h-full"
           style={{ 
-            backgroundImage: 'url("/images/backgrounds/diverse-people.png")',
+            backgroundImage: 'url("/images/backgrounds/diverse-people.webp")',
             backgroundSize: '100%',
             backgroundPosition: 'center 10%',
             filter: 'blur(0px)',
