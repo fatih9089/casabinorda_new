@@ -308,8 +308,7 @@ const MedicineDetail = () => {
       .filter(m => 
         m.id !== medicine.id && 
         m.activeIngredient === medicine.activeIngredient
-      )
-      .slice(0, 3);
+      );
   }, [medicine]);
 
   // Animation variants
