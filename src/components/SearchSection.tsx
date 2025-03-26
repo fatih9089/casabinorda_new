@@ -112,7 +112,7 @@ const SearchSection = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat w-full h-full"
           style={{ 
-            backgroundImage: 'url("/images/search.webp")',
+            backgroundImage: 'url("/images/backgrounds/search.webp")',
             opacity: 0.4
           }}
         />
