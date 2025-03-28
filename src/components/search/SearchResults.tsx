@@ -37,16 +37,16 @@ const SearchResults = ({ searchResults, addToCart }: SearchResultsProps) => {
       className="bg-white rounded-xl shadow-md border border-gray-100 mb-8 overflow-hidden w-full"
     >
       <div className={`grid ${isMobile ? 'grid-cols-5' : 'grid-cols-11'} px-6 py-3 bg-gray-50 text-sm font-medium text-gray-500`}>
-        <div className={isMobile ? "col-span-3" : "col-span-2"}>MEDICINE</div>
-        <div className={isMobile ? "col-span-2" : "col-span-2"}>ACTIVE INGREDIENT</div>
+        <div className={isMobile ? "col-span-5" : "col-span-2"}>MEDICINE</div>
         {!isMobile && (
           <>
+            <div className="col-span-2">ACTIVE INGREDIENT</div>
             <div className="col-span-2">PACKAGE</div>
             <div className="col-span-3">MANUFACTURER</div>
             <div className="col-span-1">CAUNTRY</div>
+            <div className="col-span-1 text-right"> </div>
           </>
         )}
-        <div className={`${isMobile ? "" : "col-span-1"} text-right`}> </div>
       </div>
       
       <div className="divide-y divide-gray-100">
@@ -57,38 +57,47 @@ const SearchResults = ({ searchResults, addToCart }: SearchResultsProps) => {
             animate={{ opacity: 1 }}
             transition={{ delay: index * 0.05 }}
             className={`grid ${isMobile ? 'grid-cols-5' : 'grid-cols-11'} px-6 py-4 hover:bg-gray-50 transition-colors`}
+            onClick={() => isMobile ? addToCart(medicine) : null}
           >
             <div 
-              className={`${isMobile ? "col-span-3" : "col-span-2"} font-medium cursor-pointer text-xs md:text-sm truncate`} 
-              onClick={() => handleMedicineClick(medicine)}
+              className={`${isMobile ? "col-span-5" : "col-span-2"} font-medium cursor-pointer text-xs md:text-sm truncate`} 
+              onClick={(e) => {
+                e.stopPropagation();
+                handleMedicineClick(medicine);
+              }}
             >
               {medicine.name}
-            </div>
-            <div 
-              className={`${isMobile ? "col-span-2" : "col-span-2"} text-gray-600 cursor-pointer text-xs md:text-sm truncate`}
-              onClick={() => handleMedicineClick(medicine)}
-            >
-              {medicine.activeIngredient}
+              {isMobile && (
+                <div className="text-gray-600 text-xs mt-1 truncate">
+                  {medicine.activeIngredient}
+                </div>
+              )}
             </div>
             {!isMobile && (
               <>
+                <div 
+                  className="col-span-2 text-gray-600 cursor-pointer text-xs md:text-sm truncate"
+                  onClick={() => handleMedicineClick(medicine)}
+                >
+                  {medicine.activeIngredient}
+                </div>
                 <div className="col-span-2 text-gray-600 text-xs md:text-sm truncate">{medicine.packaging || '-'}</div>
                 <div className="col-span-3 text-gray-600 text-xs md:text-sm truncate">{medicine.manufacturer || '-'}</div>
                 <div className="col-span-1 text-gray-600 text-xs md:text-sm truncate">{medicine.country || '-'}</div>
+                <div className="col-span-1 flex justify-end">
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      addToCart(medicine);
+                    }}
+                    className="p-1.5 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors flex-shrink-0 w-8 h-8 flex items-center justify-center"
+                    aria-label="Sepete ekle"
+                  >
+                    <Plus size={16} />
+                  </button>
+                </div>
               </>
             )}
-            <div className={`${isMobile ? "" : "col-span-1"} flex justify-end`}>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  addToCart(medicine);
-                }}
-                className="p-1.5 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors flex-shrink-0 w-8 h-8 flex items-center justify-center"
-                aria-label="Sepete ekle"
-              >
-                <Plus size={16} />
-              </button>
-            </div>
           </motion.div>
         ))}
       </div>
