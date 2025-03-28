@@ -66,9 +66,9 @@ const CartButton = ({ cartItems, setIsCartOpen, itemVariants }: CartButtonProps)
         >
           <button
             onClick={handleWhatsAppButtonClick}
-            className="flex items-center justify-center p-3 bg-green-500 text-white rounded-full shadow-lg hover:shadow-xl transition-all"
+            className="flex items-center justify-center p-0 rounded-full shadow-lg hover:shadow-xl transition-all"
             aria-label="WhatsApp ile iletişime geç"
-            style={{ width: '50px', height: '50px' }}
+            style={{ width: '50px', height: '50px', overflow: 'hidden' }}
           >
             <img 
               src="/images/icons/whatsapp-logo.svg" 

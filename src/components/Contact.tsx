@@ -137,7 +137,7 @@ const Contact = () => {
               </div>
               
               <div className="flex items-start">
-                <div className="w-5 h-5 mr-3 mt-1 flex-shrink-0">
+                <div className="w-5 h-5 mr-3 mt-1 flex-shrink-0 overflow-hidden">
                   <img 
                     src="/images/icons/whatsapp-logo.svg" 
                     alt="WhatsApp" 
