@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Platform-specific dependencies
+**/node_modules/@rollup/rollup-win32-x64-msvc

@@ -26,12 +26,24 @@ const Hero = () => {
     <section id="home" className="pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden relative">
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full z-0">
+        {/* Desktop background */}
         <div 
-          className="absolute inset-0 bg-cover bg-no-repeat w-full h-full"
+          className="absolute inset-0 bg-cover bg-no-repeat w-full h-full hidden md:block"
           style={{ 
             backgroundImage: 'url("/images/backgrounds/diverse-people.webp")',
             backgroundSize: '100%',
             backgroundPosition: 'center 10%',
+            filter: 'blur(0px)',
+            transform: 'scale(1.01)',
+          }}
+        />
+        {/* Mobile background */}
+        <div 
+          className="absolute inset-0 bg-cover bg-no-repeat w-full h-full block md:hidden"
+          style={{ 
+            backgroundImage: 'url("/images/backgrounds/diverse-people2.webp")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
             filter: 'blur(0px)',
             transform: 'scale(1.01)',
           }}

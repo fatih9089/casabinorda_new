@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Check } from 'lucide-react';
+import { MapPin, Phone, Mail, Check, MessageCircle } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 interface FormData {
@@ -133,6 +133,14 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium">Phone</h4>
                   <p className="text-gray-600">+90 (534) 500 82 60</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start">
+                <MessageCircle className="w-5 h-5 text-primary mt-1 mr-3" />
+                <div>
+                  <h4 className="font-medium">WhatsApp</h4>
+                  <p className="text-gray-600">+90 (501) 151 34 91</p>
                 </div>
               </div>
               

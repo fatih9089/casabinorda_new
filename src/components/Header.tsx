@@ -56,6 +56,22 @@ const Header = ({ isTransparent = false }: HeaderProps) => {
     };
   }, []);
 
+  // Sayfa en yukarı kaydırıldığında gizli bölümleri gizleyen yeni useEffect
+  useEffect(() => {
+    // Eğer sayfa en üstteyse (isScrolled false ise) ve mobil görünümdeyse
+    if (!isScrolled && window.innerWidth < 768) {
+      // Gizlenmesi gereken bölümleri bul ve gizle
+      const hiddenSections = ['about', 'how-it-works', 'legal-framework'];
+      hiddenSections.forEach(sectionId => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.classList.add('hidden');
+          section.classList.remove('block');
+        }
+      });
+    }
+  }, [isScrolled]); // isScrolled değiştiğinde çalışacak
+
   const headerClass = `fixed top-0 w-full z-50 transition-all duration-300 ${
     isScrolled ? 'py-3 bg-white/50 backdrop-blur-lg shadow-md' : 'py-5 bg-transparent'
   }`;
@@ -108,6 +124,19 @@ const Header = ({ isTransparent = false }: HeaderProps) => {
     if (!anchor) {
       window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
+    }
+    
+    // For mobile view, make the section visible if it's one of the hidden sections
+    if (window.innerWidth < 768) {
+      const hiddenSections = ['about', 'how-it-works', 'legal-framework'];
+      if (hiddenSections.includes(anchor)) {
+        const section = document.getElementById(anchor);
+        if (section) {
+          // Remove hidden class and add block class
+          section.classList.remove('hidden');
+          section.classList.add('block');
+        }
+      }
     }
     
     const element = document.getElementById(anchor);

@@ -409,7 +409,7 @@ const MedicineDetail = () => {
       
       {/* Fixed header with CASABINORDA branding positioned to align with content area */}
       <div className={`fixed top-0 left-0 right-0 z-10 py-4 transition-all duration-300 ${headerBg}`}>
-        <div className="container-tight flex">
+        <div className="container-tight flex md:justify-start justify-end">
           <div> 
             <Link 
               to="/" 

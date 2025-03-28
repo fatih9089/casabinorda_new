@@ -384,10 +384,10 @@ const CartPanel: React.FC<CartPanelProps> = ({
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-            className="fixed top-0 right-0 h-full w-full sm:w-[450px] bg-white shadow-xl z-50 overflow-y-auto"
+            className="fixed top-0 right-0 h-full w-full sm:w-[450px] bg-white shadow-xl z-50 overflow-y-auto pt-16 pb-20"
           >
             <div className="p-6">
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center justify-between mb-6 sticky top-0 bg-white py-2 border-b">
                 <h2 className="text-xl font-bold flex items-center">
                   <ShoppingCart className="mr-2 h-5 w-5" />
                   Quote Request

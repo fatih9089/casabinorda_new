@@ -6,7 +6,7 @@ import HowItWorksSection from '../components/HowItWorksSection';
 import LegalFrameworkSection from '../components/LegalFrameworkSection';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 
@@ -54,10 +54,24 @@ const Index = () => {
       
       <Header />
       <Hero />
-      <About />
+      
+      {/* About section - hidden on mobile by default */}
+      <section id="about" className="md:block hidden">
+        <About />
+      </section>
+      
       <SearchSection />
-      <HowItWorksSection />
-      <LegalFrameworkSection />
+      
+      {/* How It Works section - hidden on mobile by default */}
+      <section id="how-it-works" className="md:block hidden">
+        <HowItWorksSection />
+      </section>
+      
+      {/* Legal Framework section - hidden on mobile by default */}
+      <section id="legal-framework" className="md:block hidden">
+        <LegalFrameworkSection />
+      </section>
+      
       <Contact />
       <Footer />
     </motion.div>
