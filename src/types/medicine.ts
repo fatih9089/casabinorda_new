@@ -7,4 +7,8 @@ export interface Medicine {
   manufacturer?: string;
   country?: string;
   imageUrl?: string;
+  wholesaleInfo?: string;
+  nppInfo?: string;
+  requiresPrescription?: boolean;
+  isInNPP?: boolean;
 }
