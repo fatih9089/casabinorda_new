@@ -40,16 +40,16 @@ const Index = () => {
       className="min-h-screen overflow-x-hidden"
     >
       <Helmet>
-        <title>Casabinorda | International Pharmacy Supplier</title>
-        <meta name="description" content="Casabinorda is your trusted international pharmacy supplier. We provide high-quality medicines and healthcare products from around the world." />
-        <meta name="keywords" content="pharmacy, international pharmacy, medicine supplier, healthcare products, buy medicine online" />
-        <link rel="canonical" href="https://casabinorda.com" />
+        <title>CASABINORDA | Global Pharmaceutical Export & NPP Solutions</title>
+        <meta name="description" content="Casabinorda is a trusted Turkish pharmaceutical exporter, providing Named Patient Program (NPP) and wholesale medicine supply to Latin America, Africa, MENA, and Central America." />
+        <meta name="keywords" content="pharmaceutical export, Turkish medicine exporter, named patient program, NPP medicines, wholesale pharma, Latin America, Africa, MENA, Central America, global medicine supply" />
+        <link rel="canonical" href="https://casabinorda.org" />
         {/* Open Graph meta tags for social sharing */}
-        <meta property="og:title" content="Casabinorda | International Pharmacy Supplier" />
-        <meta property="og:description" content="Casabinorda is your trusted international pharmacy supplier. We provide high-quality medicines and healthcare products from around the world." />
+        <meta property="og:title" content="CASABINORDA | Global Pharmaceutical Export & NPP Solutions" />
+        <meta property="og:description" content="Casabinorda is a trusted Turkish pharmaceutical exporter, providing Named Patient Program (NPP) and wholesale medicine supply to Latin America, Africa, MENA, and Central America." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://casabinorda.com" />
-        <meta property="og:image" content="https://casabinorda.com/images/logo.png" />
+        <meta property="og:url" content="https://casabinorda.org" />
+        <meta property="og:image" content="https://casabinorda.org/images/logo.png" />
       </Helmet>
       
       <Header />
