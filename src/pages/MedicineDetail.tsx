@@ -607,7 +607,7 @@ const MedicineDetail = () => {
                       onClick={toggleRequestForm}
                       className="w-full bg-white border border-primary text-primary py-2 px-4 rounded-lg hover:bg-primary/5 transition-colors"
                     >
-                      Request Information
+                      Send an Inquiry
                     </button>
                     
                   </div>
@@ -621,7 +621,7 @@ const MedicineDetail = () => {
                       >
                         {!isSubmitted ? (
                           <form onSubmit={handleRequestSubmit}>
-                            <h3 className="font-medium mb-3">Request Information</h3>
+                            <h3 className="font-medium mb-3">Please fill out the form below and our team will get back to you within 24 hours with the most suitable solution.</h3>
                             
                             {formError && (
                               <div className="bg-red-50 text-red-600 p-3 rounded-md mb-3 text-sm">

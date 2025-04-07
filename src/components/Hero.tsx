@@ -65,7 +65,7 @@ const Hero = () => {
           
           <motion.div variants={itemVariants} className="mb-4">
             <span className="inline-block text-sm font-medium px-3 py-1 rounded-full bg-primary/10 text-primary">
-              Wholesale Medicine Supply
+              Wholesale & NPP Solutions
             </span>
           </motion.div>
           
