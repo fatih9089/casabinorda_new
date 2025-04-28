@@ -1,0 +1,53 @@
+**Product Description and Composition**
+
+Ziagen is a film-coated pharmaceutical tablet formulated with 300 mg of abacavir as abacavir sulfate. The tablet is yellow, biconvex, and capsule-shaped, scored for dose flexibility, and engraved with 'GX 623'. Each unit may be divided into two equal halves. Inactive ingredients include microcrystalline cellulose, sodium starch glycollate, magnesium stearate, and colloidal anhydrous silica. The coating comprises triacetin, methylhydroxypropylcellulose, titanium dioxide, polysorbate 80, and iron oxide yellow.
+
+**Pharmacological Classification**
+
+Ziagen belongs to the class of nucleoside reverse transcriptase inhibitors (NRTIs) and is indicated for use in combination antiretroviral therapy for the management of Human Immunodeficiency Virus (HIV) infection in adults, adolescents, and children.
+
+**Mechanism of Action**
+
+Abacavir acts by inhibiting the HIV reverse transcriptase enzyme. Intracellularly, it is converted to carbovir 5’-triphosphate (TP), which integrates into viral DNA, resulting in premature chain termination. This mechanism disrupts HIV replication and supports viral suppression when used in appropriate regimens.
+
+**Pharmacokinetics**
+
+Following oral administration, abacavir demonstrates a bioavailability of approximately 83%. Peak plasma concentrations (Cmax) are achieved within 1.5 hours. It has a terminal plasma half-life of 1.5 hours and is primarily metabolized by the liver through alcohol dehydrogenase and glucuronidation. Around 83% of the administered dose is excreted via urine, predominantly as metabolites.
+
+Notably, abacavir penetrates the cerebrospinal fluid (CSF), with a CSF-to-plasma AUC ratio of 30–44%, ensuring central nervous system activity. Protein binding is moderate (~49%), minimizing displacement interactions with other pharmaceuticals.
+
+**Dosage and Administration**
+
+Ziagen may be administered once daily (600 mg) or twice daily (300 mg). It is suitable for oral intake with or without food. For pediatric patients, dosage adjustments are recommended based on weight bands. It is also available in oral solution form for patients unable to swallow tablets.
+
+**Safety and Contraindications**
+
+Abacavir is contraindicated in individuals with hypersensitivity to the active substance or any excipient. Hypersensitivity reactions (HSRs), potentially fatal, are strongly associated with the HLA-B*5701 allele. Screening for this allele is mandatory before initiating therapy. Symptoms typically include fever, rash, gastrointestinal and respiratory disturbances, and may mimic other common conditions. Immediate discontinuation is required upon HSR suspicion.
+
+**Drug Interactions**
+
+Abacavir shows minimal interaction with cytochrome P450 enzymes, reducing the risk of adverse pharmacokinetic interactions. However, co-administration with methadone may necessitate dose adjustments. Enzyme inducers such as rifampicin may slightly decrease abacavir plasma levels.
+
+**Special Populations**
+
+- **Hepatic impairment**: Abacavir exposure increases significantly in mild impairment. Use is not recommended in moderate to severe hepatic dysfunction unless necessary, with close monitoring advised.
+- **Renal impairment**: Dose adjustment is typically not required. However, Ziagen is not recommended in patients with end-stage renal disease.
+- **Elderly**: Clinical pharmacokinetic data are lacking; thus, use should be cautious in individuals over 65.
+
+**Clinical Efficacy**
+
+Clinical trials have confirmed the effectiveness of Ziagen in combination therapy for treatment-naïve and experienced HIV patients. In pivotal studies, a significant proportion achieved viral suppression (<50 copies/mL) at 48 weeks. Resistance development typically involves mutations such as M184V, L74V, or K65R. Appropriate regimen design, including other NRTIs or PIs, can help mitigate resistance risks.
+
+**Adverse Reactions**
+
+Common side effects include nausea, vomiting, headache, rash, and fatigue. Rare but serious adverse events include hypersensitivity syndrome, pancreatitis, and potential mitochondrial dysfunction in neonates exposed in utero.
+
+**Storage and Packaging**
+
+Ziagen tablets should be stored below 30°C and are supplied in child-resistant blister packs, typically in quantities of 60 tablets.
+
+**Regulatory and Compliance**
+
+Ziagen is authorized under the European Medicines Agency and complies with stringent pharmaceutical standards. It is suitable for **import** and **distribution** in global regulated markets under proper licensing. For institutions involved in **wholesale** or regulated **export** operations, adherence to cold-chain logistics and controlled drug protocols is essential.
+
+

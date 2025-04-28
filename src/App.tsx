@@ -19,7 +19,9 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
-            {/* SEO dostu URL route'u */}
+            {/* Yeni SEO dostu URL route'u (ilaç ID'si ile) */}
+            <Route path="/medicine/:activeIngredient/:brandName/:medicineId" element={<MedicineDetail />} />
+            {/* Geriye dönük uyumluluk için eski SEO dostu route */}
             <Route path="/medicine/:activeIngredient/:brandName" element={<MedicineDetail />} />
             {/* Geriye dönük uyumluluk için eski route */}
             <Route path="/medicine/:id" element={<MedicineDetail />} />

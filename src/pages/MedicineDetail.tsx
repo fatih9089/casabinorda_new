@@ -12,6 +12,7 @@ import { createSlug } from '../utils/slugUtils';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import { nppActiveIngredients, nppDescription } from '../data/nppMedicines';
+import { medicineDescriptionIds } from '../data/medicineDescriptionIds';
 
 // Similar medicines component extracted and optimized with memo
 const SimilarMedicines = memo(({ medicines, navigate }: { 
@@ -27,7 +28,10 @@ const SimilarMedicines = memo(({ medicines, navigate }: {
         {medicines.map(medicine => (
           <div 
             key={medicine.id}
-            onClick={() => navigate(`/medicine/${createSlug(medicine.activeIngredient)}/${createSlug(medicine.name)}`, { state: { medicine } })}
+            onClick={() => {
+              const url = `/medicine/${createSlug(medicine.activeIngredient)}/${createSlug(medicine.name)}/${medicine.id}`;
+              window.location.href = url; // Aynı pencerede sayfa yeniden yüklenir
+            }}
             className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
           >
             <h3 className="font-medium">{medicine.name}</h3>
@@ -41,6 +45,40 @@ const SimilarMedicines = memo(({ medicines, navigate }: {
 
 // Medicine information component extracted and optimized with memo
 const MedicineInfo = memo(({ medicine }: { medicine: Medicine }) => {
+  const [fullDescription, setFullDescription] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [showFullDescription, setShowFullDescription] = useState(false);
+  const [hasDetailedDescription, setHasDetailedDescription] = useState(false);
+
+  // Check if detailed description exists for this medicine using the ID list
+  useEffect(() => {
+    setHasDetailedDescription(medicineDescriptionIds.includes(medicine.id));
+  }, [medicine.id]);
+
+  // Load detailed description when needed
+  const loadFullDescription = async () => {
+    if (fullDescription) {
+      setShowFullDescription(true);
+      return;
+    }
+
+    setIsLoading(true);
+    try {
+      const response = await fetch(`/medicine-descriptions/${medicine.id}.txt`);
+      if (response.ok) {
+        const text = await response.text();
+        setFullDescription(text);
+        setShowFullDescription(true);
+      } else {
+        console.error('Failed to load description file');
+      }
+    } catch (error) {
+      console.error('Error loading description file:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <div>
       <h2 className="text-lg font-semibold mb-4 text-gray-900">Medicine Information</h2>
@@ -72,6 +110,61 @@ const MedicineInfo = memo(({ medicine }: { medicine: Medicine }) => {
           <div className="mt-2">
             <span className="text-gray-600 font-medium">Prescription Required:</span> 
             <span className="ml-2 text-gray-900">{medicine.requiresPrescription ? 'Yes' : 'No'}</span>
+          </div>
+        )}
+
+        {/* Detailed Description Section */}
+        {hasDetailedDescription && (
+          <div className="mt-4 border-t pt-3">
+            <div className="flex justify-between items-center">
+              <span className="text-gray-600 font-medium">Detailed Information:</span>
+              <button 
+                onClick={loadFullDescription}
+                className="text-primary hover:text-primary-dark text-sm font-medium flex items-center"
+                disabled={isLoading}
+              >
+                {isLoading ? 'Loading...' : 'Read More'}
+                {!isLoading && !showFullDescription && (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                )}
+              </button>
+            </div>
+
+            {/* Full Description Modal */}
+            {showFullDescription && fullDescription && (
+              <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+                <div className="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-auto shadow-xl">
+                  <div className="p-6">
+                    <div className="flex justify-between items-start mb-4">
+                      <h3 className="text-lg font-semibold text-gray-900">{medicine.name} - Detailed Information</h3>
+                      <button 
+                        onClick={() => setShowFullDescription(false)}
+                        className="text-gray-400 hover:text-gray-500"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div className="prose max-w-none">
+                      {fullDescription.split('\n').map((paragraph, index) => (
+                        paragraph.trim() ? <p key={index} className="mb-4">{paragraph}</p> : <br key={index} />
+                      ))}
+                    </div>
+                  </div>
+                  <div className="bg-gray-50 px-6 py-3 flex justify-end rounded-b-lg">
+                    <button 
+                      onClick={() => setShowFullDescription(false)}
+                      className="px-4 py-2 bg-primary text-white rounded hover:bg-primary-dark"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         )}
       </div>
@@ -179,7 +272,7 @@ const TargetAudienceInfo = memo(({ userType }: { userType: string }) => {
 });
 
 const MedicineDetail = () => {
-  const { id, activeIngredient, brandName } = useParams();
+  const { id, activeIngredient, brandName, medicineId } = useParams();
   const location = useLocation();
   const navigate = useNavigate();
   
@@ -252,16 +345,38 @@ const MedicineDetail = () => {
       return;
     }
     
-    if (activeIngredient && brandName) {
-      // SEO dostu URL'den ilaç bilgisini bul
+    if (activeIngredient && brandName && medicineId) {
+      // Yeni URL yapısı ile ilaç bilgisini bul (activeIngredient/brandName/id)
       const foundMedicine = mockMedicines.find(m => 
         createSlug(m.activeIngredient) === activeIngredient && 
-        createSlug(m.name) === brandName
+        createSlug(m.name) === brandName &&
+        m.id === parseInt(medicineId)
       );
       
       if (foundMedicine) {
         setMedicine(foundMedicine);
         setIsLoading(false);
+        return;
+      }
+    }
+    
+    if (activeIngredient && brandName && !medicineId) {
+      // Geriye dönük uyumluluk için eski URL yapısını da destekle (activeIngredient/brandName)
+      const foundMedicines = mockMedicines.filter(m => 
+        createSlug(m.activeIngredient) === activeIngredient && 
+        createSlug(m.name) === brandName
+      );
+      
+      if (foundMedicines.length > 0) {
+        // Eğer birden fazla eşleşme varsa ilkini kullan ve URL'i güncelle
+        setMedicine(foundMedicines[0]);
+        setIsLoading(false);
+        
+        // URL'i yeni formata yönlendir
+        navigate(`/medicine/${activeIngredient}/${brandName}/${foundMedicines[0].id}`, {
+          replace: true,
+          state: { medicine: foundMedicines[0] }
+        });
         return;
       }
     }
@@ -279,7 +394,7 @@ const MedicineDetail = () => {
     }
     
     setIsLoading(false);
-  }, [id, activeIngredient, brandName, location.state]);
+  }, [id, activeIngredient, brandName, medicineId, location.state, navigate]);
 
   // Update URL to SEO friendly format if needed
   useEffect(() => {
@@ -287,12 +402,19 @@ const MedicineDetail = () => {
       // Eğer ID ile geldiyse ve ilaç bilgisi yüklendiyse, URL'i SEO dostu formata yönlendir
       const activeIngredientSlug = createSlug(medicine.activeIngredient);
       const brandNameSlug = createSlug(medicine.name);
-      navigate(`/medicine/${activeIngredientSlug}/${brandNameSlug}`, { 
+      navigate(`/medicine/${activeIngredientSlug}/${brandNameSlug}/${medicine.id}`, { 
         replace: true, // Tarayıcı geçmişini değiştirmeden URL'i güncelle
         state: { medicine } 
       });
     }
   }, [medicine, id, activeIngredient, brandName, navigate]);
+
+  // Scroll to top when medicine changes
+  useEffect(() => {
+    if (medicine) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [medicine]);
 
   // Memoize add to cart function
   const addToCart = useCallback((medicine: Medicine) => {
@@ -384,8 +506,8 @@ const MedicineDetail = () => {
         quantity: requestFormData.quantity,
         message: requestFormData.message,
         userType: requestFormData.userType,
-        medicine: medicine?.name,
-        subject: `Information Request: ${medicine?.name}`
+        medicine: medicine?.name + (medicine?.packaging ? ` (${medicine.packaging})` : ''),
+        subject: `Information Request: ${medicine?.name}${medicine?.packaging ? ` - ${medicine.packaging}` : ''}`
       },
       'PekYKb6ImWD2awBBC'
     )

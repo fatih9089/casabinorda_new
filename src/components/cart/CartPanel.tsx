@@ -304,7 +304,7 @@ const CartPanel: React.FC<CartPanelProps> = ({
     if (!cartItems || cartItems.length === 0) return "No items in cart";
     
     return cartItems.map(item => 
-      `${item.name} - ${item.quantity} adet`
+      `${item.name}${item.packaging ? ` (${item.packaging})` : ''} - ${item.quantity} adet`
     ).join('\n');
   }, [cartItems]);
 

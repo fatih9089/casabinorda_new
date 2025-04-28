@@ -24,7 +24,7 @@ const SearchResults = ({ searchResults, addToCart }: SearchResultsProps) => {
   }, []);
 
   const handleMedicineClick = (medicine: Medicine) => {
-    navigate(`/medicine/${createSlug(medicine.activeIngredient)}/${createSlug(medicine.name)}`, { state: { medicine } });
+    navigate(`/medicine/${createSlug(medicine.activeIngredient)}/${createSlug(medicine.name)}/${medicine.id}`, { state: { medicine } });
   };
 
   if (searchResults.length === 0) return null;

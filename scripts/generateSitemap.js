@@ -97,25 +97,13 @@ let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
   <!-- İlaç Detay Sayfaları -->
 `;
 
-// Her ilaç için URL ekle (/medicine/{etkin-madde-slug}/{ilaç-adı-slug} formatında)
+// Her ilaç için URL ekle (/medicine/{etkin-madde-slug}/{ilaç-adı-slug}/{id} formatında)
 medicines.forEach(medicine => {
   const activeIngredientSlug = createSlug(medicine.activeIngredient);
   const nameSlug = createSlug(medicine.name);
   
   sitemap += `  <url>
-    <loc>${domain}/medicine/${activeIngredientSlug}/${nameSlug}</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>\n`;
-});
-
-// Her etkin madde için URL ekle
-uniqueActiveIngredients.forEach(ingredient => {
-  const ingredientSlug = createSlug(ingredient);
-  
-  sitemap += `  <url>
-    <loc>${domain}/active-ingredient/${ingredientSlug}</loc>
+    <loc>${domain}/medicine/${activeIngredientSlug}/${nameSlug}/${medicine.id}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
