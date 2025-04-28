@@ -56,11 +56,13 @@ function createSlug(text) {
   return slug;
 }
 
-// Sitemap XML oluştur
-const domain = 'https://casabinorda.org'; // Domain adınızı buraya girin
-const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD formatında bugünün tarihi
+// Sitemap oluşturma fonksiyonu
+function generateSitemap() {
+  const today = new Date().toISOString().split('T')[0];
+  const domain = 'https://www.casabinorda.org';
 
-let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+  // Sitemap başlangıcı
+  let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Ana Sayfalar -->
   <url>
@@ -68,30 +70,6 @@ let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>${domain}/about</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>${domain}/medicines</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>${domain}/contact</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>${domain}/active-ingredients</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
   
   <!-- İlaç Detay Sayfaları -->
@@ -128,3 +106,6 @@ const robotsPath = path.join(__dirname, '../public/robots.txt');
 fs.writeFileSync(robotsPath, robotsTxt);
 
 console.log(`robots.txt başarıyla oluşturuldu: ${robotsPath}`);
+}
+
+generateSitemap();

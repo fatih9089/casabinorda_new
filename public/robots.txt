@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://casabinorda.org/sitemap.xml
+Sitemap: https://www.casabinorda.org/sitemap.xml
