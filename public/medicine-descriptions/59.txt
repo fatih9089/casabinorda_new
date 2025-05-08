@@ -1,0 +1,162 @@
+
+ GIOTRIF (afatinib dimaleate) 20 mg 28 Film-Coated Tablets – PRODUCT INFORMATION
+
+ 1. Product Description
+
+GIOTRIF® 20 mg is a film-coated tablet containing afatinib, an irreversible inhibitor of the ErbB family of tyrosine kinases. Each tablet contains 20 mg of afatinib (as dimaleate). It is primarily used in the treatment of patients with epidermal growth factor receptor (EGFR) mutation-positive non-small cell lung cancer (NSCLC).
+
+The 20 mg tablet is white to yellowish, round, biconvex, and bevel-edged, with “T20” debossed on one side and the Boehringer Ingelheim logo on the other. The product contains lactose monohydrate (118 mg/tablet), and patients with lactose intolerance should take this into account.
+
+GIOTRIF is distributed through regulated pharmaceutical channels, and healthcare providers can purchase it via wholesale systems or secure import channels when necessary. Export activities are typically authorized in alignment with local oncology treatment protocols. It is not intended for direct-to-consumer buying, and must be prescribed by a specialist in oncology.
+
+
+
+ 2. Indications
+
+GIOTRIF is indicated as monotherapy for:
+- First-line treatment of EGFR mutation-positive locally advanced or metastatic NSCLC.
+- Treatment of squamous cell NSCLC progressing after platinum-based chemotherapy.
+
+Its mechanism of action involves irreversibly binding and blocking all ErbB family receptors, including EGFR (ErbB1), HER2 (ErbB2), ErbB3, and ErbB4. This inhibition leads to tumor regression and delayed progression in tumors with EGFR mutations.
+
+
+
+ 3. Dosage and Administration
+
+ General Dosing Guidelines
+- Starting dose: 40 mg orally once daily
+- Take on an empty stomach: at least 3 hours before and 1 hour after food
+- Tablets must be swallowed whole with water
+- Treatment should be continued until disease progression or unacceptable toxicity occurs
+
+ Dose Adjustments
+- Dose can be increased to 50 mg/day if tolerated (no Grade >1 adverse effects after 21–28 days)
+- Adverse reactions such as diarrhea, rash, or stomatitis may necessitate dose reductions in 10 mg increments
+- If a patient cannot tolerate the minimum dose of 20 mg/day, treatment should be discontinued
+
+ Missed Dose
+If a dose is missed and the next scheduled dose is more than 8 hours away, the patient should take it. Otherwise, the missed dose should be skipped.
+
+
+
+ 4. Contraindications
+
+GIOTRIF is contraindicated in:
+- Patients with hypersensitivity to afatinib or any excipients
+- Individuals with severe hepatic impairment
+- Those with galactose intolerance, lactase deficiency, or glucose-galactose malabsorption
+
+
+
+ 5. Special Warnings and Precautions
+
+- Diarrhea is a common adverse effect; early treatment with anti-diarrheal agents is critical
+- Interstitial Lung Disease (ILD) has been reported; therapy should be interrupted if suspected
+- Skin reactions, including rash and acneiform dermatitis, are frequent; early intervention is advised
+- Hepatic failure has been observed; periodic liver monitoring is recommended
+- Keratitis and eye disorders require ophthalmological evaluation
+- Gastrointestinal perforation and renal failure are rare but serious complications
+
+
+
+ 6. Drug Interactions
+
+GIOTRIF is a substrate of P-glycoprotein (P-gp) and BCRP. Therefore:
+- P-gp inhibitors (e.g., ritonavir) can increase afatinib levels; should be taken 6–12 hours apart
+- P-gp inducers (e.g., rifampicin) can decrease efficacy
+- Afatinib may moderately increase plasma concentrations of BCRP substrates (e.g., rosuvastatin)
+
+Afatinib does not interact significantly with CYP enzymes, minimizing its metabolic interaction profile.
+
+
+
+ 7. Use in Specific Populations
+
+- Renal Impairment: Monitor closely in patients with severe renal impairment; avoid in CrCl <15 mL/min
+- Hepatic Impairment: Not recommended in severe cases; caution in moderate impairment
+- Pregnancy: Not recommended; may cause fetal harm
+- Lactation: Likely excreted in breast milk; breastfeeding should be avoided
+- Pediatrics: Not recommended; safety and efficacy not established
+
+
+
+ 8. Adverse Reactions
+
+ Very Common (≥1/10):
+- Diarrhea (up to 95% incidence)
+- Rash, acneiform dermatitis
+- Stomatitis, cheilitis
+- Paronychia
+- Decreased appetite
+
+ Common (≥1/100 to <1/10):
+- Keratitis, conjunctivitis
+- Hepatic enzyme elevation (ALT/AST)
+- Epistaxis
+- Nausea, vomiting, dyspepsia
+
+ Serious Reactions:
+- Interstitial Lung Disease
+- Stevens-Johnson syndrome
+- Hepatic failure
+- Gastrointestinal perforation
+
+
+
+ 9. Overdose
+
+ Symptoms:
+- Enhanced adverse effects (especially rash, diarrhea)
+- Cases of overdose (e.g., 160 mg/day) reported nausea, fatigue, and elevated amylase
+
+ Management:
+- No specific antidote
+- Supportive care, possible gastric lavage
+- Monitor vitals and administer IV fluids if necessary
+
+
+
+ 10. Pharmacological Properties
+
+- Pharmacokinetics: Peak plasma levels in 2–5 hours; 95% protein-bound; half-life approx. 37 hours
+- Elimination: Mainly fecal; <5% via urine
+- Mechanism: Irreversible ErbB family blockade suppresses tumor proliferation in EGFR-mutant NSCLC
+
+
+
+ 11. Clinical Efficacy
+
+ LUX-Lung 3 & 6 Trials (EGFR+ NSCLC):
+- Median progression-free survival (PFS) of ~11 months vs. 6 months in chemotherapy groups
+- Better symptom control and delayed disease progression
+
+ LUX-Lung 8 (Squamous NSCLC):
+- GIOTRIF extended survival to 7.9 months vs. 6.8 months with erlotinib
+- Delayed time to symptom deterioration
+
+These outcomes position GIOTRIF as a first-line agent in EGFR-mutant NSCLC and as second-line in squamous NSCLC post-platinum chemotherapy.
+
+
+
+ 12. Packaging and Storage
+
+- Pack Size: 28 x 1 unit-dose blisters
+- Shelf Life: 3 years
+- Storage: Store in original packaging to protect from moisture and light
+
+
+
+ 13. Manufacturer and Marketing Authorization
+
+- Manufacturer:  
+  Boehringer Ingelheim Pharma GmbH & Co. KG, Ingelheim am Rhein, Germany
+
+- Marketing Authorization Holder:  
+  Boehringer Ingelheim International GmbH
+
+- Authorization Numbers:  
+  EU/1/13/879/001 through EU/1/13/879/012
+
+- First Authorization: 25 September 2013  
+- Latest Renewal: 16 May 2018
+

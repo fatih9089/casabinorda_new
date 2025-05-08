@@ -1,0 +1,74 @@
+
+ FABRAZYME (agalsidase beta) 35 mg Powder for Concentrate for Solution for Infusion – PRODUCT INFORMATION
+
+1. Product Description  
+FABRAZYME is a recombinant human enzyme therapy designed for long-term treatment of Fabry disease. The active substance, agalsidase beta, is produced via recombinant DNA technology in a Chinese Hamster Ovary (CHO) cell line. The resulting protein is structurally and functionally identical to the naturally occurring human α-galactosidase A.
+
+Each vial of Fabrazyme contains 35 mg of agalsidase beta and is supplied as a lyophilized powder for intravenous infusion following reconstitution and dilution.
+
+2. Therapeutic Indications  
+Fabrazyme is indicated for enzyme replacement therapy in patients with a confirmed diagnosis of Fabry disease (α-galactosidase A deficiency). It is approved for use in adults, children, and adolescents aged 8 years and older.
+
+3. Dosage and Administration  
+The recommended dose is 1 mg/kg of body weight administered once every two weeks as an intravenous infusion. Infusions should be conducted under supervision of a healthcare provider familiar with Fabry disease. After initial tolerability is established, home infusion may be considered for eligible patients.
+
+Administration Guidance:
+- Reconstitute each 35 mg vial with 7.2 mL of sterile water for injection.
+- Further dilute in 0.9% sodium chloride to a final concentration of 0.05–0.7 mg/mL.
+- Infuse through a low protein-binding 0.2 µm filter over at least 2 hours.
+
+Infusion-associated reactions (IARs) are common; premedication with antihistamines or corticosteroids may be necessary.
+
+4. Clinical Pharmacology  
+Fabry disease leads to progressive accumulation of globotriaosylceramide (GL-3) due to deficient α-galactosidase A activity. Agalsidase beta restores this enzyme function, reducing GL-3 deposits in vascular endothelium and organ tissues.
+
+Clinical trials have shown:
+- Normalization of plasma GL-3 within weeks of therapy.
+- Sustained clearance of GL-3 from kidneys, heart, and skin over 5 years.
+- Stabilized renal function and a reduction in major adverse cardiac or cerebrovascular events.
+
+5. Safety Profile  
+Common side effects include chills, fever, headache, nausea, flushing, back pain, and infusion-related discomfort. Approximately 67% of patients experience at least one IAR, most commonly during early infusions.
+
+Serious reactions, including anaphylactoid responses, are rare but may require infusion discontinuation and emergency intervention. Long-term therapy has been generally well tolerated, even in pediatric and elderly patients.
+
+6. Contraindications and Precautions  
+Fabrazyme is contraindicated in individuals with known anaphylactic reactions to agalsidase beta or excipients.
+
+Patients should be monitored for:
+- Hypersensitivity
+- Immune responses (e.g., IgG or IgE antibody formation)
+- Adverse reactions related to home infusion
+- Potential for worsened outcomes in advanced renal disease
+
+7. Special Populations  
+- Pediatrics: Approved for ages 8+. Limited data in ages 5–7. No recommendation for those under 5.
+- Elderly: Data limited; no specific dose adjustment.
+- Renal impairment: No dose change required; therapeutic response may vary.
+- Hepatic impairment: No dedicated studies, but liver metabolism unlikely to affect drug clearance significantly.
+- Pregnancy and lactation: Use only if clearly needed. Agalsidase beta is excreted in human milk.
+
+8. Storage and Handling  
+- Store unopened vials at 2°C to 8°C.
+- Reconstituted solution must be diluted immediately.
+- The final diluted solution can be stored up to 24 hours at 2–8°C prior to use.
+
+Each vial is for single use only. Any unused product should be discarded according to local regulations.
+
+9. Packaging  
+Fabrazyme is packaged in clear Type I glass vials, sealed with siliconized butyl stoppers and aluminum caps. Available in cartons containing 1, 5, or 10 vials. Not all pack sizes may be marketed in every country.
+
+10. Supply Chain and Distribution  
+This product is manufactured by Genzyme and distributed by Sanofi. Healthcare institutions involved in wholesale or pharmaceutical supply must comply with all relevant GDP (Good Distribution Practice) guidelines. Entities seeking to import or export the product should ensure compliance with applicable international regulations. The public should not attempt to buy Fabrazyme outside of legal medical channels due to the complexity of administration and the risks of unsupervised use.
+
+11. Regulatory Status  
+Fabrazyme holds a centralized marketing authorization by the European Medicines Agency (EMA) since 2001. It is a prescription-only medicine subject to controlled distribution.
+
+12. Risk Management and Reporting  
+A comprehensive risk management plan is in place, including:
+- Periodic Safety Update Reports (PSURs)
+- Risk minimization materials for both healthcare professionals and patients
+- Instructions for adverse event reporting via national pharmacovigilance systems
+
+13. Conclusion  
+Fabrazyme provides essential enzyme replacement therapy for patients suffering from Fabry disease. Its long-term benefits in reducing GL-3 accumulation and preventing major organ damage have been demonstrated across a wide patient population. Proper storage, handling, and administration are vital for maximizing safety and efficacy.

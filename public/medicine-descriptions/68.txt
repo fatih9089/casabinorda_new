@@ -1,0 +1,125 @@
+
+ ALECENSA (alectinib) 150 mg – 224 Hard Capsules  
+PRODUCT INFORMATION
+
+
+
+ 1. Product Overview
+
+Alecensa (alectinib) is a targeted anti-cancer therapy indicated for the treatment of patients with ALK-positive non-small cell lung cancer (NSCLC). Each hard capsule contains 150 mg of alectinib hydrochloride, corresponding to 150 mg of active alectinib. This formulation is available as hard gelatin capsules for oral administration, supplied in packs of 224 capsules (4 blister packs of 56).
+
+
+
+ 2. Therapeutic Indications
+
+Alecensa is indicated for:
+- Adjuvant treatment of adult patients with ALK-positive NSCLC following complete tumor resection, where there is a high risk of recurrence.
+- First-line therapy for adult patients with advanced ALK-positive NSCLC.
+- Second-line therapy in adults with ALK-positive advanced NSCLC previously treated with crizotinib.
+
+
+
+ 3. Dosage and Administration
+
+- Standard dose: 600 mg (four 150 mg capsules) taken twice daily with food (total daily dose of 1200 mg).
+- Severe hepatic impairment: Recommended starting dose is 450 mg twice daily.
+- Capsules must be swallowed whole, not opened or dissolved.
+- Treatment should continue until disease progression or unacceptable toxicity.
+
+Missed Dose: If a dose is missed, it may be taken unless the next dose is due in less than 6 hours. Vomited doses should not be repeated.
+
+
+
+ 4. Pharmacodynamics and Mechanism of Action
+
+Alectinib is a selective ALK (anaplastic lymphoma kinase) and RET inhibitor. In ALK-positive NSCLC, the ALK gene fusion drives tumor growth. Alectinib inhibits the kinase activity of ALK and mutant forms resistant to prior treatment, effectively suppressing tumor proliferation.
+
+It crosses the blood-brain barrier, making it effective for patients with CNS metastases—a significant advantage over other ALK inhibitors.
+
+
+
+ 5. Clinical Efficacy
+
+ Adjuvant Setting (ALINA Trial)
+- In patients with resected ALK-positive NSCLC (Stage IB ≥ 4 cm to IIIA), Alecensa significantly improved disease-free survival (DFS) versus platinum-based chemotherapy.
+- Median DFS not reached with Alecensa vs. ~41 months for chemotherapy.
+- HR for DFS in intent-to-treat population: 0.24.
+
+ Advanced Setting (ALEX Trial)
+- Alecensa demonstrated superior progression-free survival (PFS) vs. crizotinib.
+- Median PFS: Not estimable for Alecensa vs. 11.1 months for crizotinib.
+- Improved CNS control: 12-month CNS progression rate was 9.4% (Alecensa) vs. 41.4% (crizotinib).
+- Higher objective response rate (ORR) and duration of response (DOR) compared to crizotinib.
+
+
+
+ 6. Adverse Reactions
+
+Very common (≥1/10):
+- Constipation, nausea, myalgia, oedema, increased AST/ALT/bilirubin, rash, bradycardia
+
+Common (≥1/100 to <1/10):
+- Interstitial lung disease, visual disturbances, photosensitivity, stomatitis, anaemia
+
+Serious risks:
+- Hepatotoxicity
+- Interstitial lung disease (ILD)/pneumonitis
+- Severe bradycardia
+- Creatine phosphokinase (CPK) elevation
+
+Management: Adverse events may require dose reduction, temporary interruption, or permanent discontinuation depending on severity. Table-based guidance is provided in the SmPC.
+
+
+
+ 7. Special Populations
+
+- Elderly: No dose adjustment required.
+- Renal impairment: No adjustment needed; elimination via kidney is negligible.
+- Hepatic impairment: Adjust dose in severe cases (Child-Pugh C).
+- Paediatrics: Safety and efficacy not established.
+- Pregnancy: Contraindicated due to potential fetal harm.
+- Lactation: Not recommended due to unknown excretion in breast milk.
+
+
+
+ 8. Drug Interactions
+
+- CYP3A4 is involved in alectinib metabolism. While CYP3A inhibitors/inducers slightly affect exposure, no dose adjustment is generally necessary.
+- P-gp and BCRP substrates may be affected; co-administer with monitoring.
+- Oral contraceptives may be less effective—additional contraception advised.
+
+
+
+ 9. Storage and Handling
+
+- Shelf life: 5 years
+- Storage: Store in original packaging to protect from moisture.
+- Disposal: Follow local guidelines for unused medicinal products.
+
+
+
+ 10. Packaging and Supply
+
+- Blisters: 224 capsules (4 x 56)  
+- Bottle: 240 capsules (HDPE with desiccant)  
+Not all pack sizes may be marketed.
+
+Distribution is managed under tightly regulated channels. All entities engaged in pharmaceutical wholesale, import, or export must maintain compliance with EMA and local GDP standards. Patients must not buy Alecensa from unauthorized sources.
+
+
+
+ 11. Marketing and Regulatory
+
+- Authorization Holder: Roche Registration GmbH, Germany  
+- First Authorization: 16 February 2017  
+- Latest Renewal: 15 July 2022  
+- Subject to restricted prescription use only
+
+A post-authorization efficacy study (PAES) is underway, with final survival data due by 2027 to further validate Alecensa’s role in the adjuvant setting.
+
+
+
+ Conclusion
+
+ALECENSA is a well-tolerated, highly effective ALK inhibitor with strong evidence supporting its use in both early-stage and advanced ALK-positive NSCLC. Its CNS activity, long-term disease control, and favorable safety profile make it a cornerstone of targeted therapy for lung cancer. Careful monitoring and appropriate patient selection are key to maximizing outcomes.
+

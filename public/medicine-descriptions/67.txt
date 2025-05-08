@@ -1,0 +1,134 @@
+ VALDOXAN (Agomelatine) 25 mg – 28 Film-Coated Tablets  
+PRODUCT INFORMATION
+
+
+
+ 1. Product Description
+
+Valdoxan contains 25 mg of agomelatine per film-coated tablet. The active ingredient, agomelatine, is a novel antidepressant with a unique pharmacodynamic profile. It acts as an agonist at melatonergic receptors (MT1 and MT2) and an antagonist at 5-HT2C serotonin receptors, helping regulate circadian rhythms and modulate mood-related neurotransmission.
+
+The tablets are orange-yellow, oblong and intended for oral administration. Each box of Valdoxan includes 28 tablets, packaged in calendar-marked blisters for optimal compliance tracking.
+
+
+
+ 2. Indications
+
+Valdoxan is indicated for the treatment of major depressive episodes in adults. It is not approved for use in patients under 18 years of age due to insufficient efficacy and safety data. The treatment aims to alleviate depressive symptoms such as persistent sadness, loss of interest, sleep disturbances, anxiety, and impaired concentration.
+
+
+
+ 3. Dosage and Administration
+
+Standard Dose:  
+The recommended starting dose is 25 mg once daily, taken at bedtime. If there is no improvement in symptoms after two weeks, the dose may be increased to 50 mg once daily (two 25 mg tablets).
+
+Administration:  
+Tablets should be taken orally, with or without food. Dosage adjustments are not required for elderly patients under 75 years of age, but use is not recommended in patients aged ≥75 years.
+
+Duration:  
+Treatment should continue for at least 6 months to ensure full remission and reduce the risk of relapse.
+
+
+
+ 4. Contraindications and Precautions
+
+Contraindications include:
+- Hypersensitivity to agomelatine or any excipients.
+- Active hepatic impairment or elevated transaminases (>3x ULN).
+- Concomitant use with potent CYP1A2 inhibitors (e.g., fluvoxamine, ciprofloxacin).
+
+Precautions:
+- Liver function must be assessed before treatment, and regularly monitored (at ~3, 6, 12, and 24 weeks).
+- Discontinue treatment immediately if signs of liver dysfunction arise (e.g., jaundice, dark urine, fatigue).
+
+Special Populations:
+- Hepatic: Contraindicated.
+- Renal: Use with caution; limited data available.
+- Pregnancy/Lactation: Use only if clearly needed. Breastfeeding should be discontinued.
+- Elderly (≥75 years): Not recommended due to limited clinical benefit and increased risk.
+
+
+
+ 5. Pharmacodynamics
+
+Agomelatine resynchronizes circadian rhythms and enhances dopamine and noradrenaline release in the frontal cortex. It has no significant effect on serotonin reuptake, setting it apart from SSRIs and SNRIs. This dual mechanism helps address both core depressive symptoms and sleep disturbances.
+
+
+
+ 6. Clinical Efficacy
+
+Valdoxan has been studied in over 7,900 adult patients. In 6 of 10 short-term placebo-controlled trials, it showed statistically significant reductions in Hamilton Depression Rating Scale (HAMD-17) scores.
+
+Key findings:
+- Effective in severely depressed patients (HAMD ≥25).
+- Relapse prevention confirmed in a 6-month study: relapse rate was 22% (Valdoxan) vs 47% (placebo).
+- Shown to improve sleep quality without affecting daytime alertness.
+- No discontinuation syndrome was observed after abrupt treatment cessation.
+
+
+
+ 7. Side Effects
+
+Very common:  
+- Headache
+
+Common:  
+- Dizziness, nausea, fatigue  
+- Somnolence, insomnia  
+- Abnormal dreams, anxiety  
+- Elevated liver enzymes
+
+Uncommon:  
+- Migraine, pruritus, nightmares  
+- Aggression, suicidal thoughts, mania  
+- Hepatitis, jaundice
+
+Rare:  
+- Hepatic failure, erythematous rash, angioedema, hallucinations
+
+Although rare, serious liver injury has occurred. Routine liver monitoring is required throughout treatment.
+
+
+
+ 8. Interactions
+
+Agomelatine is primarily metabolized by CYP1A2, with some involvement from CYP2C9 and CYP2C19.
+
+Do not co-administer with:
+- Fluvoxamine, ciprofloxacin (potent CYP1A2 inhibitors)
+
+Use caution with:
+- Propranolol, enoxacin, and oestrogens (moderate CYP1A2 inhibitors)
+
+Smoking may reduce agomelatine levels due to CYP1A2 induction.
+
+Agomelatine does not significantly affect other CYP450 substrates, minimizing drug-drug interaction risk.
+
+
+
+ 9. Supply, Storage, and Handling
+
+Storage:  
+No special storage conditions are required. Keep out of reach of children.
+
+Packaging:  
+Valdoxan is supplied in calendar-labeled blisters of 14, 28, 56, 84, 98, and 100 tablets. Not all pack sizes may be marketed.
+
+Distribution:  
+All wholesale and pharmaceutical distributors must comply with proper regulatory and cold chain guidelines. International export and import should follow EMA-authorized logistics standards. Patients should not buy Valdoxan from unauthorized sources or online pharmacies.
+
+
+
+ 10. Manufacturer and Authorization
+
+- Marketing Authorization Holder: Les Laboratoires Servier, France  
+- Manufacturing Sites: France, Ireland, Poland, and Spain  
+- EMA Approval Date: 19 February 2009  
+- Latest Renewal: 12 December 2018  
+- Prescription-only Medicine
+
+
+
+ Conclusion
+
+Valdoxan is a distinct antidepressant, offering efficacy in managing major depressive episodes, particularly for patients seeking improved sleep quality and minimal sexual side effects. While generally well tolerated, liver monitoring is critical to ensure patient safety. It remains a valuable option within modern depression treatment protocols.

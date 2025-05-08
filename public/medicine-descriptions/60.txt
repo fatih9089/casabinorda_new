@@ -1,0 +1,68 @@
+
+ GIOTRIF (afatinib dimaleate) 30 mg film-coated tablets – PRODUCT INFORMATION
+
+Product Overview
+
+GIOTRIF (afatinib dimaleate) 30 mg is a prescription medicinal product used primarily in the treatment of certain types of non-small cell lung cancer (NSCLC). Developed as a targeted oral therapy, GIOTRIF operates as an irreversible ErbB family blocker that interferes with the signal transduction pathways of cancer cell proliferation. This pharmaceutical is manufactured by Boehringer Ingelheim and is approved in the European Union under strict medical supervision protocols.
+
+Mechanism of Action
+
+Afatinib, the active ingredient in GIOTRIF, exerts its therapeutic effects by covalently and irreversibly binding to the ErbB family of tyrosine kinase receptors, including EGFR (ErbB1), HER2 (ErbB2), and others. This irreversible inhibition effectively blocks signaling through homo- and heterodimers of these receptors, leading to decreased tumor growth in cancers that are driven by aberrant ErbB signaling, especially those harboring EGFR mutations.
+
+Indications and Usage
+
+GIOTRIF is indicated for:
+- First-line treatment of adult patients with locally advanced or metastatic NSCLC with activating EGFR mutations who have not previously received EGFR tyrosine kinase inhibitors (TKIs).
+- Adult patients with advanced squamous cell carcinoma of the lung who have progressed on or after platinum-based chemotherapy.
+
+Dosage and Administration
+
+The recommended dose of GIOTRIF is 40 mg once daily. In patients who tolerate this dose without significant adverse effects, the dosage may be increased to 50 mg per day. GIOTRIF must be taken on an empty stomach—no food should be consumed for at least 3 hours before and 1 hour after administration.
+
+Pharmaceutical Form and Composition
+
+GIOTRIF 30 mg comes in dark blue, round, film-coated tablets marked with “T30” on one side and the manufacturer’s logo on the other. Each tablet contains 30 mg of afatinib (as dimaleate) and excipients such as lactose monohydrate, microcrystalline cellulose, and others. The tablet is designed for oral use and may be dispersed in water if swallowing is not feasible.
+
+Pharmacokinetics
+
+Upon oral administration, afatinib is absorbed with peak plasma levels occurring between 2 and 5 hours post-dose. The bioavailability of afatinib significantly decreases when taken with food. Systemic exposure increases slightly more than proportionally with the dose. The terminal half-life is approximately 37 hours, enabling steady-state concentrations within eight days.
+
+Safety and Side Effects
+
+GIOTRIF is associated with a range of adverse reactions, most of which are consistent with EGFR inhibition. The most common side effects include:
+- Diarrhea
+- Rash or acneiform eruptions
+- Stomatitis
+- Nail inflammation
+- Decreased appetite
+
+Severe but rare side effects such as interstitial lung disease (ILD), hepatic toxicity, and gastrointestinal perforation have also been reported and require immediate medical attention. Dose reduction or treatment discontinuation may be necessary in cases of persistent or severe adverse events.
+
+Special Considerations
+
+- Renal Impairment: Patients with moderate to severe renal impairment show increased systemic exposure. Careful monitoring is advised.
+- Hepatic Impairment: No dose adjustment is needed for mild to moderate impairment. The drug is not recommended for patients with severe hepatic dysfunction.
+- Pediatric Use: Not recommended due to lack of established safety and efficacy.
+- Elderly Patients: No dosage adjustments are necessary solely based on age.
+
+Drug Interactions
+
+Afatinib is a substrate and moderate inhibitor of P-glycoprotein (P-gp). Concomitant use with P-gp inhibitors or inducers may alter its plasma levels. It is recommended that P-gp inhibitors be administered as far apart in time as possible from GIOTRIF (e.g., at least 6–12 hours apart).
+
+Storage and Packaging
+
+GIOTRIF must be stored in its original package to protect it from moisture and light. It is supplied in blister packs of various sizes, each individually sealed with desiccant to preserve tablet integrity.
+
+Regulatory and Supply Notes
+
+This medication is available by restricted medical prescription only. Due to its specialized use in oncology, GIOTRIF is typically distributed through pharmaceutical channels involving certified healthcare providers and hospitals. Global distribution—including export and import activities—is strictly regulated to ensure patient safety and quality control. Entities engaged in wholesale handling of GIOTRIF must adhere to Good Distribution Practices (GDP) and national regulations.
+
+It is important to note that patients should never attempt to buy GIOTRIF online or from unauthorized sources, as it is a high-risk, prescription-only product. For medical institutions or pharmacies looking to acquire the product through authorized pharmaceutical suppliers, a valid license and prescription protocols must be in place.
+
+Clinical Efficacy
+
+Multiple trials have confirmed the efficacy of GIOTRIF in improving progression-free survival in NSCLC patients with EGFR mutations. In the LUX-Lung 3 and LUX-Lung 6 trials, patients receiving GIOTRIF demonstrated significantly longer progression-free survival compared to standard chemotherapy. In patients with squamous NSCLC, the LUX-Lung 8 trial showed improved overall survival compared to erlotinib.
+
+Conclusion
+
+GIOTRIF represents an important advancement in the treatment of EGFR mutation-positive NSCLC. Its targeted action, favorable pharmacokinetic profile, and validated efficacy make it a valuable tool in oncology. However, due to the potential for serious side effects and drug interactions, careful patient selection and close monitoring by qualified healthcare professionals are critical.

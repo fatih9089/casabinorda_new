@@ -1,0 +1,145 @@
+
+ AMGEVITA (adalimumab) 40 MG/0.8 ML – 2 SOLUTION FOR INJECTION IN PRE-FILLED PENS – PRODUCT INFORMATION
+
+ 1. Product Description
+
+AMGEVITA® 40 mg/0.8 mL solution for injection in pre-filled pen is a biosimilar of adalimumab, a recombinant fully human monoclonal antibody. It binds specifically to tumor necrosis factor-alpha (TNF-α) and blocks its interaction with cell surface TNF receptors, helping to reduce inflammation and prevent immune-mediated tissue damage.
+
+Each pre-filled pen (SureClick®) contains 40 mg of adalimumab in 0.8 mL of solution. The pen is designed for subcutaneous injection and allows convenient self-administration for patients after appropriate training. The medication is a clear, colorless to slightly yellow solution.
+
+AMGEVITA is distributed through licensed pharmaceutical suppliers and is available for purchase in various international markets. Distribution may involve import or export processes depending on national regulatory frameworks.
+
+
+
+ 2. Indications
+
+AMGEVITA is indicated for a wide range of chronic, immune-mediated inflammatory diseases in adults and pediatric patients.
+
+ Adult Indications:
+- Rheumatoid arthritis
+- Psoriatic arthritis
+- Ankylosing spondylitis and non-radiographic axial spondyloarthritis
+- Plaque psoriasis
+- Hidradenitis suppurativa
+- Crohn’s disease
+- Ulcerative colitis
+- Non-infectious uveitis
+
+ Pediatric Indications:
+- Polyarticular juvenile idiopathic arthritis (from 2 years)
+- Enthesitis-related arthritis (from 6 years)
+- Plaque psoriasis (from 4 years)
+- Crohn’s disease (from 6 years)
+- Ulcerative colitis (from 6 years)
+- Non-infectious anterior uveitis (from 2 years)
+
+
+
+ 3. Dosage and Administration
+
+Treatment should be initiated and supervised by physicians experienced in managing these conditions. After appropriate training, patients may self-administer using the pre-filled pen.
+
+ Standard Adult Dose:
+- 40 mg every other week via subcutaneous injection
+
+In some cases, the dose may be increased to 40 mg weekly or 80 mg every other week if response is inadequate.
+
+ Induction Doses (by condition):
+- Plaque psoriasis: 80 mg initially, then 40 mg every other week
+- Crohn’s disease / ulcerative colitis: Up to 160 mg at week 0, 80 mg at week 2
+- Hidradenitis suppurativa: 160 mg at day 1, 80 mg at day 15, then 40 mg weekly or 80 mg biweekly
+- Uveitis: 80 mg initially, then 40 mg every other week
+
+ Special Populations:
+- No dose adjustment required for elderly patients
+- Insufficient data for dose recommendations in renal or hepatic impairment
+
+
+
+ 4. Mechanism of Action
+
+Adalimumab neutralizes TNF-α, a key cytokine in inflammatory and autoimmune processes. By binding TNF-α, AMGEVITA prevents its interaction with TNF receptors, thereby reducing the downstream inflammatory cascade.
+
+This results in lowered levels of acute-phase reactants, improved clinical symptoms, and slowing of structural damage in joint-related diseases.
+
+
+
+ 5. Pharmacokinetics
+
+- Bioavailability: Approximately 64% after subcutaneous administration
+- Peak concentration: Reached in 5 days
+- Half-life: Approximately 2 weeks
+- Steady state: Achieved after 4–6 weeks with regular dosing
+
+No significant changes in pharmacokinetics are observed with age or gender.
+
+
+
+ 6. Contraindications
+
+- Hypersensitivity to adalimumab or any of the excipients
+- Active tuberculosis or other severe infections (e.g., sepsis, opportunistic infections)
+- Moderate to severe heart failure (NYHA class III/IV)
+
+
+
+ 7. Warnings and Precautions
+
+- Infection risk: Patients must be screened for tuberculosis before starting treatment. Monitoring for signs of infection should continue throughout and after treatment.
+- Malignancies: There is a slightly increased risk of lymphoma and other malignancies in patients on TNF inhibitors.
+- Autoimmunity: Rare cases of lupus-like syndromes and demyelinating diseases have been reported.
+- Hepatitis B: Reactivation has occurred; testing and monitoring are recommended.
+- Vaccinations: Live vaccines should be avoided during treatment. Infants exposed in utero should not receive live vaccines for 5 months after the mother's last dose.
+
+
+
+ 8. Adverse Reactions
+
+ Very Common (≥1/10):
+- Upper respiratory infections
+- Injection site reactions
+- Headache
+- Musculoskeletal pain
+
+ Common (≥1/100 to <1/10):
+- Nausea, rash, pruritus
+- Fatigue
+- Elevated liver enzymes
+- Hypertension
+- Abdominal discomfort
+
+ Uncommon to Rare:
+- Tuberculosis
+- Malignancies
+- Autoimmune hepatitis
+- Demyelinating disorders (e.g., multiple sclerosis)
+
+Injection site reactions were generally mild and did not require treatment discontinuation.
+
+
+
+ 9. Use in Pregnancy and Lactation
+
+- Pregnancy: Use only if clearly needed. Adalimumab crosses the placenta; live vaccines should be avoided in exposed infants.
+- Lactation: Detected in breast milk at low levels. Considered safe, though caution is advised.
+- Fertility: No preclinical data available on fertility effects.
+
+
+
+ 10. Packaging, Storage, and Distribution
+
+Each carton contains 2 pre-filled SureClick pens, each delivering 40 mg adalimumab in 0.8 mL.
+
+- Storage: Refrigerate at 2°C–8°C. Do not freeze.
+- May be stored at room temperature (≤25°C) for up to 14 days.
+- Keep in original packaging to protect from light.
+
+Hospitals and treatment centers may buy AMGEVITA through certified wholesale partners. For international supply, compliance with import and export regulations is required. Patients should purchase the product only from authorized pharmacies to ensure authenticity and proper handling.
+
+
+
+ 11. Marketing Authorization
+
+- Authorization Holder: Amgen Europe B.V., Breda, Netherlands
+- ATC Code: L04AB04
+- EU Authorization Date: March 22, 2017

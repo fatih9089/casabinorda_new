@@ -1,0 +1,145 @@
+
+ HUMIRA (adalimumab) 40 mg/0.8 mL – 2 Solution for Injection in Pre-Filled Pens – PRODUCT INFORMATION
+
+ 1. Product Overview
+
+HUMIRA® 40 mg/0.8 mL is a biological medicine available in pre-filled pens designed for subcutaneous injection. Each pen delivers a single dose of adalimumab, a recombinant human monoclonal antibody that targets tumor necrosis factor-alpha (TNF-α)—a pro-inflammatory cytokine. Blocking TNF-α plays a critical role in reducing inflammation in a wide array of chronic autoimmune disorders.
+
+HUMIRA pre-filled pens are a convenient option for patients requiring long-term therapy and support ease of self-administration, especially for individuals who may find syringes difficult to use. It is produced using advanced recombinant DNA technology in Chinese Hamster Ovary (CHO) cells and is distributed through regulated pharmaceutical channels.
+
+
+
+ 2. Therapeutic Indications
+
+HUMIRA is indicated for the treatment of multiple chronic inflammatory and autoimmune conditions in adults and children.
+
+ Adult Indications:
+- Rheumatoid arthritis
+- Psoriatic arthritis
+- Ankylosing spondylitis
+- Non-radiographic axial spondyloarthritis
+- Plaque psoriasis
+- Hidradenitis suppurativa
+- Crohn’s disease
+- Ulcerative colitis
+- Non-infectious uveitis
+
+ Pediatric Indications:
+- Polyarticular juvenile idiopathic arthritis (≥2 years)
+- Enthesitis-related arthritis (≥6 years)
+- Plaque psoriasis (≥4 years)
+- Crohn’s disease (≥6 years)
+- Ulcerative colitis (≥6 years)
+- Non-infectious anterior uveitis (≥2 years)
+
+These indications highlight HUMIRA’s utility across a wide age range and disease spectrum.
+
+
+
+ 3. Dosage and Administration
+
+ Standard Adult Dosage:
+- 40 mg every other week via subcutaneous injection.
+
+In some cases, the dose may be increased to 40 mg weekly or 80 mg every other week to enhance clinical response. Pre-filled pens must be used as per physician instruction after the patient has received proper training.
+
+ Administration:
+- Injections should be administered into the thigh or abdomen.
+- Rotate injection sites to avoid local irritation.
+
+After physician guidance, patients may self-administer HUMIRA, ensuring long-term treatment adherence and minimizing healthcare facility visits.
+
+
+
+ 4. Contraindications
+
+Do not use HUMIRA if the patient has:
+- Hypersensitivity to adalimumab or any excipients.
+- Active tuberculosis or other severe infections.
+- Moderate to severe heart failure (NYHA Class III/IV).
+
+
+
+ 5. Warnings and Precautions
+
+- Infections: Serious infections such as tuberculosis, sepsis, and fungal infections have occurred. Prior screening for latent TB is required before treatment.
+- Malignancy: Slightly elevated risk of lymphoma and skin cancers. Use with caution in patients with COPD or previous malignancy.
+- Vaccination: Live vaccines should be avoided during treatment. Infants exposed to HUMIRA in utero should not receive live vaccines for 5 months.
+- Demyelinating Diseases: Cases of multiple sclerosis, optic neuritis, and Guillain-Barré syndrome have been reported.
+- Hepatitis B: Reactivation risk in carriers. Monitoring and antiviral prophylaxis may be needed.
+- Allergic Reactions: Rare cases of anaphylaxis have occurred; discontinue immediately if a severe reaction arises.
+
+
+
+ 6. Adverse Effects
+
+ Very Common (≥1/10):
+- Injection site reactions (erythema, swelling, pain)
+- Respiratory tract infections
+- Headache
+- Musculoskeletal pain
+
+ Common (≥1/100 to <1/10):
+- Nausea
+- Rash
+- Abdominal pain
+- Elevated liver enzymes
+- Visual disturbances
+
+ Uncommon to Rare:
+- Serious infections (e.g., TB, sepsis)
+- Malignancies including lymphoma and skin cancer
+- Autoimmune reactions (e.g., lupus-like syndrome)
+- Central and peripheral nervous system disorders
+
+Most side effects are manageable, and discontinuation is not typically necessary unless symptoms are severe.
+
+
+
+ 7. Use in Special Populations
+
+ Pregnancy and Lactation:
+- HUMIRA crosses the placenta; avoid live vaccines in exposed infants for 5 months.
+- Adalimumab is excreted in breast milk in very low quantities. No harmful effects reported, making breastfeeding generally acceptable.
+
+ Elderly Patients:
+- Increased risk of serious infections has been reported in patients over 65. Careful monitoring is advised.
+
+
+
+ 8. Storage and Stability
+
+- Store between 2°C to 8°C. Do not freeze.
+- Can be kept at room temperature (≤25°C) for up to 14 days.
+- Protect from direct light and keep in original packaging.
+
+
+
+ 9. Packaging and Distribution
+
+Each box contains 2 pre-filled pens, each delivering 40 mg adalimumab in 0.8 mL. Packaging is tamper-evident and intended for single use only.
+
+Hospitals, clinics, and pharmacies can purchase HUMIRA via approved distributors. It is widely available through licensed wholesale channels. In some markets, HUMIRA may be supplied through regulated import or export frameworks, depending on regional access policies. Patients are strongly advised to buy HUMIRA only from certified pharmacies to avoid counterfeit products.
+
+
+
+ 10. Pharmacodynamic and Clinical Data
+
+Adalimumab binds to TNF-α, neutralizing its function and blocking inflammatory signaling pathways. This leads to reduced levels of C-reactive protein (CRP), erythrocyte sedimentation rate (ESR), and interleukin-6 (IL-6).
+
+Clinical trials have demonstrated statistically significant improvements in:
+- ACR20/50/70 scores in rheumatoid arthritis
+- PASI75 in psoriasis
+- Endoscopic mucosal healing in Crohn’s disease
+
+Long-term studies show sustained benefits over several years of treatment, making HUMIRA a well-established therapeutic option for inflammatory diseases.
+
+
+
+ 11. Marketing Authorization
+
+- MA Holder: AbbVie Deutschland GmbH & Co. KG  
+- ATC Code: L04AB04  
+- EMA Approval: Centrally authorized by the European Medicines Agency  
+
+-

@@ -1,0 +1,66 @@
+
+ EYLEA (aflibercept intravitreal) 40 mg Solution for Injection – PRODUCT INFORMATION
+
+1. Introduction  
+EYLEA (aflibercept) is a sterile, preservative-free, aqueous solution designed for intravitreal injection. It is used in the management of various retinal disorders characterized by abnormal blood vessel growth and fluid leakage, including neovascular (wet) age-related macular degeneration (AMD), diabetic macular edema (DME), macular edema following retinal vein occlusion (RVO), and myopic choroidal neovascularization (myopic CNV). It is also indicated in preterm infants for the treatment of retinopathy of prematurity (ROP).
+
+2. Active Ingredient and Mechanism of Action  
+Aflibercept is a recombinant fusion protein composed of portions of human vascular endothelial growth factor (VEGF) receptors 1 and 2, fused to the Fc portion of human IgG1. It acts as a decoy receptor that binds VEGF-A and placental growth factor (PlGF), preventing them from activating their natural receptors. This action reduces pathological neovascularization and vascular permeability in the retina, which are key features in diseases like AMD and DME.
+
+3. Pharmaceutical Form and Composition  
+EYLEA is available as a 40 mg/mL solution in a pre-filled syringe. Each syringe delivers a single intravitreal dose of 2 mg aflibercept in 0.05 mL for adults or 0.4 mg in 0.01 mL for preterm infants. The formulation includes polysorbate 20 as an excipient.
+
+4. Indications and Usage  
+EYLEA is indicated for the treatment of:
+- Wet AMD in adults
+- Visual impairment due to macular edema secondary to central or branch RVO
+- DME in diabetic adults
+- Myopic CNV in adults
+- ROP in preterm infants with disease in zones I or II, or aggressive posterior ROP
+
+5. Dosage and Administration  
+Administration is strictly intravitreal and must be performed by a qualified ophthalmologist under sterile conditions. The recommended dosing schedule varies by indication:
+- Wet AMD: 2 mg monthly for 3 months, then every 2 months. Later intervals may be extended based on clinical response.
+- RVO: Monthly injections until maximum visual benefit is achieved, followed by individualized intervals.
+- DME: Initial five monthly doses followed by bi-monthly injections; treat-and-extend protocols may be considered.
+- Myopic CNV: A single 2 mg injection, with additional doses upon recurrence.
+- ROP (infants): A single 0.4 mg dose per eye, with up to 2 injections per eye allowed within 6 months based on disease activity.
+
+6. Contraindications  
+EYLEA is contraindicated in patients with:
+- Ocular or periocular infection
+- Active severe intraocular inflammation
+- Known hypersensitivity to aflibercept or any excipients
+
+7. Warnings and Precautions  
+Careful monitoring post-injection is essential to detect increases in intraocular pressure or signs of infection such as endophthalmitis. Patients with a history of thromboembolic events should be treated with caution due to a potential systemic effect from VEGF inhibition. Regular assessment for disease activity via optical coherence tomography (OCT) or fluorescein angiography is advised.
+
+8. Adverse Reactions  
+The most commonly observed side effects include:
+- Conjunctival hemorrhage
+- Retinal hemorrhage
+- Eye pain
+- Cataracts
+- Intraocular pressure elevation
+- Visual acuity reduction
+- Vitreous detachment or floaters
+
+Serious adverse events, though rare, can include endophthalmitis, retinal detachment, or increased intraocular pressure requiring intervention. Hypersensitivity reactions have also been reported.
+
+9. Use in Special Populations  
+- Elderly: No dosage adjustment is required. Caution is advised in DME patients over 75 years due to limited data.
+- Renal/Hepatic Impairment: No specific studies conducted; however, available data suggest no need for dose alteration.
+- Pregnancy and Lactation: Use only if benefits outweigh potential risks. Women of childbearing potential should use contraception during and for at least 3 months after treatment. Breastfeeding is not recommended.
+
+10. Pharmacokinetics  
+Following intravitreal administration, systemic exposure to aflibercept is low. The drug binds VEGF-A and PlGF with high affinity, maintaining therapeutic levels in the vitreous humor. Its systemic clearance is expected to be primarily through proteolysis.
+
+11. Storage and Handling  
+EYLEA should be stored at 2–8°C and kept in its original carton to protect from light. The solution should be used immediately after the pre-filled syringe is opened and should not be reused. Each syringe is strictly intended for single-eye use.
+
+12. Supply and Distribution  
+The product is supplied as a ready-to-use pre-filled syringe. It is authorized for clinical use across the European Union and distributed through licensed channels. Entities engaged in the wholesale or retail distribution must comply with local pharmaceutical guidelines. For international trade, proper documentation is essential for export or import of EYLEA. Purchase agreements should include cold chain logistics to maintain product integrity during transit. Patients should not buy this product online or without a prescription.
+
+13. Clinical Trials and Efficacy  
+EYLEA has been evaluated in numerous clinical trials including VIEW1 and VIEW2 (wet AMD), COPERNICUS and GALILEO (CRVO), VIVID and VISTA (DME), and MYRROR (myopic CNV). Across these studies, EYLEA consistently demonstrated improvements in best corrected visual acuity and central retinal thickness. Its efficacy has been shown to be non-inferior or superior to comparators such as laser photocoagulation or ranibizumab, with a manageable safety profile.
+

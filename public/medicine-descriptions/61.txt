@@ -1,0 +1,43 @@
+
+ GIOTRIF (afatinib dimaleate) 40 mg Film-Coated Tablets – PRODUCT INFORMATION
+
+1. Product Overview  
+GIOTRIF (afatinib dimaleate) is an orally administered antineoplastic agent belonging to the class of ErbB family blockers. It is indicated for the treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with activating epidermal growth factor receptor (EGFR) mutations. Additionally, it is approved for patients with squamous histology NSCLC who have progressed following platinum-based chemotherapy.
+
+2. Mechanism of Action  
+Afatinib exerts its therapeutic effect by irreversibly binding to and inhibiting the activity of all relevant homo- and heterodimers of the ErbB family of receptors, including EGFR (ErbB1), HER2 (ErbB2), ErbB3, and ErbB4. This inhibition effectively suppresses aberrant ErbB signaling, which is known to contribute to cancer cell proliferation and survival.
+
+3. Dosage and Administration  
+The recommended starting dose of GIOTRIF is 40 mg once daily. The tablet should be taken at least three hours before or one hour after food to optimize absorption. Dose adjustments may be necessary depending on the patient’s tolerance or the emergence of adverse effects. If adverse reactions occur (e.g., persistent diarrhea, rash, stomatitis), the dose may be reduced in 10 mg decrements. The treatment should be continued until disease progression or unacceptable toxicity.
+
+4. Special Populations  
+For patients with mild to moderate hepatic impairment, no dosage adjustment is required. However, GIOTRIF is not recommended for patients with severe hepatic impairment. In those with severe renal impairment, careful monitoring is necessary. There is no established safety or efficacy data for pediatric patients with NSCLC.
+
+5. Clinical Efficacy  
+Clinical trials, including the LUX-Lung 3, LUX-Lung 6, and LUX-Lung 7 studies, have demonstrated the efficacy of GIOTRIF in extending progression-free survival (PFS) and improving response rates compared to traditional chemotherapy regimens and first-generation EGFR tyrosine kinase inhibitors (TKIs). In LUX-Lung 3, patients with common EGFR mutations (Del 19 and L858R) had a median PFS of 11.2 months on GIOTRIF compared to 6.9 months on chemotherapy.
+
+For patients with uncommon EGFR mutations (e.g., G719X, L861Q, S768I), GIOTRIF also demonstrated clinically relevant response rates and duration of response. In patients with squamous cell carcinoma, the LUX-Lung 8 trial showed a modest improvement in overall survival (7.92 months vs. 6.77 months with erlotinib).
+
+6. Safety Profile  
+The adverse event profile of GIOTRIF aligns with its mode of action and includes gastrointestinal and dermatological reactions. The most common adverse events include:
+- Diarrhea: Occurred in up to 95% of patients and is dose-limiting in some cases.
+- Rash/Acneiform dermatitis: Typically mild to moderate, appearing in sun-exposed areas.
+- Stomatitis and paronychia: Frequently reported and manageable with supportive care.
+
+Rare but serious adverse reactions include interstitial lung disease (ILD), hepatic toxicity, and gastrointestinal perforation. Liver function monitoring and patient education on symptom recognition are critical parts of patient management.
+
+7. Drug Interactions  
+Afatinib is a substrate of P-glycoprotein (P-gp) and Breast Cancer Resistance Protein (BCRP). Concurrent administration with strong P-gp inhibitors (e.g., ritonavir) can increase afatinib plasma levels and should be staggered. Conversely, P-gp inducers (e.g., rifampicin) can reduce afatinib exposure. Caution is advised when administering with medications that affect these transport systems.
+
+8. Pharmacokinetics  
+After oral administration, afatinib reaches peak plasma levels within 2 to 5 hours. It is highly protein-bound (~95%) and primarily excreted via the feces. The effective half-life is approximately 37 hours, with steady-state concentrations achieved within eight days of continuous dosing.
+
+9. Storage and Handling  
+GIOTRIF tablets should be stored in their original packaging to protect from moisture and light. Unused product should be disposed of according to local regulations.
+
+10. Additional Considerations  
+GIOTRIF is contraindicated in patients with known hypersensitivity to afatinib or any of its excipients. Women of childbearing potential must use effective contraception during and for at least one month after therapy. Breastfeeding is not recommended during treatment due to the potential for excretion in breast milk.
+
+11. Supply and Authorization  
+The product is manufactured and batch-released by Boehringer Ingelheim. It is distributed under medical prescription only, with authorization and periodic safety updates monitored by the European Medicines Agency.
+

@@ -1,0 +1,150 @@
+
+FOSAVANCE (alendronate + cholecalciferol) 70 mg / 5 600 IU – PRODUCT INFORMATION
+
+
+
+ 1. Name of the Medicinal Product  
+FOSAVANCE 70 mg/5 600 IU tablets  
+(alendronate sodium trihydrate / colecalciferol)
+
+ 2. Qualitative and Quantitative Composition  
+Each tablet contains:  
+- Alendronic acid (as sodium trihydrate) equivalent to 70 mg alendronate.  
+- Colecalciferol (vitamin D₃) 140 µg (5 600 IU).  
+
+Excipients with known effect:  
+- Lactose anhydrous: 63 mg  
+- Sucrose: 16 mg  
+
+For a full list of excipients, see section 6.1.
+
+ 3. Pharmaceutical Form  
+Modified rectangle‑shaped, white to off‑white tablet, marked with a bone‑outline logo on one side and “270” on the other.
+
+ 4. Clinical Particulars  
+
+ 4.1 Therapeutic Indications  
+FOSAVANCE is indicated for the treatment of postmenopausal osteoporosis in women at risk of vitamin D insufficiency. It diminishes the risk of both vertebral and hip fractures.
+
+ 4.2 Posology and Method of Administration  
+
+Posology  
+- Adults (postmenopausal women): One 70 mg/5 600 IU tablet once weekly.  
+- If a dose is missed, take one tablet the morning after remembering. Do not take two tablets in one day; resume your original weekly schedule.  
+- Long‑term treatment: re‑evaluate benefit/risk after 5 years, as optimal bisphosphonate duration is not established.  
+- Ensure adequate calcium intake or supplementation if dietary calcium is insufficient.  
+
+Special populations  
+- Elderly: No dose adjustment needed.  
+- Renal impairment: Not recommended if creatinine clearance < 35 mL/min; no adjustment needed if ≥ 35 mL/min.  
+- Paediatric: Not established; do not use in individuals < 18 years.
+
+Method of administration  
+- Take with plain water (≥ 200 mL), at least 30 minutes before the first food, drink or other medication of the day.  
+- Swallow whole; do not chew or allow to dissolve in the mouth.  
+- Remain upright (sitting, standing, or walking) for at least 30 minutes after dosing and until after first food.  
+- Do not take at bedtime or lie down after dosing, to minimize oesophageal irritation.
+
+ 4.3 Contraindications  
+- Hypersensitivity to alendronate, colecalciferol or excipients  
+- Abnormalities of the oesophagus (e.g., stricture, achalasia)  
+- Inability to sit or stand upright for ≥ 30 minutes  
+- Hypocalcaemia  
+
+ 4.4 Special Warnings and Precautions for Use  
+
+Gastrointestinal irritation  
+Alendronate may cause oesophagitis, oesophageal ulcers and erosions. Ensure strict adherence to administration instructions; discontinue immediately if dysphagia, odynophagia, retrosternal pain, or new/worsening heartburn occur.
+
+Osteonecrosis of the jaw (ONJ)  
+Primarily reported in oncology patients on high‑dose intravenous bisphosphonates, but also in osteoporosis patients. Risk factors include dental extractions, poor oral hygiene, concurrent corticosteroids or chemotherapy, and smoking. Dental examination and preventive dentistry are recommended before and during treatment; invasive dental procedures should be avoided if possible.
+
+Atypical femoral fractures  
+Long‑term bisphosphonate use (> 3–5 years) is associated with rare atypical subtrochanteric and diaphyseal femoral fractures. Advise patients to report new thigh or groin pain; evaluate for stress fractures. Consider discontinuation pending assessment.
+
+Hypocalcaemia and mineral metabolism disorders  
+Correct pre‑existing hypocalcaemia, vitamin D deficiency or other disorders of mineral metabolism prior to initiating FOSAVANCE. Monitor serum calcium in high‑risk patients (e.g., malabsorption).
+
+Vitamin D considerations  
+In disorders with unregulated calcitriol production (e.g., sarcoidosis, lymphoma), monitor serum and urine calcium. Malabsorption may impair vitamin D uptake.
+
+ 4.5 Interaction with Other Medicinal Products and Other Forms of Interaction  
+- Alendronate absorption decreased by calcium supplements, antacids, other oral medications, and food/beverages—hence the 30‑minute fasting requirement.  
+- NSAIDs: co‑administration may increase gastrointestinal irritation.  
+- Colecalciferol absorption impaired by olestra, mineral oils, orlistat, bile acid sequestrants; anticonvulsants, cimetidine, thiazides may increase vitamin D catabolism. Individual supplementation may be necessary.
+
+ 4.6 Fertility, Pregnancy and Lactation  
+Not to be used in pregnancy or lactation. Preclinical data show reproductive toxicity; vitamin D overdosing in pregnancy can cause hypercalcaemia.
+
+ 4.7 Effects on Ability to Drive and Use Machines  
+No direct effect, but adverse reactions such as dizziness, blurred vision or severe musculoskeletal pain may impair ability.
+
+ 4.8 Undesirable Effects  
+Very common (≥ 1/10): musculoskeletal pain (bone, joint, muscle).  
+Common (≥ 1/100 to < 1/10):  
+- Gastrointestinal: abdominal pain, dyspepsia, acid regurgitation, constipation, diarrhea, flatulence, oesophageal ulcer, dysphagia  
+- Nervous system: headache, dizziness  
+- Skin: alopecia, pruritus  
+- General: asthenia, peripheral oedema, acute‑phase reactions (myalgia, malaise, fever)  
+Uncommon (≥ 1/1 000 to < 1/100):  
+- GI: nausea, vomiting, gastritis, oesophagitis, oesophageal erosions, melena  
+- Eye: uveitis, scleritis, episcleritis  
+- Skin: rash, erythema, photosensitivity reactions  
+Rare (≥ 1/10 000 to < 1/1 000):  
+- Hypocalcaemia, oesophageal stricture, oropharyngeal ulceration, upper GI bleeding/perforation, Stevens–Johnson syndrome, toxic epidermal necrolysis, symptomatic hypocalcaemia  
+Very rare (< 1/10 000): osteonecrosis of the external auditory canal  
+Not known: atypical fractures of other bones
+
+ 4.9 Overdose  
+- Alendronate: may cause hypocalcaemia, hypophosphataemia, severe gastrointestinal irritation. Treat with milk or antacids; avoid vomiting; keep patient upright.  
+- Colecalciferol: vitamin D toxicity not seen < 10 000 IU/day; 4 000 IU daily for five months was well tolerated in adults.
+
+ 5. Pharmacological Properties  
+
+ 5.1 Pharmacodynamic Properties  
+- Alendronate: a nitrogen‑containing bisphosphonate that inhibits osteoclast‑mediated bone resorption.  
+- Colecalciferol: increases intestinal absorption of calcium and phosphate; essential for normal bone formation and muscle function.
+
+ 5.2 Pharmacokinetic Properties  
+- Alendronate bioavailability ~0.64% fasting; decreased by 60% if administered with coffee or orange juice; not metabolized; 50% excreted unchanged in urine; terminal half‑life > 10 years in bone.  
+- Vitamin D₃: AUC and Cₘₐₓ for weekly 5 600 IU similar to equivalent daily dosing; Tmax ~10–12 hours; half‑life ~24 hours; metabolized to 25‑hydroxyvitamin D₃ in liver, then to active form in kidneys.
+
+ 5.3 Preclinical Safety Data  
+Animal studies: alendronate during pregnancy caused dystocia related to hypocalcaemia and incomplete fetal ossification in rats; high‑dose vitamin D induced reproductive toxicity. No new hazards beyond known class effects.
+
+ 6. Pharmaceutical Particulars  
+
+ 6.1 List of Excipients  
+Microcrystalline cellulose, lactose anhydrous, medium chain triglycerides, gelatin, croscarmellose sodium, sucrose, colloidal silicon dioxide, magnesium stearate, butylhydroxytoluene, modified maize starch, sodium aluminium silicate.
+
+ 6.2 Incompatibilities  
+None known.
+
+ 6.3 Shelf Life  
+18 months.
+
+ 6.4 Special Precautions for Storage  
+Store in original blister to protect from moisture and light.
+
+ 6.5 Nature and Contents of Container  
+Aluminium/aluminium blister, packs of 2, 4 or 12 tablets.
+
+ 6.6 Special Precautions for Disposal  
+No special requirements.
+
+ 7. Marketing Authorisation Holder  
+N.V. Organon  
+Kloosterstraat 6, 5349 AB Oss, The Netherlands
+
+ 8. Marketing Authorisation Number(s)  
+EU/1/05/310/006 – 2 tablets  
+EU/1/05/310/007 – 4 tablets  
+EU/1/05/310/008 – 12 tablets
+
+ 9. Date of First Authorisation / Renewal  
+First authorisation: 24 August 2005  
+Latest renewal: 24 April 2015
+
+ 10. Date of Revision of the Text  
+Last revised: April 2025
+

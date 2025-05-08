@@ -1,0 +1,140 @@
+
+ AMGEVITA (adalimumab) 40 mg/0.8 mL – 2 Solutions for Injection in Pre-filled Syringes – PRODUCT INFORMATION
+
+ 1. Product Description
+
+AMGEVITA® is a biosimilar of adalimumab, a fully human monoclonal antibody that targets tumor necrosis factor-alpha (TNF-α), a cytokine involved in systemic inflammation. This solution for subcutaneous injection is presented in two pre-filled syringes, each containing 40 mg of adalimumab in 0.8 mL solution (50 mg/mL).
+
+It is a clear to slightly yellow solution and is manufactured using recombinant DNA technology in Chinese Hamster Ovary (CHO) cells. AMGEVITA is authorized for use across a broad range of immune-mediated inflammatory diseases and distributed through controlled pharmaceutical supply channels.
+
+
+
+ 2. Clinical Indications
+
+AMGEVITA is indicated for the treatment of numerous autoimmune and inflammatory conditions in both adults and children:
+
+ Adults:
+- Rheumatoid arthritis
+- Psoriatic arthritis
+- Ankylosing spondylitis
+- Axial spondyloarthritis without radiographic evidence
+- Plaque psoriasis
+- Hidradenitis suppurativa
+- Crohn’s disease
+- Ulcerative colitis
+- Non-infectious uveitis
+
+ Pediatric Patients:
+- Juvenile idiopathic arthritis (from age 2)
+- Enthesitis-related arthritis (from age 6)
+- Plaque psoriasis (from age 4)
+- Crohn’s disease and ulcerative colitis (from age 6)
+- Chronic non-infectious anterior uveitis (from age 2)
+
+The medication is often used when patients have an inadequate response to standard treatments such as corticosteroids, immunosuppressants, or disease-modifying antirheumatic drugs (DMARDs).
+
+
+
+ 3. Dosage and Administration
+
+The standard dosage is 40 mg every other week administered subcutaneously. In some conditions or patient profiles, the dosage may be escalated to 40 mg weekly or 80 mg every other week, depending on the clinical response.
+
+ Special considerations:
+- Initial loading doses are often recommended, particularly in plaque psoriasis, Crohn’s disease, ulcerative colitis, and hidradenitis suppurativa.
+- Patients must be trained on self-administration if appropriate.
+- Treatment initiation and supervision should be carried out by healthcare professionals experienced in managing these conditions.
+
+
+
+ 4. Mechanism of Action
+
+Adalimumab, the active substance in AMGEVITA, binds with high affinity to TNF-α, preventing its interaction with p55 and p75 cell surface TNF receptors. This action suppresses downstream inflammatory responses including cytokine release, leukocyte migration, and tissue destruction.
+
+
+
+ 5. Pharmacokinetics and Pharmacodynamics
+
+After subcutaneous administration, peak serum concentrations are typically reached within 5 days. The mean terminal half-life is approximately 2 weeks, supporting biweekly dosing in most patients. Therapeutic effects often become evident within 2 to 12 weeks, depending on the indication.
+
+
+
+ 6. Contraindications
+
+- Hypersensitivity to adalimumab or any excipients
+- Active tuberculosis or other severe infections
+- Moderate to severe heart failure (NYHA Class III/IV)
+
+
+
+ 7. Warnings and Precautions
+
+- Patients should be screened for latent or active tuberculosis prior to treatment.
+- Caution is advised in patients with a history of recurrent infections, neurological disorders, or malignancies.
+- Use of live vaccines is contraindicated during and for several months after treatment.
+- Periodic evaluation is required to determine the need for continued therapy.
+
+
+
+ 8. Adverse Reactions
+
+ Very common (≥1/10):
+- Injection site reactions
+- Upper respiratory tract infections
+- Headache
+- Musculoskeletal pain
+
+ Common (≥1/100 to <1/10):
+- Nausea, rash, fatigue
+- Elevated liver enzymes
+- Sinusitis, bronchitis
+
+ Uncommon to Rare:
+- Serious infections (e.g., sepsis, TB)
+- Demyelinating disorders (e.g., multiple sclerosis)
+- Lupus-like syndrome
+- Hepatotoxicity, autoimmune hepatitis
+- Certain malignancies (e.g., lymphoma, skin cancer)
+
+Most reactions are manageable and reversible. Monitoring is critical, particularly in long-term use.
+
+
+
+ 9. Fertility, Pregnancy, and Lactation
+
+- Pregnancy: No evidence of teratogenicity, but adalimumab crosses the placenta. Use only if clearly necessary.
+- Lactation: Present in low levels in breast milk, with no expected adverse effects.
+- Fertility: No data suggest any impact on fertility.
+
+
+
+ 10. Storage and Handling
+
+- Store in a refrigerator at 2°C to 8°C
+- Do not freeze
+- Protect from light and keep in original packaging
+- May be stored at room temperature (up to 25°C) for 14 days
+
+
+
+ 11. Packaging and Distribution
+
+Each pack contains 2 pre-filled syringes, each with 40 mg of adalimumab. The product is widely distributed across pharmaceutical and wholesale networks and is often subject to purchase agreements between institutions and healthcare providers.
+
+Due to its classification as a biologic, AMGEVITA may require specific labeling and tracking when included in import or export orders across international borders. Hospitals and licensed facilities typically buy AMGEVITA as part of broader immunology or rheumatology treatment protocols.
+
+
+
+ 12. Manufacturer and Authorization
+
+- Marketing Authorization Holder:  
+  Amgen Europe B.V.  
+  Minervum 7061, 4817 ZK Breda, Netherlands
+
+- Product Code: EU/1/17/1221
+- Authorization Date: 22 March 2017
+- ATC Code: L04AB04
+
+
+
+AMGEVITA continues to be a clinically valuable and cost-effective biosimilar for patients with long-standing inflammatory conditions. Always refer to local guidelines and treatment protocols for its safe and effective use.
+

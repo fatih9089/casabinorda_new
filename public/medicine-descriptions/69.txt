@@ -1,0 +1,153 @@
+
+FOSAVANCE (alendronate + cholecalciferol) 70 mg / 2 800 IU tablets – PRODUCT INFORMATION  
+
+
+
+ 1. NAME OF THE MEDICINAL PRODUCT  
+FOSAVANCE 70 mg/2 800 IU tablets
+
+ 2. QUALITATIVE AND QUANTITATIVE COMPOSITION  
+Each tablet contains:  
+- Active substances:  
+  - Alendronic acid (as sodium trihydrate) 70 mg  
+  - Cholecalciferol (Vitamin D₃) 70 µg (equivalent to 2 800 IU)  
+
+- Excipients with known effect:  
+  - Lactose anhydrous 62 mg  
+  - Sucrose 8 mg  
+
+For a full list of excipients, see section 6.1.
+
+ 3. PHARMACEUTICAL FORM  
+Modified capsule‑shaped, white to off‑white tablet, marked with a bone outline on one side and “710” on the other.
+
+ 4. CLINICAL PARTICULARS  
+
+ 4.1 Therapeutic Indications  
+- Treatment of postmenopausal osteoporosis in women at risk of vitamin D insufficiency.  
+- Reduces the risk of vertebral and hip fractures.
+
+ 4.2 Posology and Method of Administration  
+
+Recommended dose: one tablet once weekly.  
+- If a dose is missed, take one tablet the next morning—do not take two tablets the same day.  
+- Long‑term use is expected; reassess need after 5 years based on individual risk/benefit.  
+- Ensure adequate dietary calcium; consider additional vitamin D supplementation as needed.
+
+Special populations:  
+- Elderly: no dosage adjustment required.  
+- Renal impairment: not recommended if creatinine clearance < 35 mL/min; no adjustment needed > 35 mL/min.  
+- Paediatrics (< 18 years): not established; not recommended.
+
+Administration instructions to optimize absorption & reduce oesophageal irritation:  
+1. Take upon rising, with ≥ 200 mL plain water (no mineral water), ≥ 30 minutes before any food, drink or other medication.  
+2. Swallow whole—do not crush, chew or dissolve.  
+3. Remain upright (sitting, standing or walking) for at least 30 minutes post‑dose and until after first meal.  
+4. Do not take at bedtime or before arising.
+
+ 4.3 Contraindications  
+- Hypersensitivity to alendronate, cholecalciferol or excipients.  
+- Oesophageal abnormalities delaying emptying (e.g., stricture, achalasia).  
+- Inability to stand/sit upright for ≥ 30 minutes.  
+- Hypocalcaemia.
+
+ 4.4 Special Warnings and Precautions for Use  
+
+Upper gastrointestinal:  
+- Risk of oesophagitis, oesophageal ulcers/erosions—ensure proper dosing procedure; discontinue if symptoms (dysphagia, odynophagia, retrosternal pain) occur.  
+
+Bone-related events:  
+- Osteonecrosis of the jaw: report oral symptoms (pain, swelling, loose teeth); consider dental exam before bisphosphonate therapy in high‑risk patients.  
+- Atypical femoral fractures: may occur after minimal/no trauma—advise patients to report thigh/hip/groin pain.  
+- Musculoskeletal pain: severe bone, joint or muscle pain has been reported.
+
+Mineral metabolism:  
+- Correct hypocalcaemia, vitamin D deficiency, or hypoparathyroidism before initiation.  
+- Monitor serum calcium in patients with malabsorption or diseases with overproduction of calcitriol (e.g., sarcoidosis).  
+
+Renal:  
+- Avoid if creatinine clearance < 35 mL/min.
+
+Excipients:  
+- Contains lactose and sucrose; not suitable for those with rare sugar intolerances.
+
+ 4.5 Interaction with Other Medicinal Products  
+- Concomitant calcium supplements, antacids and other oral meds interfere with alendronate absorption—observe 30‑minute gap.  
+- NSAIDs may increase gastrointestinal irritation.  
+- Olestra, mineral oils, orlistat or bile acid sequestrants impair vitamin D absorption; anticonvulsants, cimetidine, thiazides may increase vitamin D catabolism.
+
+ 4.6 Fertility, Pregnancy and Lactation  
+- Intended only for postmenopausal women; contraindicated in pregnancy and breastfeeding.
+
+ 4.7 Effects on Ability to Drive and Use Machines  
+- Has no or negligible influence; however, dizziness, blurred vision or severe pain may impair ability—exercise caution.
+
+ 4.8 Undesirable Effects  
+
+Very common (≥ 1/10):  
+- Musculoskeletal pain (bone, muscle, joint), sometimes severe.  
+
+Common (≥ 1/100 to < 1/10):  
+- Gastrointestinal: abdominal pain, dyspepsia, constipation, diarrhoea, flatulence, acid regurgitation.  
+- Immune: headaches, dizziness, alopecia, pruritus, asthenia, peripheral oedema, joint swelling.  
+
+Uncommon (≥ 1/1 000 to < 1/100):  
+- Nausea, vomiting, gastritis, oesophagitis, eye inflammation, rash.  
+
+Rare (≥ 1/10 000 to < 1/1 000):  
+- Hypersensitivity (urticaria, angioedema), symptomatic hypocalcaemia, peptic ulcers, oesophageal stricture, Stevens–Johnson syndrome, toxic epidermal necrolysis, osteonecrosis of jaw, atypical femoral fractures.  
+
+Very rare (< 1/10 000):  
+- Osteonecrosis of external auditory canal.
+
+ 4.9 Overdose  
+- Alendronate overdose: hypocalcaemia, upper GI irritation; treat with milk/antacids, do not induce vomiting, keep patient upright.  
+- Cholecalciferol: toxicity unlikely at ≤ 10 000 IU/day in healthy adults.
+
+ 5. PHARMACOLOGICAL PROPERTIES  
+
+ 5.1 Pharmacodynamic Properties  
+Alendronate: bisphosphonate inhibiting osteoclast‑mediated bone resorption.  
+Cholecalciferol: vitamin D₃ precursor, enhances intestinal calcium/phosphate absorption and bone mineralisation.
+
+Key clinical studies showed weekly alendronate 70 mg + Vitamin D₃ improved BMD and reduced vertebral/hip fractures versus placebo and alendronate alone, and corrected vitamin D insufficiency over 15–24 weeks.
+
+ 5.2 Pharmacokinetic Properties  
+- Alendronate bioavailability: ~ 0.6% fasting; negligible with food. Terminal half‑life > 10 years due to bone retention.  
+- Vitamin D₃ absorption: Tmax ~ 10–12 hours; half‑life ~ 24 hours; similar bioavailability alone or in combination.
+
+ 5.3 Preclinical Safety Data  
+- No special hazard beyond class effects; animal studies indicate reproductive toxicity at high doses.
+
+ 6. PHARMACEUTICAL PARTICULARS  
+
+ 6.1 List of Excipients  
+Microcrystalline cellulose, lactose anhydrous, medium chain triglycerides, gelatin, croscarmellose sodium, sucrose, colloidal silicon dioxide, magnesium stearate, butylhydroxytoluene, modified maize starch, sodium aluminium silicate.
+
+ 6.2 Incompatibilities  
+None known.
+
+ 6.3 Shelf Life  
+18 months.
+
+ 6.4 Special Precautions for Storage  
+Store in original blister to protect from moisture and light.
+
+ 6.5 Nature and Contents of Container  
+Aluminium/aluminium blisters in cartons of 2, 4, 6 or 12 tablets.
+
+ 6.6 Special Precautions for Disposal  
+No special requirements.
+
+ 7. MARKETING AUTHORISATION HOLDER  
+N.V. Organon, Kloosterstraat 6, 5349 AB Oss, The Netherlands
+
+ 8. MARKETING AUTHORISATION NUMBERS  
+EU/1/05/310/001–004 for 2, 4, 6, 12 tablets.
+
+ 9. DATE OF FIRST AUTHORISATION / RENEWAL  
+First authorisation: 24 August 2005  
+Latest renewal: 24 April 2015
+
+ 10. DATE OF TEXT REVISION  
+Refer to EMA website for updates.

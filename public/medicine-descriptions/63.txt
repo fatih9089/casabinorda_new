@@ -1,0 +1,55 @@
+
+ ZALTRAP (aflibercept intravenous) 100 mg / 4 ml Concentrate for Solution for Infusion – PRODUCT INFORMATION
+
+1. Overview  
+ZALTRAP is a prescription-only anticancer therapy containing aflibercept, administered intravenously as a concentrate for infusion. It is primarily used in combination with chemotherapy for the treatment of adults with metastatic colorectal cancer (mCRC) that is resistant to or has progressed after an oxaliplatin-based regimen. This targeted therapy interferes with angiogenesis, a critical process in tumor progression.
+
+2. Composition and Formulation  
+Each milliliter of ZALTRAP concentrate contains 25 mg of aflibercept. A 4 ml vial provides a total of 100 mg of aflibercept. The active ingredient is produced via recombinant DNA technology in Chinese hamster ovary cells. The solution appears clear, colorless to pale yellow and is provided in single-use vials. It also includes excipients such as sodium citrate and sucrose.
+
+3. Mechanism of Action  
+Aflibercept is a recombinant fusion protein acting as a decoy receptor for vascular endothelial growth factors (VEGF-A and VEGF-B) and placental growth factor (PlGF). By binding these ligands with high affinity, aflibercept prevents them from activating their natural receptors on endothelial cells, inhibiting the formation of new blood vessels essential for tumor growth and metastasis.
+
+4. Therapeutic Indication  
+ZALTRAP is indicated for adults with mCRC in combination with irinotecan, 5-fluorouracil, and folinic acid (FOLFIRI), particularly when the disease has advanced following oxaliplatin-containing therapy. The addition of aflibercept to the FOLFIRI regimen has demonstrated improved overall survival and progression-free survival in clinical studies.
+
+5. Dosage and Administration  
+The recommended dosage is 4 mg/kg body weight, administered as a one-hour intravenous infusion, every two weeks, prior to FOLFIRI. Dilution with sodium chloride 0.9% is required before administration. The product must never be given as a bolus injection or intravitreally.
+
+Adjustments or delays in dosing may be required in cases of adverse effects such as severe hypertension, bleeding, or proteinuria. Dose modifications are also advised for specific toxicities related to neutropenia or gastrointestinal events.
+
+6. Clinical Efficacy  
+In the pivotal phase III VELOUR trial, ZALTRAP combined with FOLFIRI significantly increased median overall survival to 13.5 months, compared to 12.1 months in the placebo group. Progression-free survival also improved from 4.7 to 6.9 months. The treatment demonstrated consistent benefits across various subgroups, including those with or without prior exposure to bevacizumab.
+
+7. Safety and Adverse Effects  
+The most common adverse reactions include:
+- Hematological: Neutropenia, leukopenia, thrombocytopenia
+- Gastrointestinal: Diarrhea, stomatitis, abdominal pain
+- Cardiovascular: Hypertension, arterial and venous thromboembolic events
+- Renal: Proteinuria and, rarely, nephrotic syndrome
+- General: Fatigue, asthenia, weight loss
+
+Severe complications such as gastrointestinal perforation, compromised wound healing, and posterior reversible encephalopathy syndrome (PRES) have also been reported.
+
+Patients undergoing treatment should be closely monitored with blood counts, urine protein tests, and blood pressure assessments. Temporary suspension or permanent discontinuation may be required depending on the severity of these effects.
+
+8. Contraindications and Precautions  
+ZALTRAP is contraindicated in individuals with known hypersensitivity to aflibercept or any component of the formulation. Intravitreal administration is strictly prohibited due to the risk of ocular toxicity.
+
+Caution is required in patients with a history of cardiovascular conditions, bleeding disorders, or compromised wound healing. It is advised to suspend therapy at least four weeks before elective surgery and not resume until the wound has fully healed.
+
+9. Use in Specific Populations  
+- Elderly: No dose adjustment required, though they may experience higher rates of fatigue, weight loss, and dehydration.
+- Renal and Hepatic Impairment: No formal dose modifications necessary for mild to moderate dysfunction, though limited data exists for severe impairment.
+- Pregnancy and Lactation: Use is not recommended. Effective contraception is required during and for at least three months post-treatment. Breastfeeding should be avoided.
+
+10. Pharmacokinetics  
+Following IV infusion, aflibercept exhibits biphasic distribution and slow clearance. The terminal half-life is approximately 6 days, with free drug levels stabilizing after the second dose. Clearance is primarily via binding to circulating VEGF. Renal excretion is minimal due to the large molecular size.
+
+11. Storage and Handling  
+Store at 2–8°C in the original packaging to protect from light. The product is stable for 24 hours at 2–8°C or 8 hours at 25°C post-dilution. The solution should be prepared under aseptic conditions by healthcare professionals.
+
+12. Supply and Distribution  
+ZALTRAP is provided in 4 ml and 8 ml vials. It is intended for pharmaceutical distribution under medical supervision. Entities involved in wholesale or hospital-level distribution should ensure proper cold-chain logistics. For any import or export, local regulatory approvals and storage conditions must be strictly observed.
+
+Patients must not attempt to buy ZALTRAP without a valid prescription. Improper use or sourcing may result in serious health risks and legal implications.

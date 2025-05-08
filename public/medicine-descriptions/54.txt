@@ -1,0 +1,164 @@
+ ADRENALIN (adrenaline) 0.5 mg/1 mL – 10 Ampoules – PRODUCT INFORMATION
+
+ 1. Product Overview
+
+ADRENALIN® 0.5 mg/1 mL is a sterile injectable solution containing adrenaline (epinephrine), a potent sympathomimetic agent used in life-threatening medical emergencies such as anaphylaxis, cardiac arrest, and severe bronchospasm. It exerts direct action on both alpha- and beta-adrenergic receptors, producing rapid vasoconstriction, bronchodilation, and increased cardiac output.
+
+Each 1 mL ampoule contains:
+- Adrenaline bitartrate 1.98 mg (equivalent to 1 mg adrenaline base + 10% excess)
+- Sodium chloride 8.38 mg
+- Sodium metabisulfite 0.1 mg
+- Water for injection q.s. to 1 mL
+
+ADRENALIN is packaged in boxes of 10 ampoules, each individually sealed for single-use administration. The medication is manufactured in compliance with strict pharmaceutical standards and is widely distributed through licensed wholesale supply systems. Access in international markets may be subject to import or export regulations, and hospitals or medical distributors may purchase this product for emergency stockpiles. Patients should never buy adrenaline for home use without prescription or proper medical supervision.
+
+
+
+ 2. Indications
+
+Adrenaline injection is indicated for:
+
+- Anaphylaxis and severe allergic reactions (including drug-induced or insect bites)
+- Bronchospasm due to asthma or chronic obstructive pulmonary disease (COPD)
+- Cardiac arrest, including asystole and pulseless electrical activity
+- Adjunctive treatment for hypotension and shock
+- Prolongation of the effect of local anesthetics (off-label in certain surgical settings)
+
+
+
+ 3. Dosage and Administration
+
+Route of administration: Intramuscular (IM), subcutaneous (SC), intravenous (IV), or endotracheal (ET), depending on clinical indication.
+
+ Adults:
+
+- Anaphylaxis / Bronchospasm:  
+  0.1–0.5 mg (IM or SC); may be repeated every 10–15 minutes if necessary. Maximum single dose: 1 mg.
+
+- Cardiac Arrest:  
+  0.5–1 mg IV every 3–5 minutes during resuscitation. If IV access is unavailable, consider ET or intracardiac injection by trained personnel.
+
+- Bronchial Asthma / COPD Exacerbation:  
+  0.3 mg SC every 20 minutes for 3 doses; repeat after 2 hours if needed.
+
+ Pediatrics:
+
+- Anaphylaxis / Asthma:  
+  0.01 mg/kg SC or IM every 4 hours; up to 0.3 mg per dose.
+
+- Cardiac Arrest:  
+  0.01 mg/kg IV every 3–5 minutes; max single dose 1 mg.
+
+Important: Injection into buttock muscle (gluteus) is discouraged due to erratic absorption.
+
+
+
+ 4. Contraindications
+
+Do not administer adrenaline in the following conditions unless absolutely necessary:
+
+- Known hypersensitivity to adrenaline or sulfites
+- Severe cardiovascular disease, including organic heart disease, dilated cardiomyopathy, and severe hypertension
+- Hyperthyroidism
+- Use in halogenated hydrocarbon anesthetic environments (e.g., halothane)
+- Cerebral arteriosclerosis or recent stroke
+
+
+
+ 5. Warnings and Precautions
+
+- Exercise extreme caution in elderly patients, those with diabetes, angina pectoris, arrhythmias, or known sensitivity to sympathomimetic agents.
+- Risk of pulmonary edema, ventricular fibrillation, or stroke with high doses or inadvertent IV administration.
+- Prolonged or repeated use at the same injection site can cause local necrosis due to vasoconstriction.
+- May delay the second stage of labor and cause uterine atony if used during pregnancy. Should only be administered to pregnant women if medically necessary.
+- Contains sodium metabisulfite, which can cause allergic-type reactions, especially in asthmatic individuals.
+
+
+
+ 6. Adverse Effects
+
+ Common (≥1/100 to <1/10):
+- Palpitations
+- Tremors
+- Headache
+- Anxiety
+- Pallor
+- Dizziness
+
+ Uncommon to Rare:
+- Hypertensive crisis
+- Cardiac arrhythmia, ventricular fibrillation
+- Pulmonary edema
+- Tissue necrosis at injection site
+- Hyperglycemia, hypokalemia
+
+Overdose may lead to serious complications, particularly in the elderly. Intracranial hemorrhage, cardiac arrhythmias, and myocardial infarction are possible.
+
+
+
+ 7. Drug Interactions
+
+Avoid combination with:
+
+- Sympathomimetic agents (additive toxicity)
+- Beta-blockers (antagonize bronchial and cardiac effects; risk of hypertension)
+- Alpha-blockers (can reverse pressor effects)
+- Digitalis glycosides (increase risk of arrhythmias)
+- Inhalational anesthetics (e.g., halothane, cyclopropane): increase risk of fatal arrhythmias
+- Tricyclic antidepressants, antihistamines, thyroid hormones: enhance cardiovascular effects
+- Phenothiazines: may reduce vasopressor effect, potentially worsening hypotension
+- Insulin / Oral hypoglycemics: dosing may require adjustment due to adrenaline-induced hyperglycemia
+
+
+
+ 8. Pregnancy and Lactation
+
+ Pregnancy:
+- May inhibit uterine contractions and cause fetal anoxia.
+- Use only if clearly needed and when benefits outweigh risks.
+
+ Lactation:
+- Unknown whether adrenaline passes into breast milk. Use with caution.
+
+
+
+ 9. Overdose Management
+
+ Symptoms:
+- Hypertension
+- Cerebral hemorrhage
+- Ventricular arrhythmias
+- Pulmonary edema
+
+ Antidote and Treatment:
+- Use alpha-blockers (e.g., phentolamine) or vasodilators for blood pressure control.
+- Do not use beta-blockers alone, as unopposed alpha stimulation may worsen hypertension.
+- In absence of alpha-blockers, chlorpromazine (25 mg IM or slow IV) may be considered.
+
+
+
+ 10. Storage and Stability
+
+- Store below 25°C
+- Protect from light and do not freeze
+- Single-use ampoule; discard unused portion
+
+Keep out of reach of children. Observe expiry date printed on the packaging.
+
+
+
+ 11. Packaging and Distribution
+
+ADRENALIN is available in packs containing 10 ampoules of 1 mL. Supplied through authorized pharmaceutical wholesalers, and often purchased by emergency departments, ICUs, and field units as part of critical care kits.
+
+Regulated export and import of adrenaline are allowed for humanitarian aid and emergency health systems under specific national health authority guidelines. Healthcare providers and institutions should buy only from licensed and verified sources.
+
+
+
+ 12. Manufacturer
+
+Galen İlaç Sanayi ve Ticaret A.Ş.  
+Tel: +90 (216) 472 24 19  
+Turkey  
+ATC Code: C01CA24
+

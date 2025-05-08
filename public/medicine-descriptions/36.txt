@@ -1,0 +1,145 @@
+
+ ZOVIRAX (ACICLOVIR) 250 MG 5 VIALS – PRODUCT INFORMATION
+
+ Product Overview
+
+ZOVIRAX® I.V. 250 mg is a sterile, lyophilized aciclovir powder for intravenous infusion, primarily used for the treatment of serious viral infections caused by Herpes simplex virus (HSV) and Varicella zoster virus (VZV). Aciclovir, a purine nucleoside analogue, inhibits viral DNA polymerase activity and replication, making it a highly effective antiviral agent in hospital and clinical care settings.
+
+Each 17 ml Type I glass vial contains 250 mg of aciclovir. This formulation is manufactured by GlaxoSmithKline and distributed globally through approved pharmaceutical supply chains. The product is often involved in import and export transactions under strict regulatory frameworks, particularly within the European Union and World Health Organization–compliant countries.
+
+Zovirax 250 mg is presented in cartons containing 5 vials, making it suitable for multi-dose hospital use, especially for patients requiring repeated or high-dose regimens.
+
+---
+
+ Composition
+
+Active Ingredient:
+- Aciclovir 250 mg per vial
+
+Excipients:
+- Sodium hydroxide (used to adjust pH)
+
+This formulation contains approximately 28.03 mg of sodium per vial, equivalent to 1.4% of the WHO's recommended daily intake. Patients on a sodium-restricted diet should be made aware of this component.
+
+---
+
+ Indications
+
+ZOVIRAX I.V. 250 mg is indicated for the treatment of:
+
+- Herpes simplex infections in immunocompromised patients
+- Severe initial episodes of genital herpes in immunocompetent individuals
+- Prophylaxis of Herpes simplex virus infections in immunocompromised individuals
+- Herpes encephalitis
+- Neonatal and infant herpes (up to 3 months of age)
+- Varicella zoster infections (e.g., shingles, chickenpox)
+
+---
+
+ Dosage and Administration
+
+ZOVIRAX I.V. must be administered by slow intravenous infusion over one hour to prevent nephrotoxicity associated with rapid infusion. Dosage is adjusted based on the patient's age, weight, renal function, and the type of viral infection.
+
+ Adults:
+- HSV or VZV (non-severe cases): 5 mg/kg every 8 hours
+- Immunocompromised or CNS involvement: 10 mg/kg every 8 hours
+
+ Children (3 months – 12 years):
+- Dosage is based on body surface area
+- 250 mg/m² every 8 hours for most infections
+- 500 mg/m² every 8 hours for severe infections or in immunocompromised children
+
+ Neonates (up to 3 months):
+- 20 mg/kg every 8 hours
+- 14 days for skin/mucous disease
+- 21 days for disseminated or CNS disease
+
+ Renal Impairment:
+Dosage adjustments are essential based on creatinine clearance. Lower doses or extended intervals are required in patients with moderate to severe renal dysfunction. Hemodialysis significantly clears aciclovir from the system and should be considered in cases of overdose.
+
+---
+
+ Contraindications
+
+- Known hypersensitivity to aciclovir or valaciclovir
+- Known hypersensitivity to sodium hydroxide or other excipients
+- Not for oral or intramuscular use
+
+---
+
+ Warnings and Precautions
+
+- Hydration is critical. Ensure patients receive adequate fluid intake before and after infusions.
+- Rapid IV bolus is not advised due to the risk of aciclovir crystallizing in renal tubules.
+- Monitor renal function closely in the elderly and in patients receiving concomitant nephrotoxic medications (e.g., cyclosporine, tacrolimus).
+- Neurological adverse reactions (confusion, tremors, hallucinations) are more common in renally impaired or elderly patients.
+
+---
+
+ Drug Interactions
+
+Concurrent use of medications that affect renal excretion pathways may increase aciclovir plasma levels. Interactions of note include:
+
+- Probenecid, cimetidine – increase aciclovir AUC by reducing clearance
+- Immunosuppressants (e.g., mycophenolate mofetil) – may increase toxicity risk
+- Lithium – close monitoring is advised when co-administered
+- Theophylline – co-administration may increase systemic exposure
+
+---
+
+ Side Effects
+
+ Common:
+- Nausea and vomiting
+- Injection site reactions (inflammation, tenderness)
+- Elevated liver enzymes
+- Skin rashes, including urticaria
+
+ Uncommon:
+- Anemia, leukopenia, thrombocytopenia
+
+ Rare to Very Rare:
+- Encephalopathy symptoms (confusion, seizures, coma)
+- Hepatitis, jaundice
+- Acute kidney injury, renal pain
+- Photosensitivity
+- Behavioral disturbances
+
+In most cases, symptoms resolve upon drug discontinuation.
+
+---
+
+ Overdose
+
+Symptoms include renal impairment and neurological disturbances. Immediate supportive care is required. Hemodialysis is the most effective method for eliminating excess aciclovir from the bloodstream.
+
+---
+
+ Storage and Handling
+
+- Store below 25°C
+- Reconstitute with 10 ml Water for Injection or 0.9% NaCl to yield a 25 mg/ml solution
+- Use immediately after preparation
+- Discard any unused solution; do not refrigerate reconstituted or diluted product
+- Maintain aseptic conditions during preparation
+
+---
+
+ Packaging
+
+Zovirax 250 mg is supplied in:
+- Glass vials with butyl or bromobutyl rubber stoppers
+- 17 ml nominal capacity
+- Packs of 5 vials, ideal for hospital procurement through approved purchase and tender processes
+
+This format ensures accurate dosing flexibility across various treatment regimens.
+
+---
+
+ Marketing and Distribution
+
+- Marketing Authorization Holder: The Wellcome Foundation Ltd, UK
+- Manufacturer: GlaxoSmithKline Manufacturing S.p.A., Italy
+
+ZOVIRAX is a registered trademark under the GlaxoSmithKline Group. It is available via wholesale networks globally and is frequently included in pharmaceutical export documentation, ensuring uninterrupted access to essential antivirals worldwide. Licensed distributors must adhere to national and international quality and safety standards before any import transaction.
+

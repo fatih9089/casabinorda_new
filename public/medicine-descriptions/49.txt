@@ -1,0 +1,141 @@
+ HUMIRA (adalimumab) 40 MG/0.4 ML – 2 SOLUTIONS FOR INJECTION IN PRE-FILLED PENS – PRODUCT INFORMATION
+
+ 1. Product Overview
+
+HUMIRA® 40 mg/0.4 mL in pre-filled pens is a biological medicine used for the treatment of various chronic inflammatory diseases. It contains adalimumab, a recombinant human monoclonal antibody that binds to tumor necrosis factor-alpha (TNF-α), a cytokine involved in inflammatory and immune processes. Each pre-filled pen delivers a 40 mg dose in 0.4 mL of solution for subcutaneous injection.
+
+This ready-to-use device allows patients to self-administer the medicine conveniently after receiving training from a healthcare professional. It is available via licensed pharmaceutical channels and often distributed through regulated wholesale suppliers. Depending on national regulations, the product may be listed for import or export to facilitate access across borders.
+
+
+
+ 2. Therapeutic Indications
+
+HUMIRA is indicated in the treatment of the following autoimmune and inflammatory diseases:
+
+ Adults:
+- Rheumatoid arthritis
+- Psoriatic arthritis
+- Ankylosing spondylitis
+- Non-radiographic axial spondyloarthritis
+- Plaque psoriasis
+- Hidradenitis suppurativa
+- Crohn’s disease
+- Ulcerative colitis
+- Non-infectious uveitis
+
+ Pediatric Patients:
+- Juvenile idiopathic arthritis (age ≥2)
+- Enthesitis-related arthritis (age ≥6)
+- Severe chronic plaque psoriasis (age 4–17)
+- Crohn’s disease and ulcerative colitis (age ≥6)
+- Non-infectious uveitis (age ≥2)
+
+HUMIRA is prescribed in cases where traditional therapies have failed or are not tolerated.
+
+
+
+ 3. Dosage and Administration
+
+The recommended dose for adults is 40 mg every other week via subcutaneous injection. In some conditions or cases of inadequate response, the dose may be increased to 40 mg every week or 80 mg every other week.
+
+ Pediatric Dosage:
+Dosing in children is weight-based and varies by condition. For instance:
+- Patients ≥30 kg may receive 40 mg every other week
+- For some conditions like Crohn's disease or uveitis, loading doses may be given before maintenance therapy begins.
+
+ Administration:
+Patients can use the pre-filled pen (SureClick®) for self-injection after appropriate training. The injection should be administered into the thigh or abdomen, rotating sites to avoid irritation.
+
+
+
+ 4. Contraindications
+
+HUMIRA must not be used in patients with:
+- Known hypersensitivity to adalimumab or excipients
+- Active tuberculosis or other severe infections
+- Moderate to severe heart failure (NYHA Class III/IV)
+
+
+
+ 5. Warnings and Precautions
+
+Infections: There is a heightened risk of serious infections, including TB and opportunistic infections. Screening for latent TB is mandatory before starting therapy.
+
+Malignancies: A slight increase in the risk of lymphomas and other malignancies has been noted, particularly in children and young adults.
+
+Vaccination: Patients should avoid live vaccines during treatment. Infants exposed to HUMIRA in utero should not receive live vaccines for 5 months post-delivery.
+
+Autoimmune Reactions: Lupus-like syndrome and autoimmune hepatitis have been observed. Discontinuation is advised if symptoms emerge.
+
+Nervous System Disorders: Rare cases of demyelinating diseases, including multiple sclerosis and Guillain-Barré syndrome, have been reported.
+
+
+
+ 6. Adverse Reactions
+
+ Very Common (≥1/10):
+- Injection site reactions (pain, redness)
+- Upper respiratory tract infections
+- Headache
+- Musculoskeletal pain
+
+ Common (≥1/100 to <1/10):
+- Nausea, rash, dizziness
+- Elevated liver enzymes
+- Visual disturbances
+- Fatigue
+
+ Uncommon to Rare:
+- Serious infections including TB and sepsis
+- Blood disorders (e.g., leukopenia, thrombocytopenia)
+- Malignancies including lymphoma
+- Hepatic injury and liver failure
+
+In pediatric populations, adverse reactions mirror those in adults in frequency and type.
+
+
+
+ 7. Pregnancy and Lactation
+
+ Pregnancy:
+No increased risk of birth defects has been found in studies, but use during pregnancy should be considered only if clearly necessary.
+
+ Breastfeeding:
+Adalimumab is excreted in low levels in breast milk, with no expected harm to infants. HUMIRA may be used during breastfeeding.
+
+
+
+ 8. Pharmacological Profile
+
+ Mechanism of Action:
+Adalimumab binds TNF-α, neutralizing its activity and preventing it from binding to TNF receptors on cell surfaces. This reduces inflammation, halts disease progression, and improves clinical outcomes.
+
+ Pharmacokinetics:
+- Bioavailability: ~64%
+- Peak levels: Reached in ~5 days
+- Half-life: ~2 weeks
+
+
+
+ 9. Packaging and Storage
+
+- Supplied in cartons containing 2 pre-filled pens
+- Store at 2°C–8°C, do not freeze
+- Can be kept at room temperature (≤25°C) for up to 14 days
+
+
+
+ 10. Distribution and Purchasing
+
+HUMIRA is distributed via authorized pharmaceutical supply chains and is available in hospital pharmacies and specialty clinics. Medical institutions and clinics often purchase HUMIRA through wholesale contracts to ensure consistent availability. In countries where local supply is limited, HUMIRA may be included in import or export programs regulated by health authorities.
+
+Patients should only buy HUMIRA from certified pharmacies or healthcare providers to avoid counterfeit or improperly stored products.
+
+
+
+ 11. Manufacturer and Authorization
+
+- Marketing Authorization Holder: AbbVie Deutschland GmbH & Co. KG  
+- Manufacturing Sites: Ludwigshafen, Germany
+- European Authorization: Approved by the European Medicines Agency (EMA)
+- ATC Code: L04AB04

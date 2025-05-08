@@ -1,0 +1,65 @@
+
+ ZALTRAP (aflibercept intravenous) 200 mg/8 mL Concentrate for Solution for Infusion – PRODUCT INFORMATION
+
+1. Overview
+
+ZALTRAP is a sterile, preservative-free concentrate for solution intended for intravenous infusion. Each 8 mL vial contains 200 mg of aflibercept, a recombinant fusion protein used as an anti-neoplastic agent. Aflibercept acts by inhibiting the VEGF pathway, thereby reducing tumor vascularization and growth. It is marketed in vials ready for dilution and is strictly for single-dose administration.
+
+2. Indications
+
+ZALTRAP is indicated for adult patients with metastatic colorectal cancer (MCRC) that has progressed following oxaliplatin-based chemotherapy. It is administered in combination with the FOLFIRI regimen (irinotecan, 5-fluorouracil, and folinic acid). This combination has demonstrated efficacy in improving progression-free and overall survival.
+
+3. Mechanism of Action
+
+Aflibercept acts as a decoy receptor that binds to vascular endothelial growth factor-A (VEGF-A), VEGF-B, and placental growth factor (PlGF), thereby preventing their interaction with endogenous receptors. This inhibition blocks angiogenesis, an essential process in tumor growth and metastasis. The affinity of aflibercept for VEGF-A is significantly higher than that of native VEGF receptors.
+
+4. Dosage and Administration
+
+The recommended dosage is 4 mg/kg of body weight, administered via intravenous infusion over 1 hour every two weeks, in combination with the FOLFIRI regimen. The solution must be diluted before administration. Administration should be performed under the supervision of a healthcare professional experienced in chemotherapy delivery.
+
+5. Dose Adjustments and Treatment Delays
+
+Modifications to dosing may be required in cases of adverse events such as severe hypertension, proteinuria, gastrointestinal perforation, or thromboembolic events. Temporary suspension and dose reduction to 2 mg/kg may be necessary for persistent or recurrent toxicity. Treatment should be delayed if neutropenia (ANC < 1.5 x 10⁹/L) or thrombocytopenia (platelets < 75 x 10⁹/L) is present.
+
+6. Contraindications
+
+ZALTRAP is contraindicated in patients with known hypersensitivity to aflibercept or its excipients. It must not be administered intravitreally due to its hyperosmotic nature. Use is also contraindicated in patients with active severe bleeding or recent surgical procedures with poor wound healing.
+
+7. Adverse Reactions
+
+The most frequently observed adverse effects include:
+- Hematologic: Neutropenia, leukopenia, and thrombocytopenia.
+- Gastrointestinal: Diarrhea, stomatitis, and abdominal pain.
+- Cardiovascular: Hypertension and thromboembolic events.
+- Renal: Proteinuria and nephrotic syndrome.
+- Others: Fatigue, weight loss, and dysphonia.
+
+Serious complications such as gastrointestinal perforation, fistula formation, posterior reversible encephalopathy syndrome (PRES), and cardiac failure have also been reported.
+
+8. Pharmacokinetics
+
+ZALTRAP demonstrates a terminal half-life of approximately 6 days. Free aflibercept reaches steady-state concentrations by the second treatment cycle, with minimal accumulation. Clearance is primarily through binding to VEGF to form inactive complexes and subsequent proteolytic catabolism. Hepatic and renal impairment have not shown clinically significant impact on pharmacokinetics at the standard dose.
+
+9. Use in Special Populations
+
+- Elderly: No dose adjustment is necessary; however, increased monitoring is recommended.
+- Hepatic/Renal Impairment: Caution is advised due to limited data in severe cases, though no dose adjustment is required for mild to moderate impairment.
+- Pregnancy and Lactation: ZALTRAP is not recommended due to potential fetal harm. Breastfeeding should be avoided.
+- Pediatrics: Not recommended for use in children.
+
+10. Clinical Efficacy
+
+In the pivotal Phase III VELOUR trial, patients receiving ZALTRAP plus FOLFIRI demonstrated a median overall survival of 13.5 months compared to 12.1 months in the placebo group. Median progression-free survival was also improved, and the overall response rate was nearly doubled.
+
+11. Handling and Storage
+
+ZALTRAP must be stored between 2°C and 8°C in its original packaging to protect from light. The product must be diluted with sodium chloride 0.9% before infusion. Use is restricted to a single patient and any unused portion must be discarded according to local regulations.
+
+12. Supply and Distribution
+
+ZALTRAP is distributed through authorized pharmaceutical supply chains. Licensed entities involved in wholesale or export must follow appropriate storage and transportation protocols. Due to the complexity of its use and handling, it is not intended for general import or buy transactions outside of regulated medical supply systems. Procurement should only be conducted through certified channels under healthcare provider supervision.
+
+13. Precautions and Monitoring
+
+Patients should be closely monitored for signs of toxicity, including blood pressure, renal function, liver enzymes, and complete blood counts. Due to the risk of serious adverse effects, clinicians must assess risks versus benefits continuously throughout treatment.
+

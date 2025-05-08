@@ -1,0 +1,134 @@
+FOSAMAX (alendronate sodium) 70 mg – PRODUCT INFORMATION  
+(4 tablets)
+
+
+
+ 1. INDICATIONS AND USAGE  
+FOSAMAX® (alendronate sodium) is a bisphosphonate indicated for:  
+- Treatment and prevention of osteoporosis in postmenopausal women (Sections 1.1, 1.2)  
+- Treatment to increase bone mass in men with osteoporosis (1.3)  
+- Treatment of glucocorticoid‑induced osteoporosis (1.4)  
+- Treatment of Paget’s disease of bone (1.5)  
+
+Limitations of use: Optimal duration of use has not been established; consider discontinuation after 3–5 years in low‑risk patients (1.6).
+
+ 2. DOSAGE AND ADMINISTRATION  
+2.1 Treatment of Osteoporosis in Postmenopausal Women  
+- 10 mg once daily or 70 mg once weekly.  
+
+2.2 Prevention of Osteoporosis in Postmenopausal Women  
+- 5 mg once daily or 35 mg once weekly.  
+
+2.3 Treatment to Increase Bone Mass in Men with Osteoporosis  
+- 10 mg once daily or 70 mg once weekly.  
+
+2.4 Treatment of Glucocorticoid‑Induced Osteoporosis  
+- 5 mg once daily (or 10 mg in postmenopausal women not on estrogen).  
+
+2.5 Treatment of Paget’s Disease of Bone  
+- 40 mg once daily for six months; retreatment based on serum alkaline phosphatase and clinical status.  
+
+2.6 Important Administration Instructions  
+- Take upon arising with a full glass (6–8 oz) of plain water at least 30 minutes before first food, drink, or other medication.  
+- Remain upright for ≥ 30 minutes afterward.  
+- Missing a weekly dose: take the morning after remembering; do not double up.  
+
+2.7 Calcium and Vitamin D  
+- Supplement if dietary intake is inadequate; higher vitamin D may be needed in the elderly or malabsorptive states.  
+
+ 3. DOSAGE FORMS AND STRENGTHS  
+- Tablets: white, oval, uncoated, 70 mg tablets stamped “31” and bone‑outline logo.  
+
+ 4. CONTRAINDICATIONS  
+- Abnormalities of the esophagus (stricture, achalasia)  
+- Inability to sit/stand upright ≥ 30 minutes  
+- Hypocalcemia  
+- Hypersensitivity to alendronate or any excipient  
+
+ 5. WARNINGS AND PRECAUTIONS  
+5.1 Upper GI Adverse Reactions  
+- Risk of esophagitis, ulcers, erosions; instruct proper dosing and discontinue if dysphagia, odynophagia, or retrosternal pain occur.
+
+5.2 Mineral Metabolism  
+- Correct hypocalcemia and vitamin D deficiency before initiating; monitor in high‑risk patients.
+
+5.3 Musculoskeletal Pain  
+- Severe bone, joint, or muscle pain reported; discontinue if severe symptoms develop.
+
+5.4 Osteonecrosis of the Jaw  
+- Reported in oncology and osteoporosis patients; risk factors include dental extractions, poor oral hygiene, corticosteroids, chemotherapy. Consider dental exam prior to therapy; avoid invasive dental procedures if possible.
+
+5.5 Atypical Femur Fractures  
+- Subtrochanteric and diaphyseal femoral fractures reported with long‑term use; investigate thigh or groin pain and consider discontinuation pending risk/benefit assessment.
+
+5.6 Renal Impairment  
+- Not recommended if creatinine clearance < 35 mL/min.
+
+ 6. ADVERSE REACTIONS  
+6.1 Clinical Trials Experience  
+- Most common (≥ 3%): abdominal pain, acid regurgitation, constipation, diarrhea, dyspepsia, musculoskeletal pain, nausea.  
+- Other: headache, dizziness, flatulence, rash, back pain, peripheral edema.  
+
+6.2 Post‑marketing  
+- Hypersensitivity (urticaria, angioedema), transient acute‑phase reactions (fever, myalgia), symptomatic hypocalcemia, esophageal perforation, Stevens–Johnson syndrome, toxic epidermal necrolysis, osteonecrosis of the jaw, atypical fractures, uveitis/episcleritis.
+
+ 7. DRUG INTERACTIONS  
+- Calcium, antacids, multivalent cations: interfere with absorption; separate by ≥ 30 minutes.  
+- NSAIDs/aspirin: may increase GI irritation; use caution.
+
+ 8. USE IN SPECIFIC POPULATIONS  
+8.1 Pregnancy  
+- Discontinue when pregnancy recognized; animal data show fetal skeletal toxicity at ≥ 0.1× human dose citeturn1file0.  
+
+8.2 Lactation  
+- Unknown if excreted in human milk; weigh benefits vs. risks.
+
+8.4 Pediatric Use  
+- Not indicated; in osteogenesis imperfecta, increased vomiting and acute‑phase reactions occurred without fracture reduction.
+
+8.5 Geriatric Use  
+- No overall differences in safety or efficacy in patients ≥ 65 years.
+
+8.6 Renal Impairment  
+- Not recommended if creatinine clearance < 35 mL/min; no adjustment needed 35–60 mL/min.
+
+8.7 Hepatic Impairment  
+- No dosage adjustment necessary.
+
+ 10. OVERDOSAGE  
+- Hypocalcemia, hypophosphatemia, severe GI irritation.  
+- Treat with milk or antacids; keep patient upright; do not induce vomiting. Dialysis not effective.
+
+ 11. DESCRIPTION  
+- Alendronate sodium: (4‑amino‑1‑hydroxybutylidene) bisphosphonic acid monosodium trihydrate; C₄H₁₂NNaO₇P₂·3H₂O; formula weight 325.12. Inactive ingredients: microcrystalline cellulose, lactose anhydrous, croscarmellose sodium, magnesium stearate.
+
+ 12. CLINICAL PHARMACOLOGY  
+12.1 Mechanism of Action  
+- Inhibits osteoclast‑mediated bone resorption by binding to bone hydroxyapatite.  
+
+12.2 Pharmacodynamics  
+- Reduces biochemical markers of bone turnover by 50–70% (e.g., urinary N‑telopeptides).  
+
+12.3 Pharmacokinetics  
+- Oral bioavailability 0.6% fasting; decreased by 60% if taken with coffee or orange juice; negligible if taken with food; protein binding ~78%; terminal half‑life > 10 years due to bone retention; 50% excreted unchanged in urine within 72 hours.
+
+ 13. NONCLINICAL TOXICOLOGY  
+13.1 Carcinogenesis/Mutagenesis/Impairment of Fertility  
+- No genotoxicity; rodent studies: high‑dose Harderian gland and thyroid adenomas; relevance to humans unknown.
+
+ 14. CLINICAL STUDIES  
+- Postmenopausal osteoporosis: 10 mg daily reduced vertebral fractures by 48% and hip fractures by 51% over 3 years citeturn1file0.  
+- Prevention: 5 mg daily increased BMD vs. placebo over 2–3 years.  
+- Men: 10 mg daily increased BMD and bone markers.  
+- Glucocorticoid‑induced: 5 mg daily prevented bone loss vs. placebo in 1 year.  
+- Paget’s disease: 40 mg daily for 6 months normalized alkaline phosphatase in 70% of patients.
+
+ 16. HOW SUPPLIED/STORAGE AND HANDLING  
+- NDC: specific codes for 70 mg tablets in bottles of 4.  
+- Store at 20–25 °C; protect from moisture.
+
+ 17. PATIENT COUNSELING INFORMATION  
+- Emphasize dosing instructions (upright posture, fasting).  
+- Discuss calcium/vitamin D supplementation.  
+- Warn about potential for GI irritation and jaw osteonecrosis; advise dental evaluation.  
+- Advise prompt reporting of thigh/groin pain.
